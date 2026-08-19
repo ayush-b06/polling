@@ -1,0 +1,648 @@
+# jobwatch config
+interval_seconds: 90
+
+# Independent daemon cadences. A source can override these with its own
+# `interval_seconds`. One-shot mode still polls every configured source once.
+poll_intervals:
+  direct_api: 60
+  workday: 120
+  custom: 120
+  browser: 180
+  fallback: 900
+initial_spread_seconds: 30
+
+# Drop postings older than this, in days. Two escape hatches:
+#  - a posting whose date can't be read ALWAYS passes
+#  - a title naming the 2027 cycle NEVER expires (see max_age_exempt below)
+# Lower it if you see stale roles; raise it if the list feels thin.
+max_age_days: 90
+
+# Companies to drop entirely, whatever the role. Add a name here once you know
+# it's noise for you — every entry is an alert you won't have to ignore.
+never_alert_companies:
+  - TikTok
+  - ByteDance
+
+# Titles matching these ignore max_age_days entirely. A "Summer 2027
+# Internship" posted 4 months ago is still the exact role you're racing for.
+max_age_exempt_if_title_matches:
+  - '\b2027\b'
+  - 'summer 2027|fall 2026|spring 2027'
+concurrency: 12
+
+filters:
+  # ---- GATE 1: is it a software role?  (matched against the TITLE)
+  role_must_match_any:
+    - 'software (engineer|engr\b|developer|development|dev\b)'
+    - '\bapplication (engineer|development)\b'
+    - '\b(swe|sde)\b'
+    - '(front.?end|back.?end|full.?stack|web) (engineer|developer)'
+    - '(mobile|ios|android) (engineer|developer)'
+    - '(embedded software|software (platform|infrastructure|systems)) engineer'
+    - '(quantitative|quant) (developer|software (engineer|developer))'
+    - 'software engineering (intern|internship|co.?op)'
+
+  # ---- GATE 2: is it early-career?  (matched against the TITLE)
+  level_must_match_any:
+    - 'intern\b|internship|\bco.?op\b'
+    - 'new ?grad|newgrad|university|campus|early career|new college'
+    - 'entry.level|junior|\bgrad(uate)?\b|\bassociate\b'
+    - 'engineer,? (i|1)\b(?!i)'
+    - '(class of|summer|fall|spring|start(ing)?)\s*(2026|2027)'
+    - '\brotational\b|\bapprentice'
+
+  internship_signal_any:
+    - '\bintern\b|internship|\bco.?op\b'
+
+  new_grad_signal_any:
+    - 'new ?grad|newgrad|university grad|\bcampus\b|early career|new college'
+    - '\bentry(?:.?level)?\b|junior|\bassociate\b|recent grad|\bgraduate\b|\bapprentice\b|\brotational\b'
+    - '(software engineer|software engr|software developer|swe|sde),?\s*(i|1)\b(?!i)'
+    - '(class of|start(ing)?)\s*(2026|2027)'
+
+  # Used only when an adapter returns the job description. These allow a
+  # generic "Software Engineer" title only when the body proves it is entry-level.
+  entry_description_any:
+    - 'new grad(uate)?|recent grad(uate)?|university (hire|graduate|recruit)'
+    - '(0|zero)\s*(?:-|to)\s*2 years|0\+?\s*years of (professional )?experience'
+    - 'no (prior|professional) experience (is )?required'
+    - 'graduat(e|ing|ion).{0,80}(2026|2027)'
+
+  experienced_description_any:
+    # A generic Software Engineer title passes by default. These are explicit
+    # reasons to disqualify it from the new-grad dashboard. Ranges beginning
+    # at 0 or 1 (for example 0-4 years) are protected in classify_target().
+    - '\b(2|[3-9]|[1-9][0-9])\+?\s*years? of (professional |industry |relevant |hands.?on )?(software |engineering )?experience'
+    - '\b(minimum(?: of)?|at least|requires?|plus)\s+(2|two|[3-9]|three|four|five|six|seven|eight|nine|[1-9][0-9])\+?\s+years?(?: of)?(?: [a-z-]+){0,4}\s+experience'
+    - '\b(2|[3-9]|[1-9][0-9])\+\s*years?(?: of)?(?: [a-z-]+){0,4}\s+(experience|developing|building|working)'
+    - '\b(2|two|[3-9]|three|four|five|six|seven|eight|nine|[1-9][0-9])(?:\s*[-–—]\s*\d{1,2}|\+|\s+or more)?\s+years?\b.{0,80}\b(experience|developing|building|working)\b'
+    - '\bmid.?level\b|\bsenior.?level\b'
+    - '\bthis is (a|an) (senior|staff|principal)(?:,? [a-z-]+){0,4}\s+role\b'
+    - '\blooking for experienced (software )?engineers?\b'
+    - '\bexperience must (?:include|involve|require).{0,50}\b(?:2|two|3|three|4|four|5|five|6|six|7|seven|8|eight|9|nine|[1-9][0-9])\s*(?:\([2-9][0-9]?\))?\s+years?\b'
+
+  non_full_time_any:
+    - '\bpart.?time\b|\bcontract(or)?\b|\btemporary\b|seasonal'
+
+  quant_role_any:
+    - '(quantitative|quant) (developer|software (engineer|developer))'
+
+  # ---- GATE 3: kill non-engineering functions  (matched against the TITLE)
+  title_exclude_any:
+    - '\bsenior\b|\bstaff\b|\bprincipal\b|\bprinicipal\b|\bmanager\b|\bdirector\b|\blead(?:er)?\b|\bleadership\b(?!\s+program)|vice president|\bvp\b|\bsr\.?\b'
+    - '\badvanced software (?:engineer|engr|developer)\b'
+    - '\bfounding\b|\bmid[ .-]?(career|level)\b|\barchitect\b|\bdistinguished\b|\bfellow\b'
+    - '\b(?:engineer|engr|developer)\s*[2-9]\b|\b(?:engineer|engr|developer)\s*(ii|iii|iv|v)\b'
+    - '\blevel\s*[2-9]\b|\bspecialist\b|\bsubject matter expert\b|\bsme\b|\bprofessional\b'
+    - '\b(swe|sde|sre)\s*([2-9]|ii|iii|iv)\b|\bic\s*[2-9]\b|\bl[2-9]\b'
+    - '\bph\.?d\b|\bmba\b'
+    - 'product (manager|management|designer|owner|operations)'
+    - 'designer|\bux\b|ui/ux'
+    - '(finance|financial|treasury|accounting|audit|payroll|tax)\b'
+    - 'analyst intern|business analyst|data analyst|financial analyst'
+    - 'marketing|social media|communications|public policy|\bbrand\b'
+    - 'recruit|talent|people operations|total rewards|human resources'
+    - 'sales|account executive|customer (experience|advocacy|success|support)'
+    - 'legal|compliance|\bgrc\b|\brisk\b'
+    - 'strategy|strategist|venture capital|consultant'
+    - 'supply chain|logistics|procurement|facility|warehouse|operations associate'
+    - 'manufacturing|industrial|process engineer|technician|occupational|safety'
+    - 'physical security|network security engineer|security analyst'
+    - 'mechanical|electrical|civil|chemical|naval|aerospace|flight test|materials'
+    - 'silicon|\bsoc\b|\bfpga\b|asic|vlsi|hardware|firmware|physical design'
+    - 'verification|validation|test engineer|engineer.{0,20}\btest\b|\bqa\b|quality'
+    - 'electro.optic|applied physics|photonics|optical'
+    - '\btrader\b|trading (assistant|operations)|execution trader'
+    - 'quantitative (trader|research)'
+    - 'praktikum|premaster|werkstudent|alternance'
+    - 'ground systems|\brf\b|structures|mechanisms|mission engineering'
+    - 'test and operations|skillbridge|controls engineer'
+    - 'skillbridge|military fellow'
+    - '\brf\b|ground systems|structures|mechanisms|propulsion|avionics|thermal'
+    - 'mission engineer|systems integrat|test (and|&) operations|operations engineer'
+
+  # Some career sites shorten the visible title but leave the true seniority
+  # in the official URL (for example /experienced-software-engineer/).
+  url_exclude_any:
+    - 'external_experienced'
+    - '[/_-](experienced|senior|sr\.?|staff|principal|lead|manager|mid-career)[/_?&=-]'
+
+  # ---- GATE 4a: positive US evidence  (matched against TITLE + LOCATION)
+  # A posting must look American. Vague locations are dropped on purpose.
+  us_signal_any:
+    - 'united states|\bu\.?s\.?a?\b|remote.{0,4}(us|usa)'
+    - '\b(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|IA|ID|IL|KS|KY|LA|MA|MD|MI|MN|MO|MS|MT|NC|ND|NE|NH|NJ|NM|NV|NY|OH|OK|PA|RI|SC|SD|TN|TX|UT|VA|VT|WA|WI|WV|WY|DC)\b'
+    - '(california|texas|washington|new york|massachusetts|illinois|colorado|georgia|florida|virginia|arizona|oregon|utah|minnesota|michigan|ohio|pennsylvania|maryland|carolina|tennessee|missouri|indiana|wisconsin|nevada|hawaii|new jersey|connecticut|new mexico|iowa|kansas|oklahoma|nebraska|arkansas|alabama|kentucky|louisiana|mississippi|idaho|montana|rhode island|delaware|vermont|alaska|wyoming|dakota|west virginia|new hampshire)'
+    - '(san francisco|new york|seattle|austin|chicago|boston|denver|atlanta|los angeles|san jose|san diego|palo alto|mountain view|sunnyvale|santa clara|bellevue|redmond|kirkland|menlo park|cupertino|arlington|mclean|reston|pittsburgh|philadelphia|dallas|houston|phoenix|portland|miami|nashville|charlotte|raleigh|durham|boulder|salt lake|minneapolis|detroit|columbus|indianapolis|kansas city|honolulu|costa mesa|irvine|santa monica|culver city|bentonville|westlake|hillsboro|albuquerque|colorado springs|fort collins|overland park|deerfield|woonsocket)'
+
+  # ---- GATE 4b: explicit foreign evidence always loses
+  non_us_any:
+    - '\b(india|china|japan|korea|singapore|malaysia|vietnam|thailand|philippines|indonesia|taiwan|hong kong|israel|turkey|egypt|nigeria|kenya|south africa)\b'
+    - '\b(canada|mexico|brazil|argentina|chile|colombia|costa rica|panama|peru)\b'
+    - '\b(united kingdom|england|ireland|scotland|france|germany|spain|italy|portugal|netherlands|belgium|switzerland|austria|sweden|norway|denmark|finland|poland|serbia|romania|hungary|czech|greece|australia|new zealand)\b'
+    - '(london|dublin|paris|berlin|munich|stuttgart|hamburg|amsterdam|brussels|madrid|barcelona|milan|lisbon|zurich|geneva|vienna|stockholm|oslo|copenhagen|helsinki|warsaw|prague|budapest|belgrade|bucharest|athens|istanbul|tel aviv|dubai|yokneam)'
+    - '(bengaluru|bangalore|hyderabad|mumbai|delhi|gurgaon|chennai|noida|gift city)'
+    - '(haifa|herzliya|ramat gan|petah tikva|beer sheva)'
+    - '(beijing|shanghai|shenzhen|guangzhou|hangzhou|taipei|seoul|tokyo|yokohama|osaka|sydney|melbourne|auckland)'
+    - '(ho.?chi.?minh|hanoi|penang|bayan lepas|kuching|johor|selangor|petaling|sarawak|pasir gudang|kuala lumpur|jakarta|manila|bangkok|bangpa)'
+    - '(toronto|vancouver|montreal|ottawa|waterloo|calgary|guadalajara|mexico city|sao paulo|bogota|buenos aires)'
+    - '(mechelen|vlaanderen|aveiro|reutlingen|hildesheim|lohr am main)'
+    - '\b(BW|NDS|BY|NRW|BLR1|CN)\b'
+
+  # Amazon/Workday put a COUNTRY code first in the location field ("IL, Haifa"
+  # is Israel, not Illinois). Anchored to the start of LOCATION only.
+  non_us_location_prefix:
+    - '^(IL|IN|DE|PL|CN|BR|JP|MX|GB|UK|FR|IE|SG|AU|ZA|EG|LU|NL|ES|IT|SE|RO|CZ|TR|AE|SA|KR|TW|PH|VN|TH|MY|ID|NZ|AT|CH|BE|DK|FI|NO|PT|GR|HU|CR|CO|CL|AR|PE|JO|NG|KE), '
+
+  boost_any:
+    - 'Microsoft|Amazon|Google|Apple|Meta|NVIDIA|Databricks|Stripe|Anthropic|OpenAI|Samsara|Palantir'
+
+sources:
+  # ================= Own careers APIs (what public trackers miss) ==========
+  # ---- Fallback net: SimplifyJobs' GitHub feed -------------------------
+  # Covers every company we can't reach directly — Microsoft, Google, Apple,
+  # Meta, Oracle, Citadel, and hundreds more. `skip_direct: true` makes it
+  # automatically ignore any company already listed above, so the fast direct
+  # feed always wins and nothing shows up twice.
+  # Refreshes ~hourly, so these land slower than the 90s direct sources.
+  - {type: simplify, feed: internships, cohort: internship, skip_direct: true}
+  - {type: simplify, feed: newgrad, cohort: newgrad, skip_direct: true}
+  - {type: eightfold, company: Microsoft, subdomain: microsoft, domain: microsoft.com, query: software engineer intern}
+  - {type: eightfold, company: Microsoft, subdomain: microsoft, domain: microsoft.com, query: software engineer new grad}
+  - {type: amazon, company: Amazon, query: software development engineer intern}
+  - {type: amazon, company: Amazon, query: software engineer graduate}
+  - {type: apple, company: Apple, query: software engineer, interval_seconds: 60}
+  - {type: apple, company: Apple, query: early career, interval_seconds: 60}
+  - {type: ibm, company: IBM, country: United States, interval_seconds: 60}
+  - {type: vanguard, company: Vanguard,
+     org_id: companies/fbd5ce04-22d1-4aae-90dc-0282e45ee06f,
+     interval_seconds: 60}
+  - {type: oracle_hcm, company: Honeywell, host: ibqbjb.fa.ocs.oraclecloud.com,
+     site: CX_1, slug: careers.honeywell.com, path_site: Honeywell, title_facet: "124",
+     location_facet: "300000000469866", interval_seconds: 60}
+
+  # ================= Big tech / large public companies =====================
+  - {type: greenhouse, company: Databricks,       token: databricks}
+  - {type: greenhouse, company: Stripe,           token: stripe}
+  - {type: greenhouse, company: Cloudflare,       token: cloudflare}
+  - {type: greenhouse, company: Coinbase,         token: coinbase}
+  - {type: greenhouse, company: Reddit,           token: reddit}
+  - {type: greenhouse, company: Instacart,        token: instacart}
+  - {type: greenhouse, company: Robinhood,        token: robinhood}
+  - {type: greenhouse, company: Discord,          token: discord}
+  - {type: greenhouse, company: Airtable,         token: airtable}
+  - {type: greenhouse, company: Samsara,          token: samsara}
+  - {type: greenhouse, company: Figma,            token: figma}
+  - {type: greenhouse, company: The Trade Desk,   token: thetradedesk}
+  - {type: greenhouse, company: Lyft,             token: lyft}
+  - {type: greenhouse, company: Pinterest,        token: pinterest}
+  - {type: greenhouse, company: Airbnb,           token: airbnb}
+  - {type: greenhouse, company: Roblox,           token: roblox}
+  - {type: greenhouse, company: Twilio,           token: twilio}
+  - {type: greenhouse, company: Datadog,          token: datadog}
+  - {type: greenhouse, company: MongoDB,          token: mongodb}
+  - {type: greenhouse, company: Affirm,           token: affirm}
+  - {type: greenhouse, company: Dropbox,          token: dropbox}
+  - {type: greenhouse, company: Asana,            token: asana}
+  - {type: greenhouse, company: Scale AI,         token: scaleai}
+  - {type: greenhouse, company: Verkada,          token: verkada}
+  - {type: greenhouse, company: Waymo,            token: waymo}
+  - {type: greenhouse, company: Anduril,          token: andurilindustries}
+  - {type: greenhouse, company: Anthropic,        token: anthropic}
+
+  # ================= Ashby ================================================
+  - {type: ashby, company: OpenAI,      token: openai}
+  - {type: ashby, company: Ramp,        token: ramp}
+  - {type: ashby, company: Notion,      token: notion}
+  - {type: ashby, company: Modal,       token: modal}
+  - {type: ashby, company: Deepgram,    token: deepgram}
+  - {type: ashby, company: Saronic,     token: saronic}
+  - {type: ashby, company: Linear,      token: linear}
+
+  # ================= Lever ================================================
+  - {type: lever, company: Palantir,  token: palantir}
+
+  # ================= SmartRecruiters ======================================
+  - {type: smartrecruiters, company: Western Digital, token: WesternDigital}
+  - {type: smartrecruiters, company: Bosch,           token: BoschGroup}
+  - {type: smartrecruiters, company: Visa,            token: Visa}
+
+  # ================= Eightfold ============================================
+  # PayPal runs PayPal, Venmo, and Paidy hiring off one Eightfold tenant
+  # (domain=paypal.com) — `brand` scopes to one. Not on Workday despite
+  # PayPal also having a Workday board; that board is a different, mostly-
+  # unrelated set of postings.
+  - {type: eightfold, company: PayPal, subdomain: paypal, domain: paypal.com, brand: paypal}
+  - {type: eightfold, company: Venmo,  subdomain: paypal, domain: paypal.com, brand: venmo}
+
+  # ================= Quant / trading (SWE roles only, per filters) =========
+  - {type: greenhouse, company: Chicago Trading,  token: ctccampusboard}
+  - {type: greenhouse, company: Five Rings,       token: fiveringsllc}
+  - {type: greenhouse, company: PDT Partners,     token: pdtpartners}
+  - {type: greenhouse, company: Virtu Financial,  token: virtu}
+  - {type: greenhouse, company: Akuna Capital,    token: akunacapital}
+  - {type: greenhouse, company: Jane Street,      token: janestreet}
+  - {type: greenhouse, company: Jump Trading,     token: jumptrading}
+  - {type: greenhouse, company: Tower Research,   token: towerresearchcapital}
+  - {type: greenhouse, company: DRW,              token: drweng}
+  # Playwright-scraped (no public REST API)
+  - {type: pw_optiver, company: Optiver}
+  - {type: pw_hrt, company: Hudson River Trading}
+  - {type: pw_twosigma, company: Two Sigma}
+  - {type: pw_goldmansachs, company: Goldman Sachs}
+  - {type: pw_citadel, company: Citadel}
+  - {type: pw_citadel, company: Citadel Securities, url: "https://www.citadelsecurities.com/careers/open-opportunities/"}
+
+  # ================= Playwright-scraped: big tech (JS-rendered) ===============
+  - {type: pw_meta, company: Meta}
+  # Tesla is behind Cloudflare — stays on Simplify for now
+
+  # ================= Workday ==============================================
+  # Add more with:  python discover.py --workday <careers URL from your browser>
+  - {type: workday, company: NVIDIA, tenant: nvidia, site: NVIDIAExternalCareerSite,
+     host: wd5, search: intern}
+  - {type: workday, company: Salesforce, tenant: salesforce, site: External_Career_Site,
+     host: wd12, search: intern}
+  - {type: workday, company: Intel, tenant: intel, site: external,
+     host: wd1, search: software intern}
+  - {type: workday, company: Workday, tenant: workday, site: Workday,
+     host: wd5, search: intern}
+  - {type: workday, company: Workday, tenant: workday, site: Workday,
+     host: wd5, search: software engineer}
+  # Second pass for full-time new-grad roles — Workday boards are big enough
+  # that one search term won't surface everything.
+  - {type: workday, company: NVIDIA, tenant: nvidia, site: NVIDIAExternalCareerSite,
+     host: wd5, search: university}
+  - {type: workday, company: Intel, tenant: intel, site: external,
+     host: wd1, search: graduate}
+  - {type: workday, company: CrowdStrike, tenant: crowdstrike, site: crowdstrikecareers,
+     host: wd5, search: software intern}
+  - {type: workday, company: Cisco, tenant: cisco, site: Cisco_Careers,
+     host: wd5, search: software intern}
+  - {type: workday, company: Cisco, tenant: cisco, site: Cisco_Careers,
+     host: wd5, search: software new grad}
+  - {type: workday, company: Boeing, tenant: boeing, site: EXTERNAL_CAREERS,
+     host: wd1, search: software intern}
+  - {type: rippling, company: Rippling, token: rippling}
+
+  # ---- added by discover.py --add
+  - {type: smartrecruiters, company: ServiceNow, token: servicenow}
+  - {type: greenhouse, company: Box, token: boxinc}
+  - {type: greenhouse, company: Okta, token: okta}
+  - {type: greenhouse, company: Zscaler, token: zscaler}
+  - {type: greenhouse, company: Elastic, token: elastic}
+  - {type: greenhouse, company: GitLab, token: gitlab}
+  - {type: smartrecruiters, company: Arista Networks, token: aristanetworks}
+  - {type: ashby, company: Applied Materials, token: applied}
+  - {type: smartrecruiters, company: Uber, token: uber}
+  - {type: greenhouse, company: TripAdvisor, token: tripadvisor}
+  - {type: smartrecruiters, company: Wayfair, token: wayfair}
+  - {type: greenhouse, company: Peloton, token: peloton}
+  - {type: lever, company: Spotify, token: spotify}
+  - {type: rippling, company: Paramount, token: paramount}
+  - {type: greenhouse, company: Riot Games, token: riotgames}
+  - {type: greenhouse, company: Epic Games, token: epicgames}
+  - {type: greenhouse, company: Zynga, token: zyngacareers}
+  - {type: greenhouse, company: Block, token: block}
+  - {type: ashby, company: Plaid, token: plaid}
+  - {type: greenhouse, company: Chime, token: chime}
+  - {type: greenhouse, company: Brex, token: brex}
+  - {type: ashby, company: Marqeta, token: marqeta-inc}
+  - {type: greenhouse, company: SoFi, token: sofi}
+  - {type: greenhouse, company: Betterment, token: betterment}
+  - {type: lever, company: Wealthfront, token: wealthfront}
+  - {type: greenhouse, company: Charles Schwab, token: charles}
+  - {type: greenhouse, company: Intercontinental Exchange, token: IE}
+  - {type: greenhouse, company: Point72, token: point72}
+  - {type: greenhouse, company: XTX Markets, token: xtxmarketstechnologies}
+  - {type: greenhouse, company: IMC Trading, token: imc}
+  - {type: greenhouse, company: Old Mission Capital, token: oldmissioncapital}
+  - {type: lever, company: Belvedere Trading, token: belvederetrading}
+  # DE Shaw is NOT on Recruitee — scraping their Next.js careers page
+  - {type: pw_deshaw, company: D. E. Shaw}
+  - {type: greenhouse, company: AQR Capital, token: aqr}
+  - {type: greenhouse, company: General Dynamics, token: general}
+  - {type: smartrecruiters, company: Caterpillar, token: caterpillarinc}
+  - {type: ashby, company: Eli Lilly, token: eli}
+  - {type: smartrecruiters, company: AbbVie, token: abbvie}
+  - {type: smartrecruiters, company: Intuitive Surgical, token: intuitive}
+  - {type: smartrecruiters, company: Medtronic, token: medtronicinc}
+  - {type: recruitee, company: American Airlines, token: AA}
+  - {type: smartrecruiters, company: Marriott, token: marriottinc}
+  - {type: greenhouse, company: Charter Communications, token: CC}
+  - {type: greenhouse, company: Lucid Motors, token: lucidmotors}
+  - {type: greenhouse, company: General Motors, token: general}
+  - {type: lever, company: Zoox, token: zoox}
+  - {type: greenhouse, company: Nuro, token: nuro}
+  - {type: greenhouse, company: Motional, token: motional}
+  - {type: greenhouse, company: SpaceX, token: spacex}
+  - {type: lever, company: Blue Origin, token: blue}
+  - {type: greenhouse, company: Rocket Lab, token: rocketlab}
+  - {type: greenhouse, company: Relativity Space, token: relativity}
+  - {type: greenhouse, company: Astranis, token: astranis}
+  - {type: greenhouse, company: Planet Labs, token: planetlabs}
+  - {type: greenhouse, company: Varda Space, token: vardaspace}
+  - {type: lever, company: Hermeus, token: hermeus}
+  - {type: lever, company: Shield AI, token: shieldai}
+  - {type: ashby, company: Skydio, token: skydio}
+  - {type: ashby, company: Applied Intuition, token: applied}
+  - {type: greenhouse, company: Figure, token: figureai}
+  - {type: ashby, company: Physical Intelligence, token: physicalintelligence}
+  - {type: ashby, company: Cohere, token: cohere}
+  - {type: ashby, company: Mistral, token: mistral.ai}
+  - {type: greenhouse, company: Together AI, token: togetherai}
+  - {type: ashby, company: Fireworks AI, token: fireworks}
+  - {type: ashby, company: Baseten, token: baseten}
+  - {type: ashby, company: LangChain, token: langchain}
+  - {type: ashby, company: Pinecone, token: pinecone}
+  - {type: ashby, company: Weaviate, token: weaviate}
+  - {type: ashby, company: Snowflake, token: snowflake}
+  - {type: ashby, company: Confluent, token: confluent}
+  - {type: ashby, company: Redis, token: redis}
+  - {type: greenhouse, company: Neo4j, token: neo4j}
+  - {type: greenhouse, company: PlanetScale, token: planetscale}
+  - {type: ashby, company: Supabase, token: supabase}
+  - {type: greenhouse, company: Vercel, token: vercel}
+  - {type: greenhouse, company: Netlify, token: netlify}
+  - {type: ashby, company: Render, token: render}
+  - {type: ashby, company: Railway, token: railway}
+  - {type: greenhouse, company: Fastly, token: fastly}
+  - {type: ashby, company: Sentry, token: sentry}
+  - {type: greenhouse, company: Postman, token: postman}
+  - {type: ashby, company: Airbyte, token: airbyte}
+  - {type: greenhouse, company: Sigma Computing, token: sigmacomputing}
+  - {type: rippling, company: ThoughtSpot, token: thoughtspot}
+  - {type: greenhouse, company: Amplitude, token: amplitude}
+  - {type: greenhouse, company: Mixpanel, token: mixpanel}
+  - {type: greenhouse, company: Braze, token: braze}
+  - {type: greenhouse, company: Klaviyo, token: klaviyo}
+  - {type: greenhouse, company: Attentive, token: attentive}
+  - {type: ashby, company: Iterable, token: iterable}
+  # LinkedIn's careers site routes corporate openings to its own public
+  # company-jobs page. Company id 1337 is LinkedIn Corporation.
+  - {type: linkedin_company, company: LinkedIn, company_id: "1337",
+     query: software engineer, location: United States}
+  - {type: greenhouse, company: Twitch, token: twitch}
+  - {type: greenhouse, company: Smartsheet, token: smartsheet}
+  - {type: greenhouse, company: Qualtrics, token: qualtrics}
+  - {type: greenhouse, company: Pure Storage, token: purestorage}
+  - {type: smartrecruiters, company: Western Digital, token: westerndigital}
+  - {type: ashby, company: Oracle Health, token: OH}
+  - {type: lever, company: Veeva Systems, token: veeva}
+  - {type: greenhouse, company: Doximity, token: doximity}
+  - {type: greenhouse, company: Flatiron Health, token: flatironhealth}
+  - {type: greenhouse, company: Komodo Health, token: komodohealth}
+  - {type: lever, company: Included Health, token: includedhealth}
+  - {type: greenhouse, company: Oscar Health, token: oscar}
+  - {type: smartrecruiters, company: Devoted Health, token: devotedhealth}
+  - {type: lever, company: Capital One, token: capital}
+  - {type: recruitee, company: Morgan Stanley, token: MS}
+  - {type: greenhouse, company: US Bank, token: us}
+  - {type: smartrecruiters, company: Experian, token: experian}
+  - {type: smartrecruiters, company: Progressive, token: progressivegroup}
+  - {type: smartrecruiters, company: GEICO, token: geico}
+  - {type: recruitee, company: Allstate, token: allstate}
+  - {type: smartrecruiters, company: Northwestern Mutual, token: northwesternmutual}
+  - {type: recruitee, company: Accenture, token: accenture}
+  - {type: recruitee, company: EY, token: ey}
+  - {type: greenhouse, company: Thoughtworks, token: thoughtworks}
+  - {type: greenhouse, company: Disney, token: disney}
+  - {type: greenhouse, company: Roku, token: roku}
+  - {type: greenhouse, company: The New York Times, token: thenewyorktimes}
+  - {type: greenhouse, company: Bungie, token: bungie}
+  - {type: greenhouse, company: Duolingo, token: duolingo}
+  - {type: greenhouse, company: Coursera, token: coursera}
+  - {type: greenhouse, company: Udemy, token: udemy}
+  - {type: smartrecruiters, company: Glassdoor, token: glassdoorinc}
+  - {type: greenhouse, company: ZipRecruiter, token: ziprecruiter}
+  - {type: greenhouse, company: Upwork, token: upwork}
+  - {type: greenhouse, company: GoDaddy, token: godaddy}
+  - {type: greenhouse, company: Squarespace, token: squarespace}
+  - {type: greenhouse, company: Toast, token: toast}
+  - {type: greenhouse, company: Carvana, token: carvana}
+  - {type: rippling, company: Opendoor, token: opendoor}
+  - {type: ashby, company: Strava, token: strava}
+  - {type: ashby, company: Whoop, token: whoop}
+  - {type: greenhouse, company: Oura, token: oura}
+  - {type: recruitee, company: Duke Energy, token: DE}
+  - {type: ashby, company: Union Pacific, token: union}
+  - {type: greenhouse, company: General Mills, token: general}
+  - {type: smartrecruiters, company: Kimberly-Clark, token: kimberlyclark}
+  - {type: smartrecruiters, company: Lawrence Livermore National Laboratory, token: LLNL}
+  - {type: ashby, company: Oak Ridge National Laboratory, token: oak}
+  - {type: smartrecruiters, company: ByteDance, token: bytedance}
+  - {type: smartrecruiters, company: Uber, token: uber}
+  - {type: greenhouse, company: Lucid Software, token: lucidsoftware}
+  - {type: lever, company: Outreach, token: outreach}
+  - {type: lever, company: Rover, token: rover}
+  - {type: greenhouse, company: Squarespace, token: squarespace}
+  - {type: smartrecruiters, company: Wayfair, token: wayfair}
+  - {type: greenhouse, company: Rubrik, token: rubrik}
+  - {type: ashby, company: Confluent, token: confluent}
+  - {type: greenhouse, company: Couchbase, token: couchbaseinc}
+  - {type: greenhouse, company: SingleStore, token: singlestore}
+  - {type: greenhouse, company: Starburst, token: starburst}
+  - {type: greenhouse, company: Imply, token: imply}
+  - {type: ashby, company: Materialize, token: materialize}
+  - {type: greenhouse, company: Clickhouse, token: clickhouse}
+  - {type: greenhouse, company: Grafana Labs, token: grafanalabs}
+  - {type: greenhouse, company: New Relic, token: newrelic}
+  - {type: greenhouse, company: PagerDuty, token: pagerduty}
+  - {type: greenhouse, company: Sumo Logic, token: sumologic}
+  - {type: greenhouse, company: LaunchDarkly, token: launchdarkly}
+  - {type: greenhouse, company: CircleCI, token: circleci}
+  - {type: greenhouse, company: JFrog, token: jfrog}
+  - {type: greenhouse, company: Wiz, token: wizinc}
+  - {type: greenhouse, company: Orca Security, token: orcasecurity}
+  - {type: greenhouse, company: Abnormal Security, token: abnormalsecurity}
+  - {type: greenhouse, company: Tanium, token: tanium}
+  - {type: greenhouse, company: Netskope, token: netskope}
+  - {type: greenhouse, company: Cybereason, token: cybereason}
+  - {type: greenhouse, company: Huntress, token: huntress}
+  - {type: greenhouse, company: Dragos, token: dragos}
+  - {type: greenhouse, company: Axonius, token: axonius}
+  - {type: recruitee, company: TGS Management, token: tgs}
+  - {type: recruitee, company: Radix Trading, token: radix}
+  - {type: greenhouse, company: Old Mission Capital, token: oldmissioncapital}
+  - {type: greenhouse, company: Clear Street, token: clear}
+  - {type: greenhouse, company: ExodusPoint Capital Management, token: exoduspoint}
+  - {type: greenhouse, company: Trumid, token: trumid}
+  - {type: greenhouse, company: Upstart, token: upstart}
+  - {type: greenhouse, company: Bill.com, token: billcom}
+  - {type: ashby, company: Modern Treasury, token: moderntreasury}
+  - {type: ashby, company: Paxos, token: paxos}
+  - {type: greenhouse, company: Ripple, token: ripple}
+  - {type: greenhouse, company: FalconX, token: falconx}
+  - {type: ashby, company: Socure, token: socure}
+  - {type: greenhouse, company: Lithic, token: lithic}
+  - {type: greenhouse, company: Highnote, token: highnote}
+  - {type: greenhouse, company: Blend, token: blend}
+  - {type: greenhouse, company: HubSpot, token: hubspotjobs}
+  - {type: ashby, company: UiPath, token: uipath}
+  - {type: greenhouse, company: AppLovin, token: applovin}
+  - {type: greenhouse, company: Flexport, token: flexport}
+  - {type: greenhouse, company: Gusto, token: gusto}
+  - {type: greenhouse, company: Anaplan, token: anaplan}
+  - {type: greenhouse, company: Collibra, token: collibra}
+  - {type: greenhouse, company: Five9, token: five9}
+  - {type: greenhouse, company: SolarWinds, token: solarwinds}
+  - {type: rippling, company: Malwarebytes, token: malwarebytes}
+  - {type: greenhouse, company: Procore Technologies, token: PT}
+  - {type: smartrecruiters, company: ServiceTitan, token: servicetitan}
+  - {type: ashby, company: Zapier, token: zapier}
+  - {type: greenhouse, company: Fivetran, token: fivetran}
+  - {type: greenhouse, company: Nextdoor, token: nextdoor}
+  - {type: greenhouse, company: Mozilla, token: mozilla}
+  - {type: ashby, company: NerdWallet, token: nerdwallet}
+  - {type: greenhouse, company: Life360, token: life360}
+  - {type: greenhouse, company: StubHub, token: stubhubinc}
+  - {type: greenhouse, company: SeatGeek, token: seatgeek}
+  - {type: greenhouse, company: OpenTable, token: opentable}
+  - {type: greenhouse, company: CarGurus, token: cargurus}
+  - {type: ashby, company: Hopper, token: hopper}
+  - {type: greenhouse, company: OfferUp, token: offerup}
+  - {type: lever, company: Gopuff, token: gopuff}
+  - {type: greenhouse, company: Fanatics, token: fanaticsinc}
+  - {type: greenhouse, company: Stitch Fix, token: stitchfix}
+  - {type: ashby, company: Patreon, token: patreon}
+  - {type: ashby, company: Quora, token: quora}
+  - {type: ashby, company: Thumbtack, token: thumbtack}
+  - {type: ashby, company: ClickUp, token: clickup}
+  - {type: ashby, company: Mux, token: mux}
+  - {type: greenhouse, company: LivePerson, token: liveperson}
+  - {type: lever, company: Sysdig, token: sysdig}
+  - {type: ashby, company: Vanta, token: vanta}
+  - {type: ashby, company: Stytch, token: stytch}
+  - {type: ashby, company: WorkOS, token: workos}
+  - {type: smartrecruiters, company: Glean, token: glean}
+  - {type: ashby, company: Anyscale, token: anyscale}
+  - {type: greenhouse, company: Cockroach Labs, token: cockroachlabs}
+  - {type: rippling, company: Aerospike, token: aerospike-inc}
+  - {type: greenhouse, company: Temporal Technologies, token: temporaltechnologies}
+  - {type: greenhouse, company: Hightouch, token: hightouch}
+  - {type: greenhouse, company: Instabase, token: instabase}
+  - {type: greenhouse, company: Labelbox, token: labelbox}
+  - {type: greenhouse, company: Neuralink, token: neuralink}
+  - {type: greenhouse, company: Kodiak Robotics, token: kodiak}
+  - {type: greenhouse, company: IonQ, token: ionq}
+  - {type: greenhouse, company: Aviatrix, token: aviatrix}
+  - {type: ashby, company: Insitro, token: insitro}
+  - {type: greenhouse, company: Freenome, token: freenome}
+  - {type: lever, company: Lyra Health, token: lyrahealth}
+  - {type: ashby, company: Hinge Health, token: hinge-health}
+  - {type: recruitee, company: Spring Health, token: spring}
+  - {type: ashby, company: Benchling, token: benchling}
+  - {type: greenhouse, company: Chan Zuckerberg Initiative, token: chanzuckerberginitiative}
+  - {type: ashby, company: ClassDojo, token: classdojo}
+  - {type: ashby, company: Mysten Labs, token: mystenlabs}
+  - {type: ashby, company: Ava Labs, token: ava-labs}
+  - {type: ashby, company: OpenSea, token: opensea}
+  - {type: greenhouse, company: Polygon Technology, token: PT}
+
+  # ---- added: tier-list gap fill
+  - {type: greenhouse, company: Schonfeld, token: schonfeld}
+  - {type: greenhouse, company: WorldQuant, token: worldquant}
+  - {type: greenhouse, company: Coupang, token: coupang}
+  - {type: greenhouse, company: Webflow, token: webflow}
+  - {type: greenhouse, company: Moloco, token: moloco}
+  - {type: greenhouse, company: StockX, token: stockx}
+  - {type: greenhouse, company: DoubleVerify, token: doubleverify}
+  - {type: workday, company: GoodRx, tenant: goodrx, site: careers,
+     host: wd1, search: software intern}
+
+  # ---- auto-promoted from Simplify: direct Workday sources
+  - {type: workday, company: Adobe, tenant: adobe, site: external_experienced, host: wd5}
+  - {type: workday, company: AeroVironment, tenant: avav, site: avav, host: wd1}
+  - {type: workday, company: Ambarella, tenant: ambarella, site: ambarella, host: wd108}
+  #- {type: workday, company: Amerisure, tenant: osv-amerisure, site: Amerisure, host: wd5}  # 422
+  - {type: workday, company: Analytical Mechanics Associates, tenant: amainc, site: ama_careers, host: wd12}
+  - {type: workday, company: Ancestry, tenant: ancestry, site: Careers, host: wd501}
+  - {type: workday, company: Arrowstreet Capital, tenant: arrowstreetcapital, site: Campus_Careers, host: wd5}
+  - {type: workday, company: Axos Bank, tenant: axos, site: Axos, host: wd5}
+  - {type: workday, company: Baker Tilly, tenant: bakertilly, site: BTCareers, host: wd5}
+  - {type: workday, company: Blue Cross of Idaho, tenant: bcidaho, site: BCI, host: wd5}
+  - {type: workday, company: Booz Allen, tenant: bah, site: bah_jobs, host: wd1}
+  - {type: workday, company: Bristol Myers Squibb, tenant: bristolmyerssquibb, site: bms, host: wd5}
+  - {type: workday, company: Brunswick, tenant: brunswick, site: search, host: wd1}
+  - {type: workday, company: CACI, tenant: caci, site: external, host: wd1}
+  - {type: workday, company: Cadence Design Systems, tenant: cadence, site: External_Careers, host: wd1}
+  - {type: workday, company: Cadence Design Systems, tenant: cadence, site: Univ_Careers, host: wd1}
+  #- {type: workday, company: Castleton Commodities International, tenant: osv-cci, site: CCICareers, host: wd1}  # 422
+  - {type: workday, company: Cboe, tenant: cboe, site: External_Career_CBOE, host: wd1}
+  - {type: workday, company: Chevron, tenant: chevron, site: University, host: wd5}
+  - {type: workday, company: Citi, tenant: citi, site: 2, host: wd5}
+  - {type: workday, company: Clearwater Analytics, tenant: clearwateranalytics, site: Clearwater_Analytics_Careers, host: wd1}
+  - {type: workday, company: Copart, tenant: copart, site: copart, host: wd12}
+  - {type: workday, company: Core & Main, tenant: coreandmain, site: coreandmain, host: wd1}
+  - {type: workday, company: Cox, tenant: cox, site: Cox_External_Career_Site_1, host: wd1}
+  - {type: workday, company: Danaher, tenant: danaher, site: danaherjobs, host: wd1}
+  - {type: workday, company: Entegris, tenant: entegris, site: entegriscareers, host: wd1}
+  - {type: workday, company: Expedia, tenant: expedia, site: private, host: wd108}
+  - {type: workday, company: Fidelity Investments, tenant: fmr, site: fidelitycareers, host: wd1}
+  - {type: workday, company: Freddie Mac, tenant: freddiemac, site: External, host: wd5}
+  - {type: workday, company: GE Appliances, tenant: haier, site: ge_appliances, host: wd3}
+  - {type: workday, company: GE Vernova, tenant: gevernova, site: vernova_externalsite, host: wd5}
+  - {type: workday, company: Gentex, tenant: gentex, site: Gentex, host: wd5}
+  - {type: workday, company: Global Payments, tenant: tsys, site: tsys, host: wd1}
+  - {type: workday, company: Globus Medical, tenant: globusmedical, site: GMED_Careers, host: wd5}
+  - {type: workday, company: Harris Computer, tenant: harriscomputer, site: 1, host: wd3}
+  - {type: workday, company: Hewlett Packard Enterprise, tenant: hpe, site: acjobsite, host: wd5}
+  - {type: workday, company: Integrity, tenant: integritymarketing, site: Integrity, host: wd1}
+  - {type: workday, company: Intuitive Research, tenant: intuitive, site: irtc_careers, host: wd1}
+  - {type: workday, company: Jade Global, tenant: jadeglobal, site: jade_careers, host: wd5}
+  - {type: workday, company: Johnson & Johnson, tenant: jj, site: JJ, host: wd5}
+  - {type: workday, company: Johnson Controls, tenant: jci, site: JCI, host: wd5}
+  - {type: workday, company: KBR, tenant: kbr, site: KBR_Careers, host: wd5}
+  - {type: workday, company: KLA, tenant: kla, site: UR, host: wd1}
+  - {type: workday, company: Leidos, tenant: leidos, site: External, host: wd5}
+  - {type: workday, company: Litera, tenant: litera, site: Litera_Careers, host: wd12}
+  - {type: workday, company: Marmon Holdings, tenant: marmon, site: Marmon_Careers, host: wd501}
+  - {type: workday, company: Merck, tenant: msd, site: searchjobs, host: wd5}
+  - {type: workday, company: Mizuho, tenant: mizuho, site: mizuhoamericas, host: wd1}
+  - {type: workday, company: Motorola, tenant: motorolasolutions, site: Careers, host: wd5}
+  - {type: workday, company: NCR Voyix, tenant: ncr, site: ext_us, host: wd1}
+  - {type: workday, company: NXP Semiconductors, tenant: nxp, site: careers, host: wd3}
+  - {type: workday, company: Nelnet, tenant: nelnet, site: MyNelnet, host: wd1}
+  - {type: workday, company: Netsmart, tenant: ntst, site: careers, host: wd1}
+  - {type: workday, company: Nidec, tenant: nidec, site: nidec, host: wd1}
+  - {type: workday, company: Nissan, tenant: alliance, site: nissanjobs, host: wd3}
+  - {type: workday, company: Northrop Grumman, tenant: ngc, site: Northrop_Grumman_External_Site, host: wd1}
+  #- {type: workday, company: OneDigital, tenant: onedigital, site: onedigital, host: wd5}  # 422
+  - {type: workday, company: Palo Alto Networks, tenant: paloaltonetworks, site: panwexternalcareers, host: wd5}
+  - {type: workday, company: RBI, tenant: rbi, site: RBI_External_Career_Site, host: wd3}
+  - {type: workday, company: RTX, tenant: globalhr, site: rec_rtx_ext_gateway, host: wd5}
+  - {type: workday, company: Rocket Companies, tenant: quickenloans, site: rocket_careers, host: wd5}
+  - {type: workday, company: Schweitzer Engineering, tenant: selinc, site: SEL, host: wd1}
+  - {type: workday, company: Simpson Strong-Tie, tenant: strongtie, site: External, host: wd1}
+  - {type: workday, company: Sony, tenant: sonyglobal, site: SonyGlobalCareers, host: wd1}
+  - {type: workday, company: Stewart, tenant: stewart, site: External, host: wd1}
+  - {type: workday, company: Synchrony Financial, tenant: synchronyfinancial, site: University, host: wd5}
+  - {type: workday, company: Teledyne, tenant: flir, site: flircareers, host: wd1}
+  - {type: workday, company: Tencent, tenant: tencent, site: OA_Huoshui_Platform, host: wd1}
+  - {type: workday, company: The Campbell's Company, tenant: campbellsoup, site: externalcareers_globalsite, host: wd5}
+  - {type: workday, company: Torch Technologies, tenant: starfish, site: Careers, host: wd501}
+  - {type: workday, company: Tyson Foods, tenant: tysonfoods, site: TSN, host: wd5}
+  - {type: workday, company: Uline, tenant: uline, site: Uline_Careers, host: wd1}
+  - {type: workday, company: Viridien, tenant: cgg, site: viridiencareers, host: wd103}
+  - {type: workday, company: Volaris Group, tenant: volarisgroup, site: volaris, host: wd3}
+  - {type: workday, company: Waystar, tenant: waystar, site: Waystar, host: wd1}
+  - {type: workday, company: Wolters Kluwer, tenant: wk, site: External, host: wd3}
+  - {type: workday, company: iHeartMedia, tenant: iheartmedia, site: External_iHM, host: wd5}
+
+  # ---- auto-promoted from Simplify: Eightfold sources
+  - {type: eightfold, company: Qualcomm, subdomain: qualcomm, domain: qualcomm.com, query: software engineer}
+  - {type: eightfold, company: Starbucks, subdomain: starbucks, domain: starbucks.com, query: software engineer}
+
+  # ---- auto-promoted from Simplify: Rippling sources
+  - {type: rippling, company: Gitar, token: gitar-careers}
+  - {type: rippling, company: Lynx Software Technologies, token: lynx-software-technologies}
+  - {type: rippling, company: Mobius Renewables, token: greengas}
+  - {type: rippling, company: Supernova Technology, token: supernova-technology}
+  - {type: rippling, company: Zededa, token: zededa}
+
+  # ---- auto-promoted from Simplify: SmartRecruiters
+  - {type: smartrecruiters, company: AG Technologies, token: AGTechnologies1}
+
+  # ---- proprietary career APIs
+  - {type: garmin, company: Garmin}
+  - {type: l3harris, company: L3Harris Technologies}

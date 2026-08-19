@@ -1,0 +1,642 @@
+# One company per line. Run:  python discover.py --add companies.txt
+# It probes Greenhouse / Lever / Ashby / SmartRecruiters and appends whatever
+# has a real public feed straight into config.yaml. Anything not found prints
+# so you know to handle it another way (usually Workday — see README).
+# Lines starting with # are ignored. Add your own freely.
+
+# ---- big tech / large public
+Adobe
+Intuit
+Workday
+ServiceNow
+Autodesk
+Atlassian
+Splunk
+VMware
+Nutanix
+Box
+Okta
+Zscaler
+CrowdStrike
+Palo Alto Networks
+Fortinet
+Elastic
+HashiCorp
+GitLab
+DigitalOcean
+Akamai
+F5
+Juniper Networks
+Arista Networks
+Motorola Solutions
+Garmin
+Zebra Technologies
+Keysight
+Analog Devices
+Micron
+Marvell
+Broadcom
+Applied Materials
+Lam Research
+KLA
+Synopsys
+Cadence
+Ansys
+PTC
+Dassault Systemes
+
+# ---- consumer / marketplaces / media
+Uber
+Lyft
+DoorDash
+Instacart
+Airbnb
+Booking
+Expedia
+TripAdvisor
+Chewy
+Etsy
+eBay
+Wayfair
+Peloton
+Spotify
+Warner Bros Discovery
+Paramount
+Sony
+Electronic Arts
+Take-Two Interactive
+Riot Games
+Epic Games
+Activision Blizzard
+Zynga
+Niantic
+
+# ---- fintech / finance
+PayPal
+Block
+Plaid
+Chime
+Brex
+Marqeta
+SoFi
+Betterment
+Wealthfront
+Fidelity
+Charles Schwab
+Nasdaq
+Intercontinental Exchange
+Cboe
+S&P Global
+Moody's
+FactSet
+MSCI
+Bloomberg
+Point72
+Millennium
+Balyasny
+Squarepoint
+XTX Markets
+Optiver
+IMC Trading
+SIG
+Old Mission Capital
+Belvedere Trading
+Wolverine Trading
+Peak6
+Quantlab
+Headlands Technologies
+Hudson River Trading
+Citadel
+Two Sigma
+DE Shaw
+AQR Capital
+Bridgewater
+
+# ---- health / retail / industrial / defense
+CVS Health
+Walgreens
+UnitedHealth Group
+Cigna
+Humana
+Elevance Health
+McKesson
+Cardinal Health
+Boeing
+Lockheed Martin
+Northrop Grumman
+RTX
+General Dynamics
+L3Harris
+Leidos
+Booz Allen Hamilton
+SAIC
+MITRE
+Aerospace Corporation
+Johns Hopkins APL
+Draper
+BAE Systems
+Textron
+Honeywell
+GE Aerospace
+Emerson
+Rockwell Automation
+Caterpillar
+Deere
+3M
+Procter & Gamble
+Johnson & Johnson
+Pfizer
+Merck
+Eli Lilly
+AbbVie
+Amgen
+Moderna
+Genentech
+Illumina
+Intuitive Surgical
+Medtronic
+Stryker
+Boston Scientific
+Abbott
+
+# ---- retail / logistics / travel / telecom
+Walmart
+Target
+Costco
+Home Depot
+Lowe's
+Best Buy
+Kroger
+Albertsons
+Nike
+Starbucks
+Chipotle
+McDonald's
+FedEx
+UPS
+Delta Air Lines
+United Airlines
+American Airlines
+Southwest Airlines
+Marriott
+Hilton
+Verizon
+AT&T
+T-Mobile
+Comcast
+Charter Communications
+Dish Network
+
+# ---- autos / energy / space
+Tesla
+Rivian
+Lucid Motors
+Ford
+General Motors
+Stellantis
+Zoox
+Cruise
+Waymo
+Aurora
+Nuro
+Motional
+SpaceX
+Blue Origin
+Rocket Lab
+Relativity Space
+Firefly Aerospace
+Astranis
+Planet Labs
+Varda Space
+Hermeus
+Shield AI
+Skydio
+Applied Intuition
+Scale AI
+Figure
+Physical Intelligence
+
+# ---- AI / infra / dev tools
+Anthropic
+OpenAI
+Scale AI
+Hugging Face
+Cohere
+Mistral
+Together AI
+Fireworks AI
+Baseten
+Modal
+Replicate
+Weights & Biases
+LangChain
+Pinecone
+Weaviate
+Chroma
+Snowflake
+Confluent
+Redis
+Neo4j
+CockroachDB
+PlanetScale
+Supabase
+Vercel
+Netlify
+Render
+Railway
+Fly.io
+Cloudflare
+Fastly
+Sentry
+Postman
+Retool
+Airbyte
+dbt Labs
+Sigma Computing
+ThoughtSpot
+Amplitude
+Mixpanel
+Segment
+Braze
+Klaviyo
+Attentive
+Iterable
+
+# ============================================================
+# ADDED after research — high-volume US SWE new-grad/intern hirers
+# that students routinely overlook. Aug 2026.
+# ============================================================
+
+# ---- enterprise / legacy tech (huge intern classes)
+Oracle
+IBM
+Cisco
+Dell Technologies
+HP
+Hewlett Packard Enterprise
+Qualcomm
+AMD
+Texas Instruments
+SAP
+Siemens
+Salesforce
+LinkedIn
+Snap
+Twitch
+Zoom
+DocuSign
+Smartsheet
+Qualtrics
+Workiva
+Alteryx
+Teradata
+Informatica
+NetApp
+Pure Storage
+Western Digital
+Seagate
+Cloudera
+
+# ---- healthcare software (Epic is one of the largest US new-grad SWE hirers)
+Epic Systems
+Oracle Health
+Veeva Systems
+Doximity
+Tempus
+Flatiron Health
+Komodo Health
+Included Health
+Oscar Health
+Devoted Health
+HCA Healthcare
+Centene
+Baxter International
+Edwards Lifesciences
+Zimmer Biomet
+GE HealthCare
+
+# ---- banks / insurers / payments (massive tech orgs, less competition)
+Capital One
+American Express
+Discover Financial
+Synchrony Financial
+Vanguard
+BlackRock
+State Street
+BNY Mellon
+Northern Trust
+JPMorgan Chase
+Goldman Sachs
+Morgan Stanley
+Wells Fargo
+Bank of America
+Citi
+US Bank
+PNC
+Truist
+Fiserv
+FIS
+Global Payments
+Equifax
+Experian
+TransUnion
+Progressive
+GEICO
+State Farm
+USAA
+Liberty Mutual
+Travelers
+Allstate
+Nationwide
+Northwestern Mutual
+MassMutual
+Aflac
+
+# ---- consulting / services with real SWE tracks
+Deloitte
+Accenture
+EY
+PwC
+KPMG
+Capgemini
+Slalom
+Epam Systems
+Thoughtworks
+
+# ---- media / gaming / consumer
+Disney
+NBCUniversal
+Hulu
+Roku
+Sirius XM
+The New York Times
+Valve
+Bungie
+Duolingo
+Coursera
+Udemy
+Indeed
+Glassdoor
+ZipRecruiter
+Upwork
+GoDaddy
+Squarespace
+Wix
+Shopify
+Toast
+Grubhub
+Carvana
+CarMax
+Redfin
+Opendoor
+Compass
+Strava
+Whoop
+Oura
+
+# ---- industrials / energy / transport (quiet, well-paid, less competitive)
+ExxonMobil
+Chevron
+ConocoPhillips
+SLB
+Duke Energy
+NextEra Energy
+Southern Company
+Exelon
+American Electric Power
+Union Pacific
+CSX
+Norfolk Southern
+PepsiCo
+Coca-Cola
+General Mills
+Kraft Heinz
+Mondelez
+Tyson Foods
+Colgate-Palmolive
+Kimberly-Clark
+Sherwin-Williams
+Cummins
+Paccar
+Whirlpool
+Corning
+Dow
+DuPont
+
+# ---- national labs / FFRDC (many require US citizenship — check each posting)
+Sandia National Laboratories
+Los Alamos National Laboratory
+Lawrence Livermore National Laboratory
+Pacific Northwest National Laboratory
+Argonne National Laboratory
+Oak Ridge National Laboratory
+NASA Jet Propulsion Laboratory
+
+# ---- names missing from earlier passes (most are bespoke — see manual-checklist.md)
+ByteDance
+TikTok
+Google
+Alphabet
+Apple
+Meta
+Netflix
+Bloomberg
+Uber
+Lucid Software
+Nordstrom
+Expedia Group
+Zillow
+Redfin
+Remitly
+Convoy
+Outreach
+Highspot
+Tableau
+F5 Networks
+Avalara
+Accolade
+Rover
+PitchBook
+Chewy
+Squarespace
+Vimeo
+Wayfair
+Instacart
+Rubrik
+Cohesity
+Databricks
+Confluent
+Couchbase
+SingleStore
+Starburst
+Imply
+Materialize
+Clickhouse
+Grafana Labs
+Datadog
+New Relic
+Dynatrace
+PagerDuty
+Sumo Logic
+LaunchDarkly
+CircleCI
+JFrog
+Sonar
+Snyk
+Wiz
+Orca Security
+Abnormal Security
+SentinelOne
+Tanium
+Netskope
+Cybereason
+Arctic Wolf
+Huntress
+Dragos
+Claroty
+Axonius
+
+# ============================================================
+# From the levels.fyi top-500 by median SWE total comp
+# (github.com/miketromba/highest-paying-software-companies).
+# Curated: dropped defunct, non-US, and sub-50-person shops.
+# ============================================================
+
+# ---- quant / trading / fintech
+Vatic Investments
+TGS Management
+Radix Trading
+Arrowstreet Capital
+Old Mission Capital
+Bridgewater Associates
+The Voleon Group
+Clear Street
+Maven Securities
+ExodusPoint Capital Management
+Balyasny Asset Management
+Verition Fund Management
+Hap Capital
+GTS
+Trumid
+Interactive Brokers
+Coremont
+Ares Management
+Upstart
+LendingClub
+Bill.com
+Modern Treasury
+Paxos
+Ripple
+FalconX
+Chainalysis
+Socure
+Lithic
+Highnote
+Blend
+Divvy Homes
+
+# ---- large tech / well-known product companies
+GitHub
+Slack
+Tableau Software
+Audible
+HubSpot
+UiPath
+AppLovin
+Credit Karma
+Grammarly
+Flexport
+Gusto
+Anaplan
+BlackLine
+Collibra
+DataRobot
+Dolby Laboratories
+Equinix
+Five9
+Citrix
+SolarWinds
+Malwarebytes
+Duo Security
+Procore Technologies
+ServiceTitan
+AuditBoard
+Zapier
+Fivetran
+Nextdoor
+Mozilla
+NerdWallet
+Life360
+StubHub
+SeatGeek
+OpenTable
+CarGurus
+Turo
+Hopper
+Navan
+OfferUp
+Gopuff
+Fanatics
+Stitch Fix
+Tubi
+Patreon
+Quora
+Noom
+Thumbtack
+ClickUp
+Mux
+Heap
+LivePerson
+Sysdig
+ExtraHop
+Exabeam
+Panther Labs
+Vanta
+Stytch
+WorkOS
+Glean
+Moveworks
+Anyscale
+Cockroach Labs
+Aerospike
+Chronosphere
+Temporal Technologies
+Hightouch
+Alation
+Instabase
+Labelbox
+Ampere Computing
+Symbotic
+Walmart Global Tech
+Kensho Technologies
+CloudKitchens
+
+# ---- AI / robotics / hardware / health / science
+Neuralink
+Zipline
+Kodiak Robotics
+Covariant
+Rivos
+Toyota Research Institute
+Luminar Technologies
+IonQ
+QuantumScape
+SoundHound
+Aviatrix
+Verily
+23andMe
+Insitro
+Freenome
+PacBio
+Datavant
+Lyra Health
+Hinge Health
+Spring Health
+Benchling
+Chan Zuckerberg Initiative
+ClassDojo
+Mysten Labs
+Protocol Labs
+Ava Labs
+OpenSea
+Polygon Technology

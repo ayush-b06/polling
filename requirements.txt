@@ -1,0 +1,4 @@
+httpx>=0.27
+PyYAML>=6.0
+playwright>=1.40
+playwright-stealth>=2.0

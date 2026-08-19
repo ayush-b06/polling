@@ -1,0 +1,24 @@
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+
+# Runtime state that is exported to state.json for scheduled runs
+jobwatch.db
+jobwatch.db-shm
+jobwatch.db-wal
+jobwatch*.log
+
+# Local Python/browser environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local backups and editor/OS metadata
+.bak/
+.DS_Store
+.idea/
+.vscode/
+.claude/
