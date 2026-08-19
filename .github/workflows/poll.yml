@@ -1,7 +1,8 @@
 name: jobwatch
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Avoid the top-of-hour Actions congestion window.
+    - cron: "2/5 * * * *"
   workflow_dispatch:
 
 permissions:
