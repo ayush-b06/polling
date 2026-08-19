@@ -1,8 +1,7 @@
 name: jobwatch
 on:
   schedule:
-    # Offset from :00, when scheduled Actions experience the most congestion.
-    - cron: "2-57/5 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
