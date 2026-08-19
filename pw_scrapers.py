@@ -22,6 +22,7 @@ from adapters import _uid, _iso, _plain
 # Lazy-initialized shared browser
 _BROWSER = None
 _PW = None
+_BROWSER_START_TASK = None
 _META_DETAIL_CACHE = {}
 
 
@@ -72,29 +73,48 @@ async def _meta_detail_description(browser, url: str) -> str:
     return description
 
 
-async def _get_browser():
-    global _BROWSER, _PW
-    if _BROWSER is None:
-        from playwright.async_api import async_playwright
-        try:
-            from playwright_stealth import stealth_async
-        except ImportError:
-            stealth_async = None
-        _PW = await async_playwright().start()
-        _BROWSER = await _PW.chromium.launch(
+async def _start_browser():
+    from playwright.async_api import async_playwright
+    try:
+        from playwright_stealth import stealth_async
+    except ImportError:
+        stealth_async = None
+    playwright = await async_playwright().start()
+    try:
+        browser = await playwright.chromium.launch(
             headless=True,
             args=["--disable-blink-features=AutomationControlled"],
         )
-        _BROWSER._stealth = stealth_async  # stash for page setup
+    except Exception:
+        await playwright.stop()
+        raise
+    browser._stealth = stealth_async  # stash for page setup
+    return playwright, browser
+
+
+async def _get_browser():
+    global _BROWSER, _PW, _BROWSER_START_TASK
+    if _BROWSER is None:
+        # Several Playwright adapters are polled concurrently. Share the same
+        # in-flight startup task so they cannot each launch their own browser.
+        if _BROWSER_START_TASK is None:
+            _BROWSER_START_TASK = asyncio.create_task(_start_browser())
+        startup = _BROWSER_START_TASK
+        try:
+            _PW, _BROWSER = await startup
+        finally:
+            if _BROWSER_START_TASK is startup:
+                _BROWSER_START_TASK = None
     return _BROWSER
 
 
 async def close_browser():
     """Cleanly stop the shared browser before the asyncio loop is closed."""
-    global _BROWSER, _PW
+    global _BROWSER, _PW, _BROWSER_START_TASK
     browser, playwright = _BROWSER, _PW
     _BROWSER = None
     _PW = None
+    _BROWSER_START_TASK = None
     if browser is not None:
         try:
             await browser.close()
