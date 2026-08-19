@@ -89,6 +89,24 @@ async def _get_browser():
     return _BROWSER
 
 
+async def close_browser():
+    """Cleanly stop the shared browser before the asyncio loop is closed."""
+    global _BROWSER, _PW
+    browser, playwright = _BROWSER, _PW
+    _BROWSER = None
+    _PW = None
+    if browser is not None:
+        try:
+            await browser.close()
+        except Exception:
+            pass
+    if playwright is not None:
+        try:
+            await playwright.stop()
+        except Exception:
+            pass
+
+
 async def _new_page(browser):
     page = await browser.new_page(
         viewport={"width": 1440, "height": 900},
@@ -247,7 +265,7 @@ async def deshaw(client, company="D. E. Shaw", **kw):
                 // Remove leading "icon" artifact from styled-components
                 title = title.replace(/^icon/, '');
                 // DE Shaw embeds descriptions after ": The D. E. Shaw..."
-                const m = title.match(/:\s+The\s+D[\.\s\u00a0]+E[\.\s\u00a0]+Shaw/);
+                const m = title.match(/:\\s+The\\s+D[\\.\\s\\u00a0]+E[\\.\\s\\u00a0]+Shaw/);
                 if (m) title = title.substring(0, m.index);
                 if (title.length > 3 && title.length < 300) {
                     items.push({

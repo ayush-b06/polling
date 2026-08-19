@@ -29,6 +29,7 @@ except Exception:
 
 import adapters
 import dashboard
+import pw_scrapers
 import source_discovery
 import storage
 
@@ -825,11 +826,14 @@ async def main():
               file=sys.stderr)
         sys.exit(2)
 
-    if a.once or a.seed:
-        await poll_once(cfg, seed=a.seed)
-        return
+    try:
+        if a.once or a.seed:
+            await poll_once(cfg, seed=a.seed)
+            return
 
-    await run_scheduler(cfg)
+        await run_scheduler(cfg)
+    finally:
+        await pw_scrapers.close_browser()
 
 
 if __name__ == "__main__":
