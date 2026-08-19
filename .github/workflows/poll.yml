@@ -38,7 +38,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          playwright install --with-deps chromium
+          # GitHub's Ubuntu image already carries Chromium's shared libraries.
+          # Avoid `--with-deps`: it depends on an apt mirror that can stall an
+          # otherwise healthy poll for several minutes.
+          playwright install chromium
       - run: python main.py --once
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
