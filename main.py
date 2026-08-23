@@ -462,8 +462,18 @@ async def finalize_results(client, sem, srcs, results, store, F):
     if not sf_candidates:
         return results
     current_state = store.dashboard_state()
-    sf_todo = [job for job in sf_candidates
-               if not current_state.get(job["id"], {}).get("_date_resolved")]
+    unresolved_new = [job for job in sf_candidates if job["id"] not in current_state]
+    unresolved_backfill = [
+        job for job in sf_candidates
+        if job["id"] in current_state
+        and not current_state[job["id"]].get("_date_resolved")
+    ]
+    # Date enrichment is useful metadata, not a reason to hold alerts and the
+    # dashboard hostage. A first health-aware fallback pass can expose hundreds
+    # of unresolved historical roles, and many custom career URLs consume their
+    # full timeout. Resolve a bounded foreground batch; persist every remaining
+    # role immediately and backfill a few more on subsequent scans.
+    sf_todo = unresolved_new[:24] + unresolved_backfill[:6]
     if not sf_todo:
         return results
 
