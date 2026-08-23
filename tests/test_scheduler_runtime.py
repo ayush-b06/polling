@@ -52,6 +52,8 @@ class SchedulerRuntimeTests(unittest.IsolatedAsyncioTestCase):
                 }]
 
             with patch.object(main, "STATE_FILE", root / "state.json"), \
+                 patch.object(main, "DIRECT_SOURCE_FILE", root / "direct_sources.json"), \
+                 patch.object(main, "COVERAGE_FILE", root / "coverage_report.json"), \
                  patch.object(main.dashboard, "write"), \
                  patch.dict(adapters.REGISTRY, {"ashby": fake_ashby}), \
                  patch.dict(os.environ, {}, clear=True):
@@ -59,7 +61,11 @@ class SchedulerRuntimeTests(unittest.IsolatedAsyncioTestCase):
                      contextlib.redirect_stderr(io.StringIO()):
                     await main.poll_once(cfg, store=store)
 
-            self.assertTrue(store.dashboard_state()["direct-role"]["open"])
+            # The fallback card identity and first_seen time survive the
+            # official-source upgrade.
+            upgraded = store.dashboard_state()["fallback-role"]
+            self.assertTrue(upgraded["open"])
+            self.assertEqual(upgraded["_source_type"], "ashby")
             self.assertEqual(store.outbox_counts(), {})
 
     async def test_completed_source_is_persisted_without_waiting_for_a_round(self):
@@ -89,6 +95,8 @@ class SchedulerRuntimeTests(unittest.IsolatedAsyncioTestCase):
 
             with patch.object(main, "DB_FILE", db_path), \
                  patch.object(main, "STATE_FILE", state_path), \
+                 patch.object(main, "DIRECT_SOURCE_FILE", root / "direct_sources.json"), \
+                 patch.object(main, "COVERAGE_FILE", root / "coverage_report.json"), \
                  patch.object(main.dashboard, "write"), \
                  patch.dict(adapters.REGISTRY, {"greenhouse": fake_adapter}), \
                  patch.dict(os.environ, {}, clear=True):

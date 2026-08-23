@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name  "jobwatch"
           git config user.email "jobwatch@users.noreply.github.com"
-          git add state.json dashboard.html
+          git add state.json direct_sources.json coverage_report.json dashboard.html
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           git push
       - name: Prepare dashboard site

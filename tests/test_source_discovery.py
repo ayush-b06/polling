@@ -32,6 +32,34 @@ class DirectSourceInferenceTests(unittest.TestCase):
                 "Acme", "https://acme.eightfold.ai/careers/job/123?domain=acme.com",
                 {"type": "eightfold", "subdomain": "acme", "domain": "acme.com"},
             ),
+            (
+                "Acme", "https://example.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/job/123/",
+                {"type": "oracle_hcm", "host": "example.fa.us2.oraclecloud.com", "site": "CX_1003"},
+            ),
+            (
+                "Acme", "https://careers-acme.icims.com/jobs/123/software-engineer/job",
+                {"type": "icims", "token": "acme"},
+            ),
+            (
+                "Acme", "https://acme.bamboohr.com/careers/42",
+                {"type": "bamboohr", "token": "acme"},
+            ),
+            (
+                "Acme", "https://jobs.jobvite.com/acme/job/abc/software-engineer",
+                {"type": "jobvite", "token": "acme"},
+            ),
+            (
+                "Acme", "https://acme.pinpointhq.com/en/postings/abc",
+                {"type": "pinpoint", "token": "acme"},
+            ),
+            (
+                "Acme", "https://acme.applytojob.com/apply/abc/software-engineer",
+                {"type": "jazzhr", "token": "acme"},
+            ),
+            (
+                "Acme", "https://career5.successfactors.eu/career?company=ACME",
+                {"type": "successfactors", "token": "ACME"},
+            ),
         ]
         for company, url, expected in cases:
             with self.subTest(url=url):

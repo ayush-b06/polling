@@ -7,13 +7,13 @@ source no longer delays lightweight Greenhouse, Lever, or Ashby checks.
 ## What it actually does
 
 Official-source adapters cover **Greenhouse, Lever, Ashby, SmartRecruiters,
-Workday, Workable, Recruitee, Rippling, Eightfold, Oracle HCM, Microsoft,
-Amazon, IBM, Vanguard**, and
+Workday, Workable, Recruitee, Rippling, Eightfold, Oracle HCM, iCIMS,
+SuccessFactors, BambooHR, Jobvite, Pinpoint, JazzHR, Microsoft, Amazon, IBM, Vanguard**, and
 several custom/browser-only career systems.
 
 Simplify is a discovery and safety fallback, not the preferred alert source.
 When one of its matching URLs reveals a supported official ATS board, jobwatch
-persists and polls that board directly. The first official snapshot is seeded
+persists and polls that board directly in the same scan. The first official snapshot is seeded
 without duplicate alerts; Simplify is suppressed for that company only after
 the official source is healthy, non-empty, and reproduces a qualifying match.
 
@@ -43,7 +43,9 @@ python main.py
 
 On the first run, the existing `state.json` is imported automatically. Keep the
 SQLite database on persistent storage in production. `state.json` remains a
-compatibility export for the ephemeral GitHub Actions fallback.
+compatibility export for ephemeral GitHub Actions runs, while
+`direct_sources.json` preserves learned board configurations and verification
+state across clean runners.
 
 ### Telegram alerts
 
@@ -69,10 +71,10 @@ Running on your laptop means it stops when the lid closes. Pick one:
 |---|---|---|
 | **Always-on container / small VM** | poll interval + fetch time | Use a persistent volume for `jobwatch.db`. |
 | **Raspberry Pi / spare machine** | ~90s | Free, fully under your control. |
-| **GitHub Actions** (`--once` on cron) | **5–20 min** | Included as a fallback, but cron there is throttled and unreliable under load. Don't rely on it as primary. |
+| **GitHub Actions** (`--once` on cron) | scheduler-dependent | Included workflow and current scheduler. Starts are best-effort and can be substantially delayed even with a five-minute cron. |
 
-The included workflow is in `.github/workflows/poll.yml` — commit `seen.json`
-back so state survives between runs.
+The included workflow is in `.github/workflows/poll.yml`; it commits
+`state.json`, `direct_sources.json`, and the generated dashboard after each run.
 
 ## Tuning
 
@@ -91,10 +93,15 @@ Everything lives in `config.yaml`:
   60s, Workday/custom sources to 120s, browser scrapers to 180s, and Simplify's
   delayed fallback to 900s. Any source can set its own `interval_seconds`.
 - **Automatic direct promotion** recognizes Greenhouse, Lever, Ashby, Workable,
-  Workday, SmartRecruiters, Rippling, and Eightfold application URLs. Generated
-  source configurations are persisted in SQLite and resume after restarts.
-- The self-contained dashboard reloads every 60 seconds. Its file is rewritten
-  within roughly five seconds of a completed source poll.
+  Workday variants, Oracle HCM, iCIMS, SuccessFactors, BambooHR, Jobvite,
+  Pinpoint, JazzHR, SmartRecruiters, Rippling, and Eightfold application URLs.
+  Generated configurations and verification state are committed in
+  `direct_sources.json`.
+- The self-contained dashboard checks for changed HTML every 60 seconds and
+  reloads only when the build ID changes. Its stale clock is anchored to the
+  completed scan in Pacific Time (warning at 10 minutes, critical at 30).
+- Roles that triggered an alert but disappear from a subsequent ATS snapshot
+  remain linked under “Recently detected, now unavailable” for 48 hours.
 
 Filters are regex and are tested — see the cases in `check.py` output. If a
 posting you wanted got dropped, add its title to your own test case first, then

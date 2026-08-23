@@ -10,11 +10,13 @@ more than one poll interval stale.
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import time
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).parent
 STATE_FILE = ROOT / "state.json"
@@ -105,7 +107,10 @@ input[type=search]:focus,select:focus{outline:2px solid var(--cool);outline-offs
 .badge.scraped{color:var(--muted);border:1px solid var(--edge)}
 .badge.pending,.badge.retry{color:var(--fresh);border:1px solid var(--fresh)}
 .badge.sent{color:var(--done);border:1px solid var(--done)}
+.badge.fallback{color:var(--fresh);border:1px solid var(--fresh)}
 .when .seen{color:var(--muted);font-style:italic}
+.stamp.stale{color:var(--fresh)}
+.stamp.critical{color:var(--dead);font-weight:600}
 
 .health{margin:0 0 18px;padding:12px 14px;border:1px solid var(--edge);
         border-radius:6px;color:var(--muted);font-size:12px}
@@ -167,7 +172,7 @@ function dateLabel(j){
     let exact = new Date(Date.UTC(bits[0], bits[1] - 1, bits[2]))
       .toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric', timeZone:'UTC'});
     if (j.posted_has_time && j.posted_ts != null) {
-      exact = new Date(j.posted_ts * 1000).toLocaleString('en-US', {
+      exact = j.posted_exact_label || new Date(j.posted_ts * 1000).toLocaleString('en-US', {
         month:'short', day:'numeric', year:'numeric', hour:'numeric', minute:'2-digit',
         timeZone:'America/Los_Angeles', timeZoneName:'short'
       });
@@ -234,6 +239,7 @@ function render(){
           <span>${e(j.location || '\\u2014')}</span>
           ${isFresh ? '<span class="new">just detected</span>' : ''}
           <span class="badge direct">${e(j.source_type)}</span>
+          ${j.fallback_delayed ? '<span class="badge fallback">fallback delayed</span>' : ''}
           ${j.category ? `<span class="badge resolved">${e(j.category)}</span>` : ''}
           ${j.alert_status ? `<span class="badge ${e(j.alert_status)}">discord ${e(j.alert_status)}</span>` : ''}
         </div>
@@ -262,25 +268,32 @@ function render(){
 }
 
 // ---- auto-refresh -------------------------------------------------------
-// The poller rewrites this file every cycle, but a browser tab won't notice
-// on its own. Reloading is safe: your applied / not-applicable marks live in
-// localStorage, and scroll position is restored by the browser.
+// Check the deployed HTML every minute. A visible navigation happens only
+// when the poller-produced build ID has actually changed.
 const REFRESH_MS = 60000;
 let timer = null;
+
+async function checkForUpdate(){
+  const checked = $('#page-checked');
+  if (checked) checked.textContent = 'page checked ' + new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
+  try {
+    const response = await fetch(location.href, {cache:'no-store'});
+    if (!response.ok) return;
+    const next = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const nextId = next.documentElement.dataset.buildId;
+    const currentId = document.documentElement.dataset.buildId;
+    if (nextId && nextId !== currentId) {
+      try { localStorage.setItem('jw_sort', $('#sort').value); } catch(e){}
+      location.reload();
+    }
+  } catch(e) {}
+}
 
 function setLive(on){
   $('#live').setAttribute('aria-pressed', on);
   try { localStorage.setItem('jw_live', on ? '1' : '0'); } catch(e){}
   clearInterval(timer);
-  if (on) timer = setInterval(() => {
-    // don't yank the page out from under an active search
-    if (document.activeElement === $('#q') && $('#q').value) return;
-    // Persist this before navigation. Browsers restore form controls at
-    // different points in the reload lifecycle, which previously let the
-    // dropdown and rendered ordering disagree after an automatic refresh.
-    try { localStorage.setItem('jw_sort', $('#sort').value); } catch(e){}
-    location.reload();
-  }, REFRESH_MS);
+  if (on) timer = setInterval(checkForUpdate, REFRESH_MS);
 }
 
 $('#live').onclick = () => setLive($('#live').getAttribute('aria-pressed') !== 'true');
@@ -289,16 +302,23 @@ let liveOn = true;
 try { liveOn = localStorage.getItem('jw_live') !== '0'; } catch(e){}
 setLive(liveOn);
 
-// tick the "updated" stamp so a stale page is obvious at a glance
-const BUILT = Date.now();
-setInterval(() => {
-  const s = Math.round((Date.now() - BUILT) / 1000);
+// This timestamp came from the completed poll, so browser reloads never reset it.
+const SCAN_COMPLETED = Number(document.documentElement.dataset.scanCompleted) * 1000;
+function updateScanAge(){
+  const s = Math.max(0, Math.round((Date.now() - SCAN_COMPLETED) / 1000));
   const el = $('#age');
   if (!el) return;
   el.textContent = s < 60 ? `${s}s ago`
                  : s < 3600 ? `${Math.floor(s/60)}m ago`
                  : `${Math.floor(s/3600)}h ago`;
-}, 5000);
+  const stamp = $('#scan-stamp');
+  stamp.classList.toggle('stale', s >= 600 && s < 1800);
+  stamp.classList.toggle('critical', s >= 1800);
+  $('#stale-warning').textContent = s >= 1800 ? 'Critical: scan is over 30 minutes old'
+    : s >= 600 ? 'Warning: scan is over 10 minutes old' : '';
+}
+updateScanAge();
+setInterval(updateScanAge, 5000);
 
 $('#q').oninput = render;
 $('#co').onchange = render;
@@ -331,14 +351,30 @@ window.addEventListener('pageshow', () => {
 
 
 def build(state: dict, sources: list[dict] | None = None,
-          notification_counts: dict | None = None) -> str:
+          notification_counts: dict | None = None, *,
+          scan_completed_at: int | None = None,
+          coverage: dict | None = None) -> str:
     sources = sources or []
     notification_counts = notification_counts or {}
-    today = time.strftime("%Y-%m-%d")
+    coverage_report = coverage or {}
     now_ts = time.time()
+    scan_completed_at = int(scan_completed_at or now_ts)
     jobs = []
+    recently_closed = []
     for jid, r in state.items():
-        if not r.get("open", True):
+        is_open = bool(r.get("open", True))
+        if not is_open:
+            closed_reference = int(r.get("last_seen") or r.get("first_seen") or 0)
+            if not closed_reference or now_ts - closed_reference > 172800:
+                continue
+            recently_closed.append({
+                "id": jid,
+                "company": str(r.get("company") or ""),
+                "title": str(r.get("title") or ""),
+                "location": str(r.get("location") or ""),
+                "url": str(r.get("url") or ""),
+                "first_seen": int(r.get("first_seen") or closed_reference),
+            })
             continue
         age = None
         posted_raw = str(r.get("posted") or "").strip()
@@ -368,16 +404,27 @@ def build(state: dict, sources: list[dict] | None = None,
         if fs:
             detected_seconds = max(int(now_ts - fs), 0)
 
+        posted_exact_label = None
+        if posted_has_time and posted_ts is not None:
+            posted_exact_label = datetime.fromtimestamp(
+                posted_ts, timezone.utc
+            ).astimezone(ZoneInfo("America/Los_Angeles")).strftime(
+                "%b %-d, %Y, %-I:%M %p %Z"
+            )
+
         jobs.append({
             "id": jid, "company": r.get("company", ""), "title": r.get("title", ""),
             "location": r.get("location", ""), "url": r.get("url", ""),
             "posted": posted_raw or None, "posted_date": posted or None,
             "posted_ts": posted_ts, "posted_has_time": posted_has_time, "age": age,
+            "posted_exact_label": posted_exact_label,
             "detected_seconds": detected_seconds,
             "source_type": r.get("_source_type") or "legacy",
             "source_label": r.get("_source_label") or "Legacy state import",
             "alert_status": r.get("alert_status"),
             "category": r.get("category") or "",
+            "fallback_delayed": bool(r.get("fallback_delayed") or
+                                      (r.get("_source_type") == "simplify")),
         })
 
     # Company posting date is the primary order. Sources that do not expose a
@@ -418,6 +465,7 @@ def build(state: dict, sources: list[dict] | None = None,
     degraded = [s for s in sources if s.get("status") in ("degraded", "suspect_empty")]
     healthy = sum(1 for s in sources if s.get("status") == "healthy")
     pending_alerts = int(notification_counts.get("pending", 0)) + int(notification_counts.get("retry", 0))
+    recently_closed.sort(key=lambda item: item["first_seen"], reverse=True)
 
     opts = "".join(f'<option value="{html.escape(c, quote=True)}">{html.escape(c)}</option>' for c in companies)
     src_opts = "".join(f'<option value="{html.escape(s, quote=True)}">{html.escape(s)}</option>' for s in source_types)
@@ -437,24 +485,61 @@ def build(state: dict, sources: list[dict] | None = None,
         f'{html.escape(", ".join(sorted(tracked_statuses[company])))}</li>'
         for company in sorted(tracked_sources)
     )
-    fallback_companies = sum(
+    fallback_companies = int(coverage_report.get("fallback_only_companies", sum(
         1 for source_set in tracked_sources.values() if "simplify" in source_set
-    )
-    coverage = (
+    )))
+    coverage_html = (
         f'<details class="health"><summary>Company source coverage · '
-        f'{len(tracked_sources)} tracked companies · {fallback_companies} using Simplify</summary>'
+        f'{len(tracked_sources)} tracked companies · {fallback_companies} fallback-only</summary>'
         f'<ul>{coverage_rows}</ul></details>'
     )
 
+    backlog_rows = "".join(
+        f'<li><span class="mono">{html.escape(str(item.get("company") or ""))}</span> — '
+        f'{html.escape(str(item.get("domain") or "unknown"))} · '
+        f'{int(item.get("job_count") or 0)} job(s) · attempted '
+        f'{html.escape(str(item.get("attempted_adapter") or "none"))} · '
+        f'{html.escape(str(item.get("reason") or "unsupported"))}</li>'
+        for item in coverage_report.get("fallback_companies", [])
+    )
+    backlog_html = (
+        f'<details class="health" open><summary>Fallback adapter backlog · '
+        f'{fallback_companies} company gap(s)</summary><ul>{backlog_rows}</ul></details>'
+        if fallback_companies else ""
+    )
+    recently_closed_rows = "".join(
+        f'<li><span class="mono">{html.escape(item["company"])}</span> — '
+        f'<a href="{html.escape(item["url"], quote=True)}" target="_blank" rel="noopener">'
+        f'{html.escape(item["title"])}</a>'
+        f'{(" · " + html.escape(item["location"])) if item["location"] else ""}</li>'
+        for item in recently_closed[:50]
+    )
+    recently_closed_html = (
+        f'<details class="health" open><summary>Recently detected, now unavailable · '
+        f'{len(recently_closed)} role(s) from the last 48 hours</summary>'
+        f'<p>These stay visible temporarily so a Discord alert never appears to vanish.</p>'
+        f'<ul>{recently_closed_rows}</ul></details>'
+        if recently_closed else ""
+    )
+    completed_pt = datetime.fromtimestamp(
+        scan_completed_at, timezone.utc
+    ).astimezone(ZoneInfo("America/Los_Angeles"))
+    completed_label = completed_pt.strftime("%b %d, %-I:%M %p %Z")
+    build_id = hashlib.sha1(
+        (str(scan_completed_at) + data + json.dumps(coverage_report, sort_keys=True)).encode()
+    ).hexdigest()[:16]
+
     return f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en" data-build-id="{build_id}" data-scan-completed="{scan_completed_at}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>jobwatch</title><style>{CSS}</style></head>
 <body><div class="wrap">
 <header>
   <h1>Open roles</h1>
-  <span class="stamp mono">rendered {time.strftime('%b %d, %H:%M %Z')} · <span id="age">just now</span></span>
+  <span class="stamp mono" id="scan-stamp">scan completed {completed_label} · last scanned <span id="age">just now</span></span>
+  <span class="stamp mono" id="page-checked">page checked just now</span>
 </header>
+<p class="stamp mono" id="stale-warning" role="status"></p>
 <p class="lede">Everything currently live on the boards you track, newest company-posted first.
 Roles without a company posting date follow dated roles and are ordered by detection time.</p>
 
@@ -464,12 +549,18 @@ Roles without a company posting date follow dated roles and are ordered by detec
   <div class="stat"><b>{len(companies)}</b><span>companies</span></div>
   <div class="stat"><b>{dated}</b><span>with company date</span></div>
   <div class="stat"><b>{pending_alerts}</b><span>Discord pending</span></div>
+  <div class="stat"><b>{int(coverage_report.get('verified_direct_companies', 0))}</b><span>verified direct</span></div>
+  <div class="stat"><b>{fallback_companies}</b><span>fallback-only</span></div>
+  <div class="stat"><b>{int(coverage_report.get('direct_source_failures', len(degraded)))}</b><span>direct failures</span></div>
+  <div class="stat"><b>{int(coverage_report.get('simplify_missing_from_healthy_direct', 0))}</b><span>audit mismatches</span></div>
   <div class="stat"><b id="applied">0</b><span>applied</span></div>
   <div class="stat"><b id="na">0</b><span>not applicable</span></div>
 </div>
 
 {health}
-{coverage}
+{coverage_html}
+{backlog_html}
+{recently_closed_html}
 
 <div class="controls">
   <input type="search" id="q" placeholder="Search title, company, location" aria-label="Search roles">
@@ -493,8 +584,12 @@ Roles without a company posting date follow dated roles and are ordered by detec
 
 
 def write(state: dict, sources: list[dict] | None = None,
-          notification_counts: dict | None = None) -> Path:
-    OUT.write_text(build(state, sources, notification_counts), encoding="utf-8")
+          notification_counts: dict | None = None, *,
+          scan_completed_at: int | None = None,
+          coverage: dict | None = None) -> Path:
+    OUT.write_text(build(state, sources, notification_counts,
+                         scan_completed_at=scan_completed_at, coverage=coverage),
+                   encoding="utf-8")
     return OUT
 
 
@@ -504,7 +599,14 @@ if __name__ == "__main__":
         store = storage.JobStore(ROOT / "jobwatch.db")
         store.import_legacy(STATE_FILE)
         st = store.dashboard_state()
-        p = write(st, store.source_health(), store.outbox_counts())
+        health_state = store.source_health()
+        completed = store.scan_completed_at() or max(
+            (int(item.get("last_attempt_at") or 0) for item in health_state),
+            default=int(time.time()),
+        )
+        p = write(st, health_state, store.outbox_counts(),
+                  scan_completed_at=completed,
+                  coverage=store.coverage_report())
     except Exception:
         st = json.loads(STATE_FILE.read_text()) if STATE_FILE.exists() else {}
         p = write(st)

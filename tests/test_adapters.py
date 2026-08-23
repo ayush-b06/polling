@@ -214,6 +214,35 @@ class FakeOracleHCMClient:
         }]})
 
 
+class FakePagedOracleHCMClient:
+    def __init__(self):
+        self.offsets = []
+
+    async def get(self, url, **kwargs):
+        if url.endswith("/recruitingCEJobRequisitions"):
+            finder = kwargs["params"]["finder"]
+            offset = int(__import__("re").search(r"offset=(\d+)", finder).group(1))
+            self.offsets.append(offset)
+            ids = range(offset, min(offset + 100, 101))
+            return FakeResponse({"items": [{
+                "TotalJobsCount": 101,
+                "requisitionList": [{
+                    "Id": str(20260000 + index),
+                    "Title": "Software Engineer I",
+                    "PostedDate": "2026-08-20",
+                    "PrimaryLocationCountry": "US",
+                    "PrimaryLocation": "Oakland, CA, United States",
+                } for index in ids],
+            }]})
+        req = __import__("re").search(r'Id="([^"]+)', kwargs["params"]["finder"]).group(1)
+        return FakeResponse({"items": [{
+            "Id": req, "Title": "Software Engineer I",
+            "PrimaryLocation": "Oakland, CA, United States",
+            "ExternalPostedStartDate": "2026-08-20T16:10:00Z",
+            "ExternalQualificationsStr": "0-2 years of experience",
+        }]})
+
+
 class PostedDateNormalizationTests(unittest.TestCase):
     def test_preserves_iso_timestamp_in_utc(self):
         self.assertEqual(
@@ -333,6 +362,19 @@ class AmbiguousDetailEnrichmentTests(unittest.IsolatedAsyncioTestCase):
             FakeWorkdayClient(), "Example", "example", "External", "wd1",
         )
         self.assertIn("5+ years", jobs[0]["description"])
+
+    async def test_oracle_hcm_paginates_and_keeps_exact_blue_shield_time(self):
+        adapters._ORACLE_DETAIL_CACHE.clear()
+        client = FakePagedOracleHCMClient()
+        jobs = await adapters.oracle_hcm(
+            client, company="Blue Shield of California",
+            host="ecge.fa.us2.oraclecloud.com", site="CX_1003",
+            slug="ecge.fa.us2.oraclecloud.com", path_site="CX_1003",
+        )
+        self.assertEqual(len(jobs), 101)
+        self.assertEqual(client.offsets, [0, 100])
+        self.assertEqual(jobs[0]["posted"], "2026-08-20T16:10:00Z")
+        self.assertIn("/hcmUI/CandidateExperience/en/sites/CX_1003/job/", jobs[0]["url"])
         self.assertNotIn("_detail_url", jobs[0])
 
     async def test_smartrecruiters_enriches_generic_software_title(self):

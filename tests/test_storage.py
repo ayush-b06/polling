@@ -226,6 +226,108 @@ class JobStoreTests(unittest.TestCase):
         self.assertIn("window.addEventListener('pageshow'", page)
         self.assertIn("savedSort === 'detected' ? 'detected' : 'posted'", page)
 
+    def test_registry_survives_a_clean_runner_with_verified_state(self):
+        generated = {
+            "type": "ashby", "company": "Example", "token": "example",
+            "generated": True, "promoted_from": "simplify",
+        }
+        generated["_source_key"] = storage.source_key(generated)
+        generated["_source_label"] = storage.source_label(generated)
+        self.store.sync_sources([generated])
+        self.store.record_poll([result(generated, [job("official-role")])], False, now=100)
+        registry = self.root / "direct_sources.json"
+        self.store.export_source_registry(registry)
+
+        clean = storage.JobStore(self.root / "clean-checkout.db")
+        loaded = clean.import_source_registry(registry)
+        self.assertEqual(len(loaded), 1)
+        self.assertTrue(clean.generated_company_ready("Example"))
+        self.assertEqual(clean.source_health()[0]["last_success_at"], 100)
+
+    def test_dashboard_uses_scan_clock_and_blue_shield_exact_pacific_time(self):
+        state = {
+            "blue-shield-role": {
+                **job("blue-shield-role"),
+                "company": "Blue Shield of California",
+                "posted": "2026-08-20T16:10:00Z",
+                "_source_type": "oracle_hcm",
+                "first_seen": 1787330400,
+                "open": True,
+            }
+        }
+        page = dashboard.build(state, scan_completed_at=1787331000)
+        self.assertIn("Aug 20, 2026, 9:10 AM PDT", page)
+        self.assertIn('data-scan-completed="1787331000"', page)
+        self.assertIn("SCAN_COMPLETED", page)
+        self.assertNotIn("const BUILT = Date.now()", page)
+        self.assertIn("nextId !== currentId", page)
+        self.assertIn("scan is over 10 minutes old", page)
+        self.assertIn("scan is over 30 minutes old", page)
+
+    def test_blue_shield_oracle_fixture_alerts_once(self):
+        oracle = {
+            "type": "oracle_hcm", "company": "Blue Shield of California",
+            "host": "ecge.fa.us2.oraclecloud.com", "site": "CX_1003",
+            "slug": "ecge.fa.us2.oraclecloud.com",
+        }
+        oracle["_source_key"] = storage.source_key(oracle)
+        oracle["_source_label"] = storage.source_label(oracle)
+        self.store.sync_sources([oracle])
+        blue = {
+            **job("oracle-blue-shield-role"),
+            "company": "Blue Shield of California",
+            "url": ("https://ecge.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/"
+                    "en/sites/CX_1003/job/20261234/"),
+            "posted": "2026-08-20T16:10:00Z",
+        }
+        self.store.record_poll([result(oracle, [blue])], True, now=100)
+        self.store.record_poll([result(oracle, [blue])], True, now=200)
+        saved = self.store.dashboard_state()["oracle-blue-shield-role"]
+        self.assertEqual(saved["posted"], "2026-08-20T16:10:00Z")
+        self.assertEqual(saved["_source_type"], "oracle_hcm")
+        self.assertEqual(self.store.outbox_counts(), {"pending": 1})
+
+    def test_fallback_role_is_visible_warned_and_reported(self):
+        fallback = {"type": "simplify", "feed": "newgrad"}
+        fallback["_source_key"] = storage.source_key(fallback)
+        fallback["_source_label"] = storage.source_label(fallback)
+        self.store.sync_sources([fallback])
+        delayed = dict(
+            job("fallback-role"), company="Unsupported Co",
+            url="https://careers.unsupported.example/jobs/123",
+        )
+        poll = result(fallback, [delayed])
+        poll["audit_hits"] = [delayed]
+        self.store.record_poll([poll], True, now=100)
+        report = self.store.coverage_report()
+        self.assertEqual(report["fallback_only_companies"], 1)
+        self.assertEqual(report["fallback_companies"][0]["domain"],
+                         "careers.unsupported.example")
+        page = dashboard.build(self.store.dashboard_state(), coverage=report)
+        self.assertIn("fallback delayed", page)
+        self.assertIn("unsupported or custom career site", page)
+
+    def test_recently_closed_alert_does_not_disappear_from_dashboard(self):
+        now = int(time.time())
+        closed = {
+            **job("closed-role"),
+            "company": "PayPal",
+            "title": "Software Engineer",
+            "url": "https://paypal.eightfold.ai/careers/job/274921701755",
+            "first_seen": now - 900,
+            "last_seen": now - 900,
+            "open": False,
+        }
+        page = dashboard.build({"closed-role": closed}, scan_completed_at=now)
+        self.assertIn("Recently detected, now unavailable", page)
+        self.assertIn("Discord alert never appears to vanish", page)
+        self.assertIn("274921701755", page)
+
+        closed["last_seen"] = now - 172801
+        closed["first_seen"] = now - 172801
+        old_page = dashboard.build({"closed-role": closed}, scan_completed_at=now)
+        self.assertNotIn("274921701755", old_page)
+
 
 if __name__ == "__main__":
     unittest.main()

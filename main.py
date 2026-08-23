@@ -36,6 +36,8 @@ import storage
 
 ROOT = Path(__file__).parent
 STATE_FILE = ROOT / "state.json"
+DIRECT_SOURCE_FILE = ROOT / "direct_sources.json"
+COVERAGE_FILE = ROOT / "coverage_report.json"
 SEEN_FILE = ROOT / "seen.json"        # legacy, migrated on first load
 DB_FILE = ROOT / "jobwatch.db"
 LOCAL_ENV_FILE = ROOT / ".env.local"
@@ -251,10 +253,11 @@ async def send_telegram(client, cfg, jobs):
     if not (token and chat):
         return
     for j in jobs:  # one message per role — each is independently tappable
+        warning = "\n⚠️ fallback delayed — official adapter unavailable" if j.get("_fallback_delayed") else ""
         text = (f"🚨 <b>{esc(j['company'])}</b>\n"
                 f"{esc(j['title'])}\n"
                 f"📍 {esc(j['location'] or '—')}\n"
-                f"<a href=\"{j['url']}\">Apply now</a>")
+                f"<a href=\"{j['url']}\">Apply now</a>{warning}")
         try:
             await client.post(
                 f"https://api.telegram.org/bot{token}/sendMessage",
@@ -283,7 +286,9 @@ async def deliver_discord_outbox(client, store):
         for j in chunk:
             embed = {
                 "title": f"{j['company']} — {j['title']}"[:250] or "New role",
-                "description": str(j["location"] or "—")[:4000],
+                "description": (str(j["location"] or "—") +
+                                ("\n⚠️ fallback delayed — official adapter unavailable"
+                                 if j.get("discovered_source_type") == "simplify" else ""))[:4000],
                 "color": 0xE8543F,
             }
             if str(j.get("url") or "").startswith(("https://", "http://")):
@@ -403,11 +408,6 @@ def promoted_sources(store: storage.JobStore) -> list[dict]:
 def prepare_sources(cfg: dict, generated_sources: list[dict] | None = None) -> list[dict]:
     """Apply fallback exclusions and attach stable scheduler metadata."""
     generated_sources = generated_sources or []
-    # Only hand-curated sources are hard-excluded from Simplify. Generated
-    # sources suppress fallback dynamically after their official board is
-    # proven healthy, so a broken inference can never create a blind spot.
-    direct = {str(s["company"]).lower() for s in cfg["sources"]
-              if s.get("company") and s["type"] != "simplify"}
     srcs = []
     source_keys = set()
     for raw in list(cfg["sources"]) + list(generated_sources):
@@ -418,15 +418,19 @@ def prepare_sources(cfg: dict, generated_sources: list[dict] | None = None) -> l
             continue
         source_keys.add(src["_source_key"])
         if src.pop("skip_direct", False):
-            src["exclude"] = sorted(direct | {c.lower() for c in
-                                              cfg.get("never_alert_companies", [])})
+            # Direct-company suppression is health-aware in finalize_results.
+            # Static exclusion caused blind spots whenever a configured board
+            # was broken or had not completed its first successful poll.
+            src["exclude"] = sorted(
+                {c.lower() for c in cfg.get("never_alert_companies", [])}
+            )
         srcs.append(src)
     return srcs
 
 
 async def finalize_results(client, sem, srcs, results, store, F):
     """Attach trusted cohort evidence, classify, and resolve fallback dates."""
-    healthy_promotions = store.healthy_generated_companies()
+    healthy_direct = store.healthy_direct_companies()
     for src, result in zip(srcs, results):
         batch = result["jobs"]
         cohort = src.get("cohort")
@@ -438,10 +442,13 @@ async def finalize_results(client, sem, srcs, results, store, F):
         if src["type"] == "simplify":
             for job in batch:
                 job["_simplify"] = True
+                job["_fallback_delayed"] = True
         hits = [job for job in batch if matches(job, F)]
-        if src["type"] == "simplify" and healthy_promotions:
+        if src["type"] == "simplify":
+            result["audit_hits"] = list(hits)
+        if src["type"] == "simplify" and healthy_direct:
             hits = [job for job in hits if str(job.get("company") or "").strip().casefold()
-                    not in healthy_promotions]
+                    not in healthy_direct]
         result["hits"] = hits
 
     sf_candidates = [job for result in results for job in result.get("hits", [])
@@ -476,6 +483,7 @@ async def poll_once(cfg, seed=False, store=None):
     F = compile_filters(cfg)
     store = store or storage.JobStore(DB_FILE)
     store.import_legacy(STATE_FILE)
+    store.import_source_registry(DIRECT_SOURCE_FILE)
     store.retire_unmanaged_once("strict-targeting-v1")
     first_run = store.job_count() == 0
 
@@ -491,27 +499,63 @@ async def poll_once(cfg, seed=False, store=None):
     sem = asyncio.Semaphore(cfg.get("concurrency", 12))
     limits = httpx.Limits(max_connections=30, max_keepalive_connections=15)
     async with httpx.AsyncClient(limits=limits, follow_redirects=True, http2=False) as client:
-        results = await asyncio.gather(
-            *(fetch_source_result(client, s, sem) for s in srcs)
-        )
-
-        await finalize_results(client, sem, srcs, results, store, F)
-
         enqueue = not (seed or first_run)
         fresh = []
-        for src, result in zip(srcs, results):
-            source_seed = src["_source_key"] in seed_keys
-            added = store.record_poll(
-                [result], enqueue_notifications=enqueue and not source_seed,
+        all_results = []
+
+        async def fetch_and_record(batch_srcs, force_seed=False):
+            if not batch_srcs:
+                return []
+            batch_results = await asyncio.gather(
+                *(fetch_source_result(client, source, sem) for source in batch_srcs)
             )
-            if not source_seed:
-                fresh.extend(added)
-            if src.get("generated") and result.get("ok") and \
-                    int(result.get("raw_count") or 0) > 0 and \
-                    store.generated_company_ready(src.get("company", "")):
-                store.deactivate_fallback_company(src.get("company", ""))
+            await finalize_results(client, sem, batch_srcs, batch_results, store, F)
+            for source, result in zip(batch_srcs, batch_results):
+                source_seed = force_seed or source["_source_key"] in seed_keys
+                added = store.record_poll(
+                    [result], enqueue_notifications=enqueue and not source_seed,
+                )
+                if not source_seed:
+                    fresh.extend(added)
+                if source_seed and result.get("ok"):
+                    seed_keys.discard(source["_source_key"])
+            all_results.extend(batch_results)
+            return batch_results
+
+        # Official boards always complete first. Simplify then acts as an audit
+        # and discovery pass, never as the preferred record for a healthy board.
+        direct_srcs = [source for source in srcs if source["type"] != "simplify"]
+        fallback_srcs = [source for source in srcs if source["type"] == "simplify"]
+        await fetch_and_record(direct_srcs)
+        fallback_results = await fetch_and_record(fallback_srcs)
+
+        # A URL first observed in this Simplify pass is promoted and polled now,
+        # during the same ephemeral Actions run. The fallback record already
+        # owns any alert, so the initial board snapshot safely upgrades it.
+        inferred = source_discovery.discover_direct_sources(
+            job for result in fallback_results for job in result.get("audit_hits") or []
+        )
+        existing_keys = {source["_source_key"] for source in srcs}
+        candidates = prepare_sources({**cfg, "sources": []}, inferred)
+        new_sources = [source for source in candidates
+                       if source["_source_key"] not in existing_keys]
+        if new_sources:
+            store.register_sources(new_sources)
+            await fetch_and_record(new_sources, force_seed=True)
+            srcs.extend(new_sources)
+            print(f"  promoted and immediately polled {len(new_sources)} official source(s)")
+
+        for company in store.healthy_direct_companies():
+            store.deactivate_fallback_company(company)
 
         if enqueue and fresh:
+            current = store.dashboard_state()
+            for job in fresh:
+                upgraded = current.get(str(job.get("id") or ""))
+                if upgraded:
+                    for field in ("company", "title", "location", "url", "posted"):
+                        job[field] = upgraded.get(field, job.get(field))
+                    job["_fallback_delayed"] = bool(upgraded.get("fallback_delayed"))
             fresh.sort(key=lambda j: (F["boost"] is None or F["boost"].search(j["company"]) is None, j["company"]))
             for j in fresh:
                 print(f"  → {j['company']}: {j['title']} [{j['location']}]\n    {j['url']}")
@@ -521,14 +565,19 @@ async def poll_once(cfg, seed=False, store=None):
         if not seed:
             delivered = await deliver_discord_outbox(client, store)
 
+        scan_completed_at = store.mark_scan_completed()
         state = store.dashboard_state()
-        dashboard.write(state, store.source_health(), store.outbox_counts())
+        dashboard.write(state, store.source_health(), store.outbox_counts(),
+                        scan_completed_at=scan_completed_at,
+                        coverage=store.coverage_report())
         # Keep the existing Actions fallback viable without making JSON the
         # runtime source of truth. Pending alerts are omitted so an ephemeral
         # next run detects and retries them.
         store.export_legacy(STATE_FILE, exclude_pending=True)
+        store.export_source_registry(DIRECT_SOURCE_FILE)
+        store.export_coverage_report(COVERAGE_FILE, scan_completed_at)
 
-        scanned = sum(int(r.get("raw_count") or 0) for r in results if r.get("ok"))
+        scanned = sum(int(r.get("raw_count") or 0) for r in all_results if r.get("ok"))
         open_count = sum(1 for rec in state.values() if rec.get("open"))
         print(f"[{time.strftime('%H:%M:%S')}] {scanned} scanned · "
               f"{open_count} open & matching · {len(fresh)} NEW · "
@@ -595,9 +644,14 @@ def is_network_failure(result: dict) -> bool:
 
 
 def write_outputs(store) -> None:
+    scan_completed_at = store.mark_scan_completed()
     state = store.dashboard_state()
-    dashboard.write(state, store.source_health(), store.outbox_counts())
+    dashboard.write(state, store.source_health(), store.outbox_counts(),
+                    scan_completed_at=scan_completed_at,
+                    coverage=store.coverage_report())
     store.export_legacy(STATE_FILE, exclude_pending=True)
+    store.export_source_registry(DIRECT_SOURCE_FILE)
+    store.export_coverage_report(COVERAGE_FILE, scan_completed_at)
 
 
 async def run_scheduler(cfg: dict, stop_event: asyncio.Event | None = None) -> None:
@@ -605,6 +659,7 @@ async def run_scheduler(cfg: dict, stop_event: asyncio.Event | None = None) -> N
     F = compile_filters(cfg)
     store = storage.JobStore(DB_FILE)
     store.import_legacy(STATE_FILE)
+    store.import_source_registry(DIRECT_SOURCE_FILE)
     retired = store.retire_unmanaged_once("strict-targeting-v1")
     if retired:
         print(f"strict targeting migration · retired {retired} unverified legacy rows")
@@ -745,6 +800,8 @@ async def run_scheduler(cfg: dict, stop_event: asyncio.Event | None = None) -> N
                             int(result.get("raw_count") or 0) > 0 and \
                             store.generated_company_ready(src.get("company", "")):
                         store.deactivate_fallback_company(src.get("company", ""))
+                    elif src["type"] != "simplify" and result.get("ok"):
+                        store.deactivate_fallback_company(src.get("company", ""))
                     if fresh:
                         fresh.sort(key=lambda job: (
                             F["boost"] is None or F["boost"].search(job["company"]) is None,
@@ -789,12 +846,19 @@ async def run_scheduler(cfg: dict, stop_event: asyncio.Event | None = None) -> N
                     last_delivery = now
                     dirty = True
                 if dirty and now - last_dashboard >= 5:
+                    scan_completed_at = store.mark_scan_completed()
                     state = store.dashboard_state()
-                    dashboard.write(state, store.source_health(), store.outbox_counts())
+                    dashboard.write(state, store.source_health(), store.outbox_counts(),
+                                    scan_completed_at=scan_completed_at,
+                                    coverage=store.coverage_report())
                     last_dashboard = now
                     dirty = False
                 if now - last_export >= 60:
                     store.export_legacy(STATE_FILE, exclude_pending=True)
+                    store.export_source_registry(DIRECT_SOURCE_FILE)
+                    store.export_coverage_report(
+                        COVERAGE_FILE, store.scan_completed_at() or int(time.time())
+                    )
                     last_export = now
         finally:
             for task in running:

@@ -180,6 +180,9 @@ sources:
   - {type: oracle_hcm, company: Honeywell, host: ibqbjb.fa.ocs.oraclecloud.com,
      site: CX_1, slug: careers.honeywell.com, path_site: Honeywell, title_facet: "124",
      location_facet: "300000000469866", interval_seconds: 60}
+  - {type: oracle_hcm, company: Blue Shield of California,
+     host: ecge.fa.us2.oraclecloud.com, site: CX_1003,
+     slug: ecge.fa.us2.oraclecloud.com, path_site: CX_1003, interval_seconds: 60}
 
   # ================= Big tech / large public companies =====================
   - {type: greenhouse, company: Databricks,       token: databricks}

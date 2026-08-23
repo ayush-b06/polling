@@ -13,6 +13,7 @@ import sqlite3
 import time
 from pathlib import Path
 from typing import Iterable
+from urllib.parse import parse_qs, urlparse
 
 
 SCHEMA = """
@@ -57,7 +58,8 @@ CREATE TABLE IF NOT EXISTS jobs (
     discovered_source_label TEXT NOT NULL DEFAULT '',
     date_resolved INTEGER NOT NULL DEFAULT 0,
     category TEXT NOT NULL DEFAULT '',
-    classification_reason TEXT NOT NULL DEFAULT ''
+    classification_reason TEXT NOT NULL DEFAULT '',
+    canonical_key TEXT NOT NULL DEFAULT ''
 );
 
 CREATE TABLE IF NOT EXISTS observations (
@@ -83,6 +85,17 @@ CREATE TABLE IF NOT EXISTS outbox (
     UNIQUE(job_id, channel)
 );
 
+CREATE TABLE IF NOT EXISTS fallback_audit (
+    source_key TEXT NOT NULL,
+    canonical_key TEXT NOT NULL,
+    company TEXT NOT NULL DEFAULT '',
+    url TEXT NOT NULL DEFAULT '',
+    first_seen INTEGER NOT NULL,
+    last_seen INTEGER NOT NULL,
+    active INTEGER NOT NULL DEFAULT 1,
+    PRIMARY KEY (source_key, canonical_key)
+);
+
 CREATE INDEX IF NOT EXISTS idx_jobs_open ON jobs(open, first_seen);
 CREATE INDEX IF NOT EXISTS idx_observations_source ON observations(source_key, active);
 CREATE INDEX IF NOT EXISTS idx_outbox_due ON outbox(channel, status, next_attempt_at);
@@ -96,8 +109,54 @@ SOURCE_FAILURE_THRESHOLD = 3
 
 IDENTITY_FIELDS = (
     "type", "company", "token", "tenant", "site", "host", "subdomain",
-    "domain", "brand", "feed", "only", "query", "search", "url", "org_id",
+    "domain", "brand", "feed", "only", "query", "search", "url", "base_url",
+    "org_id", "country",
 )
+
+
+def canonical_job_key(job: dict, source_type: str = "") -> str:
+    """ATS/requisition identity shared by direct feeds and aggregator URLs."""
+    company = re.sub(r"\W+", "", str(job.get("company") or "").casefold())
+    explicit_ats = str(job.get("_ats") or "").casefold()
+    explicit_req = str(job.get("_requisition_id") or "").strip().casefold()
+    if explicit_ats and explicit_req:
+        return f"{explicit_ats}:{company}:{explicit_req}"
+
+    url = str(job.get("url") or "")
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        parsed = urlparse("")
+    host = (parsed.hostname or "").casefold()
+    path = parsed.path.rstrip("/")
+    patterns = [
+        ("greenhouse", r"/(?:jobs|job)/([0-9]+)(?:[-/]|$)"),
+        ("lever", r"jobs\.lever\.co/[^/]+/([^/?#]+)"),
+        ("ashby", r"jobs\.ashbyhq\.com/[^/]+/([^/?#]+)"),
+        ("workable", r"/j/([^/?#]+)"),
+        ("workday", r"/(?:job|details)/.+?/([^/?#]+)$"),
+        ("oracle_hcm", r"/(?:job|preview)/([^/?#]+)$"),
+        ("icims", r"/jobs/([0-9]+)(?:/|$)"),
+        ("bamboohr", r"/(?:careers|jobs)/([^/?#]+)"),
+        ("jobvite", r"/job/([^/?#]+)"),
+        ("pinpoint", r"/postings/([^/?#]+)"),
+        ("jazzhr", r"/apply/([^/?#]+)"),
+        ("apple", r"/details/([0-9]+)"),
+    ]
+    target = f"{host}{path}"
+    if host.endswith(".bamboohr.com"):
+        bamboo_id = (parse_qs(parsed.query).get("id") or [None])[0]
+        if bamboo_id:
+            return f"bamboohr:{company}:{str(bamboo_id).casefold()}"
+    for ats, pattern in patterns:
+        match = re.search(pattern, target, re.I)
+        if match:
+            return f"{ats}:{company}:{match.group(1).casefold()}"
+    # A stable official URL is still more useful than an aggregator row ID.
+    if host and source_type != "simplify":
+        normalized = re.sub(r"/+", "/", path).casefold()
+        return f"url:{company}:{host}{normalized}"
+    return ""
 
 
 def source_key(src: dict) -> str:
@@ -125,6 +184,15 @@ class JobStore:
                 db.execute("ALTER TABLE jobs ADD COLUMN category TEXT NOT NULL DEFAULT ''")
             if "classification_reason" not in columns:
                 db.execute("ALTER TABLE jobs ADD COLUMN classification_reason TEXT NOT NULL DEFAULT ''")
+            if "canonical_key" not in columns:
+                db.execute("ALTER TABLE jobs ADD COLUMN canonical_key TEXT NOT NULL DEFAULT ''")
+            db.execute("CREATE INDEX IF NOT EXISTS idx_jobs_canonical ON jobs(canonical_key)")
+            for row in db.execute(
+                "SELECT id, company, url, discovered_source_type FROM jobs WHERE canonical_key=''"
+            ).fetchall():
+                key = canonical_job_key(dict(row), row["discovered_source_type"])
+                if key:
+                    db.execute("UPDATE jobs SET canonical_key=? WHERE id=?", (key, row["id"]))
             db.execute("PRAGMA journal_mode = WAL")
 
     def _connect(self):
@@ -168,18 +236,23 @@ class JobStore:
                 if not isinstance(rec, dict):
                     continue
                 first_seen = int(rec.get("first_seen") or now)
-                source_type = "simplify" if rec.get("_date_resolved") else "legacy"
+                source_type = str(rec.get("_source_type") or (
+                    "simplify" if rec.get("fallback_delayed") or rec.get("_date_resolved")
+                    else "legacy"
+                ))
+                source_label = str(rec.get("_source_label") or "Legacy state import")
+                canonical = canonical_job_key(rec, source_type)
                 db.execute(
                     """INSERT OR IGNORE INTO jobs
                        (id, company, title, location, url, posted, first_seen,
                         last_seen, open, managed, discovered_source_type,
-                        discovered_source_label, date_resolved)
-                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?, ?)""",
+                        discovered_source_label, date_resolved, canonical_key)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?)""",
                     (jid, str(rec.get("company") or ""), str(rec.get("title") or ""),
                      str(rec.get("location") or ""), str(rec.get("url") or ""),
                      str(rec.get("posted") or ""), first_seen, first_seen,
                      int(bool(rec.get("open", True))), source_type,
-                     "Legacy state import", int(bool(rec.get("_date_resolved")))),
+                     source_label, int(bool(rec.get("_date_resolved"))), canonical),
                 )
                 imported += db.execute("SELECT changes()").fetchone()[0]
             db.execute(
@@ -244,11 +317,83 @@ class JobStore:
                      json.dumps(clean, sort_keys=True, default=str)),
                 )
 
+    def import_source_registry(self, path: str | Path) -> list[dict]:
+        """Load committed learned sources and their last verified state."""
+        path = Path(path)
+        try:
+            payload = json.loads(path.read_text()) if path.exists() else {}
+        except (OSError, json.JSONDecodeError):
+            return []
+        entries = payload.get("sources", []) if isinstance(payload, dict) else []
+        pairs = []
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            config = entry.get("config") if isinstance(entry.get("config"), dict) else entry
+            if not config.get("generated"):
+                continue
+            pairs.append((entry, dict(config)))
+        sources = [source for _, source in pairs]
+        self.register_sources(sources)
+        with self._connect() as db:
+            for entry, source in pairs:
+                verification = entry.get("verification") or {}
+                key = source_key(source)
+                if verification:
+                    db.execute(
+                        """UPDATE sources SET status=?, last_attempt_at=?, last_success_at=?,
+                           last_error=?, consecutive_failures=?, consecutive_empty=?,
+                           last_job_count=?, last_match_count=?, duration_ms=? WHERE source_key=?""",
+                        (str(verification.get("status") or "healthy"),
+                         verification.get("last_attempt_at"), verification.get("last_success_at"),
+                         verification.get("last_error"),
+                         int(verification.get("consecutive_failures") or 0),
+                         int(verification.get("consecutive_empty") or 0),
+                         verification.get("last_job_count"),
+                         verification.get("last_match_count"),
+                         verification.get("duration_ms"), key),
+                    )
+        return sources
+
+    def export_source_registry(self, path: str | Path) -> None:
+        """Atomically commit learned source config and verification metadata."""
+        entries = []
+        with self._connect() as db:
+            rows = db.execute(
+                """SELECT config_json, status, last_attempt_at, last_success_at,
+                          last_error, consecutive_failures, consecutive_empty,
+                          last_job_count, last_match_count, duration_ms
+                   FROM sources WHERE enabled=1 ORDER BY company, source_key"""
+            ).fetchall()
+        for row in rows:
+            try:
+                config = json.loads(row["config_json"])
+            except (TypeError, json.JSONDecodeError):
+                continue
+            if not config.get("generated"):
+                continue
+            entries.append({
+                "config": config,
+                "verification": {
+                    "status": row["status"], "last_attempt_at": row["last_attempt_at"],
+                    "last_success_at": row["last_success_at"], "last_error": row["last_error"],
+                    "consecutive_failures": row["consecutive_failures"],
+                    "consecutive_empty": row["consecutive_empty"],
+                    "last_job_count": row["last_job_count"],
+                    "last_match_count": row["last_match_count"],
+                    "duration_ms": row["duration_ms"],
+                },
+            })
+        path = Path(path)
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_text(json.dumps({"version": 1, "sources": entries}, indent=2) + "\n")
+        tmp.replace(path)
+
     def generated_sources(self) -> list[dict]:
         """Load direct source configurations previously promoted from fallback jobs."""
         sources = []
         with self._connect() as db:
-            rows = db.execute("SELECT config_json FROM sources").fetchall()
+            rows = db.execute("SELECT config_json FROM sources WHERE enabled=1").fetchall()
         for row in rows:
             try:
                 config = json.loads(row["config_json"])
@@ -297,6 +442,16 @@ class JobStore:
                 for row in company_rows
             )
         }
+
+    def healthy_direct_companies(self) -> set[str]:
+        """Companies with at least one currently successful official source."""
+        with self._connect() as db:
+            rows = db.execute(
+                """SELECT DISTINCT lower(trim(company)) AS company FROM sources
+                   WHERE enabled=1 AND source_type<>'simplify' AND status='healthy'
+                     AND last_success_at IS NOT NULL AND last_job_count>0"""
+            ).fetchall()
+        return {str(row["company"]) for row in rows if row["company"]}
 
     def generated_company_ready(self, company: str) -> bool:
         return str(company or "").strip().casefold() in self.healthy_generated_companies()
@@ -407,8 +562,33 @@ class JobStore:
                 )]
                 db.execute("UPDATE observations SET active=0 WHERE source_key=?", (key,))
 
+                if str(result.get("source_type") or "") == "simplify":
+                    db.execute("UPDATE fallback_audit SET active=0 WHERE source_key=?", (key,))
+                    for audit_job in result.get("audit_hits") or hits:
+                        audit_key = canonical_job_key(audit_job, "simplify") or \
+                            f"id:{str(audit_job.get('id') or '')}"
+                        db.execute(
+                            """INSERT INTO fallback_audit
+                               (source_key, canonical_key, company, url, first_seen, last_seen, active)
+                               VALUES (?, ?, ?, ?, ?, ?, 1)
+                               ON CONFLICT(source_key, canonical_key) DO UPDATE SET
+                                 company=excluded.company, url=excluded.url,
+                                 last_seen=excluded.last_seen, active=1""",
+                            (key, audit_key, str(audit_job.get("company") or ""),
+                             str(audit_job.get("url") or ""), now, now),
+                        )
+
                 for job in hits:
                     jid = str(job["id"])
+                    canonical = canonical_job_key(job, str(result.get("source_type") or ""))
+                    if canonical:
+                        alias = db.execute(
+                            """SELECT id FROM jobs WHERE canonical_key=?
+                               ORDER BY open DESC, last_seen DESC LIMIT 1""",
+                            (canonical,),
+                        ).fetchone()
+                        if alias:
+                            jid = str(alias["id"])
                     # Aggregators use their own IDs, while Apple's direct API
                     # uses the Apple position ID. Join observations by the
                     # stable Apple details URL so promoting Apple does not
@@ -435,15 +615,15 @@ class JobStore:
                                (id, company, title, location, url, posted, first_seen,
                                 last_seen, open, managed, discovered_source_key,
                                 discovered_source_type, discovered_source_label,
-                                date_resolved, category, classification_reason)
-                               VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, 1, ?, ?, ?, ?, ?, ?)""",
+                                date_resolved, category, classification_reason, canonical_key)
+                               VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, 1, ?, ?, ?, ?, ?, ?, ?)""",
                             (jid, str(job.get("company") or ""), str(job.get("title") or ""),
                              str(job.get("location") or ""), str(job.get("url") or ""),
                              str(job.get("posted") or ""), now, now, key,
                              str(result.get("source_type") or "unknown"),
                              str(result.get("source_label") or ""), resolved,
                              str(job.get("_category") or ""),
-                             str(job.get("_classification_reason") or "")),
+                             str(job.get("_classification_reason") or ""), canonical),
                         )
                         fresh.append(dict(job))
                         if enqueue_notifications:
@@ -468,7 +648,9 @@ class JobStore:
                                discovered_source_label=CASE
                                  WHEN managed=0 OR (discovered_source_type='simplify' AND ?<>'simplify')
                                  THEN ? ELSE discovered_source_label END,
-                               category=?, classification_reason=?, last_seen=?, managed=1
+                               category=?, classification_reason=?,
+                               canonical_key=CASE WHEN ?<>'' THEN ? ELSE canonical_key END,
+                               last_seen=?, managed=1
                                WHERE id=?""",
                             (str(job.get("company") or ""), str(job.get("title") or ""),
                              str(job.get("location") or ""), str(job.get("url") or ""),
@@ -480,7 +662,8 @@ class JobStore:
                              str(result.get("source_type") or "unknown"),
                              str(result.get("source_label") or ""),
                              str(job.get("_category") or ""),
-                             str(job.get("_classification_reason") or ""), now, jid),
+                             str(job.get("_classification_reason") or ""),
+                             canonical, canonical, now, jid),
                         )
 
                     db.execute(
@@ -518,6 +701,7 @@ class JobStore:
                 "alert_status": d["alert_status"], "alerted_at": d["alerted_at"],
                 "category": d["category"],
                 "classification_reason": d["classification_reason"],
+                "fallback_delayed": d["discovered_source_type"] == "simplify",
             }
         return state
 
@@ -532,6 +716,99 @@ class JobStore:
                    ORDER BY CASE status WHEN 'degraded' THEN 0 WHEN 'suspect_empty' THEN 1
                             WHEN 'pending' THEN 2 ELSE 3 END, label"""
             )]
+
+    def coverage_report(self) -> dict:
+        """Summarize direct coverage and every remaining fallback company."""
+        import source_discovery  # local import avoids the startup module cycle
+
+        healthy = self.healthy_direct_companies()
+        with self._connect() as db:
+            audits = [dict(row) for row in db.execute(
+                "SELECT company, url, canonical_key FROM fallback_audit WHERE active=1"
+            )]
+            known_audits = {(row["company"], row["url"], row["canonical_key"])
+                            for row in audits}
+            for row in db.execute(
+                """SELECT company, url, canonical_key FROM jobs
+                   WHERE open=1 AND discovered_source_type='simplify'"""
+            ):
+                item = dict(row)
+                identity = (item["company"], item["url"], item["canonical_key"])
+                if identity not in known_audits:
+                    audits.append(item)
+            failures = int(db.execute(
+                """SELECT COUNT(*) FROM sources WHERE enabled=1
+                   AND source_type<>'simplify' AND status IN ('degraded','suspect_empty')"""
+            ).fetchone()[0])
+            official_keys = {row[0] for row in db.execute(
+                """SELECT DISTINCT j.canonical_key FROM jobs j
+                   JOIN observations o ON o.job_id=j.id AND o.active=1
+                   JOIN sources s ON s.source_key=o.source_key
+                   WHERE s.source_type<>'simplify' AND s.status='healthy'
+                     AND j.canonical_key<>''"""
+            )}
+
+        grouped = {}
+        for row in audits:
+            company = str(row["company"] or "").strip()
+            normalized = company.casefold()
+            if normalized in healthy:
+                # Keep this in the audit mismatch metric, but it is no longer a
+                # fallback-only coverage gap.
+                continue
+            url = str(row["url"] or "")
+            domain = (urlparse(url).hostname or "unknown").casefold()
+            inferred = source_discovery.infer_direct_source(company, url)
+            entry = grouped.setdefault((company, domain), {
+                "company": company, "domain": domain, "job_count": 0,
+                "attempted_adapter": inferred.get("type") if inferred else "none",
+                "reason": ("adapter discovered but not yet verified"
+                           if inferred else "unsupported or custom career site"),
+                "_keys": set(),
+            })
+            entry["_keys"].add(row["canonical_key"])
+            entry["job_count"] = len(entry["_keys"])
+
+        missing = len({
+            row["canonical_key"] for row in audits
+            if str(row["company"] or "").strip().casefold() in healthy
+            and row["canonical_key"] not in official_keys
+        })
+        return {
+            "verified_direct_companies": len(healthy),
+            "fallback_only_companies": len({key[0] for key in grouped}),
+            "direct_source_failures": failures,
+            "simplify_missing_from_healthy_direct": missing,
+            "fallback_companies": sorted(
+                ({key: value for key, value in item.items() if key != "_keys"}
+                 for item in grouped.values()),
+                key=lambda item: item["company"],
+            ),
+        }
+
+    def export_coverage_report(self, path: str | Path, generated_at: int | None = None) -> None:
+        report = self.coverage_report()
+        report["generated_at"] = int(generated_at or time.time())
+        path = Path(path)
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_text(json.dumps(report, indent=2) + "\n")
+        tmp.replace(path)
+
+    def mark_scan_completed(self, now: int | None = None) -> int:
+        now = int(now or time.time())
+        with self._connect() as db:
+            db.execute(
+                "INSERT OR REPLACE INTO meta(key, value) VALUES('scan_completed_at', ?)",
+                (str(now),),
+            )
+        return now
+
+    def scan_completed_at(self) -> int | None:
+        with self._connect() as db:
+            row = db.execute(
+                "SELECT value FROM meta WHERE key='scan_completed_at'"
+            ).fetchone()
+        return int(row["value"]) if row else None
 
     def outbox_counts(self) -> dict[str, int]:
         with self._connect() as db:
@@ -590,7 +867,7 @@ class JobStore:
         clean = {}
         for jid, rec in state.items():
             clean[jid] = {k: v for k, v in rec.items()
-                          if k not in ("_source_type", "_source_label", "alert_status", "alerted_at")}
+                          if k not in ("alert_status", "alerted_at")}
         path = Path(path)
         tmp = path.with_suffix(path.suffix + ".tmp")
         tmp.write_text(json.dumps(clean, separators=(",", ":")))

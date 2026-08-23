@@ -15,6 +15,9 @@ import json
 import re
 import time
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
+from urllib.parse import urljoin
+from xml.etree import ElementTree
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"}
@@ -165,6 +168,13 @@ def _iso(v) -> str:
             return datetime.strptime(s, fmt).strftime("%Y-%m-%d")
         except ValueError:
             continue
+    try:
+        parsed = parsedate_to_datetime(s)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    except (TypeError, ValueError, OverflowError):
+        pass
     # Workday reports relative dates: "Posted Today" / "Posted 7 Days Ago"
     low = s.lower()
     if "posted" in low or "ago" in low:
@@ -388,9 +398,10 @@ async def linkedin_company(client, company="LinkedIn", company_id="1337",
 
 
 # ------------------------------------------------------------------- Workday
-async def workday(client, company, tenant, site, host, search="", subdomain=None, **kw):
+async def workday(client, company, tenant, site, host, search="", subdomain=None,
+                  domain="myworkdayjobs.com", **kw):
     """Workday's CXS endpoint. host is like 'wd1' / 'wd5' / 'wd103'."""
-    base = f"https://{subdomain or tenant}.{host}.myworkdayjobs.com"
+    base = f"https://{subdomain or tenant}.{host}.{domain}"
     url = f"{base}/wday/cxs/{tenant}/{site}/jobs"
     out, offset = [], 0
     while offset < 200:
@@ -839,8 +850,8 @@ async def vanguard(
 
 
 # ------------------------------------------------------------- Oracle HCM CE
-async def oracle_hcm(client, company, host, site, slug, title_facet,
-                     location_facet, path_site=None, **kw):
+async def oracle_hcm(client, company, host, site, slug, title_facet=None,
+                     location_facet=None, path_site=None, **kw):
     """Poll an Oracle Recruiting Candidate Experience site directly.
 
     ``title_facet`` and ``location_facet`` are the stable IDs exposed by the
@@ -854,32 +865,41 @@ async def oracle_hcm(client, company, host, site, slug, title_facet,
         "Accept-Language": "en-US",
         "Ora-Irc-Language": "en",
     }
-    finder = (
-        "findReqs;siteNumber=" + site
-        + ",facetsList=TITLES;LOCATIONS;POSTING_DATES"
-        + ",limit=100,offset=0,sortBy=POSTING_DATES_DESC"
-        + f",selectedTitlesFacet={title_facet}"
-        + f",selectedLocationsFacet={location_facet}"
-    )
-    response = await client.get(
-        f"{root}/recruitingCEJobRequisitions",
-        params={
-            "onlyData": "true",
-            "expand": "requisitionList.secondaryLocations",
-            "finder": finder,
-        },
-        headers=headers,
-        timeout=30,
-    )
-    response.raise_for_status()
-    containers = response.json().get("items") or []
-    container = containers[0] if containers else {}
-    total = int(container.get("TotalJobsCount") or 0)
-    if total > 100:
-        raise RuntimeError(f"{company} Oracle HCM facet exceeds page limit: {total}")
+    cards_raw, offset, total = [], 0, None
+    while total is None or offset < total:
+        finder_parts = [
+            f"findReqs;siteNumber={site}",
+            "facetsList=TITLES;LOCATIONS;POSTING_DATES",
+            f"limit=100,offset={offset},sortBy=POSTING_DATES_DESC",
+        ]
+        if title_facet:
+            finder_parts.append(f"selectedTitlesFacet={title_facet}")
+        if location_facet:
+            finder_parts.append(f"selectedLocationsFacet={location_facet}")
+        response = await client.get(
+            f"{root}/recruitingCEJobRequisitions",
+            params={
+                "onlyData": "true",
+                "expand": "requisitionList.secondaryLocations",
+                "finder": ",".join(finder_parts),
+            },
+            headers=headers,
+            timeout=30,
+        )
+        response.raise_for_status()
+        containers = response.json().get("items") or []
+        container = containers[0] if containers else {}
+        page = container.get("requisitionList") or []
+        cards_raw.extend(page)
+        total = int(container.get("TotalJobsCount") or len(cards_raw))
+        if not page or len(cards_raw) >= total:
+            break
+        offset += len(page)
+        if offset > 10000:
+            raise RuntimeError(f"{company} Oracle HCM pagination exceeded 10000 jobs")
 
     cards = []
-    for card in container.get("requisitionList") or []:
+    for card in cards_raw:
         job_id = str(card.get("Id") or "")
         if not job_id:
             continue
@@ -889,7 +909,7 @@ async def oracle_hcm(client, company, host, site, slug, title_facet,
                          for loc in secondary if isinstance(loc, dict))
         # Location facets should already enforce this, but validate the
         # structured country fields in case Oracle changes facet behavior.
-        if "US" not in countries:
+        if location_facet and "US" not in countries:
             continue
         cards.append((job_id, card))
 
@@ -931,12 +951,15 @@ async def oracle_hcm(client, company, host, site, slug, title_facet,
         ]
         location = str(detail.get("PrimaryLocation") or card.get("PrimaryLocation") or "")
         all_locations = list(dict.fromkeys(filter(None, [location, *secondary_names])))
+        public_root = f"https://{slug}"
+        if slug == host and host.endswith(".oraclecloud.com"):
+            public_root += "/hcmUI/CandidateExperience"
         out.append({
             "id": _uid("oracle-hcm", host, site, job_id),
             "company": company,
             "title": detail.get("Title") or card.get("Title", ""),
             "location": ", ".join(all_locations),
-            "url": f"https://{slug}/en/sites/{path_site or site}/job/{job_id}/",
+            "url": f"{public_root}/en/sites/{path_site or site}/job/{job_id}/",
             "posted": _iso(
                 detail.get("ExternalPostedStartDate") or card.get("PostedDate")
             ),
@@ -946,6 +969,180 @@ async def oracle_hcm(client, company, host, site, slug, title_facet,
                 detail.get("ExternalQualificationsStr"),
                 card.get("ShortDescriptionStr"),
             ),
+        })
+    return out
+
+
+def _json_ld_job_objects(page: str) -> list[dict]:
+    """Return JobPosting objects embedded by hosted ATS detail/list pages."""
+    jobs = []
+    for raw in re.findall(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        page or "", re.I | re.DOTALL,
+    ):
+        try:
+            data = json.loads(html_lib.unescape(raw).strip())
+        except (json.JSONDecodeError, TypeError):
+            continue
+        values = data if isinstance(data, list) else [data]
+        for value in values:
+            if isinstance(value, dict) and value.get("@type") == "JobPosting":
+                jobs.append(value)
+            elif isinstance(value, dict) and isinstance(value.get("@graph"), list):
+                jobs.extend(item for item in value["@graph"]
+                            if isinstance(item, dict) and item.get("@type") == "JobPosting")
+    return jobs
+
+
+def _json_ld_location(value) -> str:
+    locations = value if isinstance(value, list) else [value]
+    names = []
+    for location in locations:
+        if not isinstance(location, dict):
+            continue
+        address = location.get("address") or {}
+        names.append(", ".join(filter(None, [
+            address.get("addressLocality"), address.get("addressRegion"),
+            address.get("addressCountry"),
+        ])) or str(location.get("name") or ""))
+    return "; ".join(filter(None, names))
+
+
+def _jobs_from_json_ld(page: str, company: str, ats: str, board: str,
+                       base_url: str) -> list[dict]:
+    out = []
+    for index, item in enumerate(_json_ld_job_objects(page)):
+        identifier = item.get("identifier") or {}
+        req = (identifier.get("value") if isinstance(identifier, dict) else identifier)
+        url = str(item.get("url") or base_url)
+        req = str(req or re.sub(r"\W+", "-", url).strip("-") or index)
+        out.append({
+            "id": _uid(ats, board, req), "company": company,
+            "title": _plain(item.get("title")),
+            "location": _json_ld_location(item.get("jobLocation")),
+            "url": urljoin(base_url, url), "posted": _iso(item.get("datePosted")),
+            "description": _plain(item.get("description")),
+            "_ats": ats, "_requisition_id": req,
+        })
+    return out
+
+
+async def _hosted_html_board(client, company: str, ats: str, board: str,
+                             url: str) -> list[dict]:
+    response = await client.get(url, headers=UA, follow_redirects=True, timeout=30)
+    response.raise_for_status()
+    resolved_url = str(getattr(response, "url", None) or url)
+    jobs = _jobs_from_json_ld(response.text, company, ats, board, resolved_url)
+    if jobs:
+        return jobs
+
+    # iCIMS/Jobvite/SuccessFactors list pages commonly put JSON-LD only on the
+    # details pages. Follow only same-board job-looking links, with a cap and
+    # bounded concurrency so one generated adapter cannot monopolize a scan.
+    candidates = []
+    for href in re.findall(r'<a[^>]+href=["\']([^"\']+)["\']', response.text or "", re.I):
+        absolute = urljoin(resolved_url, html_lib.unescape(href))
+        if re.search(r"/(?:jobs?/\d+|job/[^/?#]+|career[^?#]*\bjobId=)", absolute, re.I):
+            candidates.append(absolute)
+    candidates = list(dict.fromkeys(candidates))[:250]
+    detail_sem = asyncio.Semaphore(6)
+
+    async def fetch_detail(detail_url):
+        async with detail_sem:
+            try:
+                detail = await client.get(detail_url, headers=UA, follow_redirects=True, timeout=25)
+                detail.raise_for_status()
+                return _jobs_from_json_ld(detail.text, company, ats, board, detail_url)
+            except Exception:
+                return []
+
+    pages = await asyncio.gather(*(fetch_detail(candidate) for candidate in candidates))
+    return [job for page in pages for job in page]
+
+
+async def icims(client, company, token, base_url=None, **kw):
+    base = base_url or f"https://careers-{token}.icims.com"
+    return await _hosted_html_board(
+        client, company, "icims", token, f"{base.rstrip('/')}/jobs/search?ss=1"
+    )
+
+
+async def successfactors(client, company, base_url, token=None, **kw):
+    url = base_url
+    if token and "?" not in url:
+        url = f"{url.rstrip('/')}/career?company={token}"
+    return await _hosted_html_board(client, company, "successfactors", token or base_url, url)
+
+
+async def bamboohr(client, company, token, **kw):
+    response = await client.get(
+        f"https://{token}.bamboohr.com/careers/list",
+        headers={**UA, "Accept": "application/json"}, timeout=25,
+    )
+    response.raise_for_status()
+    data = response.json()
+    values = data.get("result", data.get("jobs", [])) if isinstance(data, dict) else data
+    out = []
+    for item in values or []:
+        req = str(item.get("id") or item.get("jobOpeningId") or "")
+        location = item.get("location") or {}
+        out.append({
+            "id": _uid("bamboohr", token, req), "company": company,
+            "title": item.get("jobOpeningName") or item.get("title", ""),
+            "location": (location.get("city") if isinstance(location, dict) else str(location)),
+            "url": f"https://{token}.bamboohr.com/careers/{req}",
+            "posted": _iso(item.get("datePosted") or item.get("createdAt")),
+            "description": _plain(item.get("description")),
+            "_ats": "bamboohr", "_requisition_id": req,
+        })
+    return out
+
+
+async def jobvite(client, company, token, **kw):
+    return await _hosted_html_board(
+        client, company, "jobvite", token,
+        f"https://jobs.jobvite.com/{token}/jobs?nl=1&fr=true",
+    )
+
+
+async def pinpoint(client, company, token, **kw):
+    base = f"https://{token}.pinpointhq.com"
+    response = await client.get(f"{base}/postings.json", headers=UA, timeout=25)
+    response.raise_for_status()
+    data = response.json()
+    values = data if isinstance(data, list) else data.get("data", data.get("postings", []))
+    out = []
+    for item in values or []:
+        req = str(item.get("id") or item.get("slug") or "")
+        loc = item.get("location") or item.get("location_name") or ""
+        out.append({
+            "id": _uid("pinpoint", token, req), "company": company,
+            "title": item.get("title") or item.get("name", ""),
+            "location": loc.get("name", "") if isinstance(loc, dict) else str(loc),
+            "url": urljoin(base, item.get("url") or f"/en/postings/{req}"),
+            "posted": _iso(item.get("published_at") or item.get("created_at")),
+            "description": _plain(item.get("description")),
+            "_ats": "pinpoint", "_requisition_id": req,
+        })
+    return out
+
+
+async def jazzhr(client, company, token, **kw):
+    base = f"https://{token}.applytojob.com"
+    response = await client.get(f"{base}/apply/jobs/rss", headers=UA, timeout=25)
+    response.raise_for_status()
+    root = ElementTree.fromstring(response.text)
+    out = []
+    for item in root.findall(".//item"):
+        url = item.findtext("link") or ""
+        match = re.search(r"/apply/([^/?#]+)", url)
+        req = match.group(1) if match else (item.findtext("guid") or url)
+        out.append({
+            "id": _uid("jazzhr", token, req), "company": company,
+            "title": item.findtext("title") or "", "location": "",
+            "url": url, "posted": _iso(item.findtext("pubDate")),
+            "description": _plain(item.findtext("description")),
+            "_ats": "jazzhr", "_requisition_id": str(req),
         })
     return out
 
@@ -1315,6 +1512,12 @@ REGISTRY = {
     "ibm": ibm,
     "vanguard": vanguard,
     "oracle_hcm": oracle_hcm,
+    "icims": icims,
+    "successfactors": successfactors,
+    "bamboohr": bamboohr,
+    "jobvite": jobvite,
+    "pinpoint": pinpoint,
+    "jazzhr": jazzhr,
     "tiktok": tiktok,
     "rippling": rippling,
     "eightfold": eightfold,
