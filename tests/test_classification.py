@@ -40,6 +40,17 @@ class StrictClassificationTests(unittest.TestCase):
                 self.assertTrue(kept)
                 self.assertEqual(job["_category"], category)
 
+    def test_null_ats_scalar_fields_do_not_abort_scan(self):
+        job = {
+            "title": "Software Engineer Intern",
+            "description": "",
+            "location": None,
+            "posted": "",
+            "url": "https://example.com/jobs/1",
+        }
+        self.assertFalse(main.matches(job, self.filters))
+        self.assertEqual(job["location"], "")
+
     def test_rejects_adjacent_but_out_of_scope_roles(self):
         for title in [
             "Data Engineer Intern", "Machine Learning Research Intern",

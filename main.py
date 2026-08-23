@@ -206,8 +206,14 @@ def too_old(posted: str, max_age_days) -> bool:
 
 
 def matches(job: dict, F) -> bool:
-    title = job["title"]
-    text = f"{title} {job['location']}"
+    # Hosted ATS APIs are inconsistent about empty scalar fields: several emit
+    # JSON null instead of an empty string. Normalize at the classifier boundary
+    # so one malformed card cannot abort an otherwise successful full scan.
+    title = str(job.get("title") or "")
+    location = str(job.get("location") or "")
+    job["title"] = title
+    job["location"] = location
+    text = f"{title} {location}"
 
     if F["kill"] and F["kill"].search(title):
         return False
@@ -222,7 +228,7 @@ def matches(job: dict, F) -> bool:
     # purpose — an unlocatable role is not worth an alert.
     if F["not_us"] and F["not_us"].search(text):
         return False
-    if F.get("loc_pfx") and F["loc_pfx"].search(job["location"]):
+    if F.get("loc_pfx") and F["loc_pfx"].search(location):
         return False
     if F["us"] and not F["us"].search(text):
         return False
