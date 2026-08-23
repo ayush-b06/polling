@@ -1,8 +1,569 @@
 {
-  "verified_direct_companies": 0,
-  "fallback_only_companies": 0,
+  "verified_direct_companies": 581,
+  "fallback_only_companies": 80,
   "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 0,
-  "fallback_companies": [],
-  "generated_at": 0
+  "simplify_missing_from_healthy_direct": 312,
+  "fallback_companies": [
+    {
+      "company": "AAR",
+      "domain": "aarcorp.taleo.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "AIR Control Concepts",
+      "domain": "aircontrolconcepts.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "AMD",
+      "domain": "careers.amd.com",
+      "job_count": 5,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Advanced Energy",
+      "domain": "jobs.advanced-energy.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Artera Technologies",
+      "domain": "arteratechnologies.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Astrion",
+      "domain": "careers.astrion.us",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Barrios",
+      "domain": "careers-barrios.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Berkshire Hathaway GUARD Insurance Companies",
+      "domain": "careers-guard.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Black Cape",
+      "domain": "blackcape.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Clerkie",
+      "domain": "getfiber.ai",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Clyde Companies",
+      "domain": "careers.clydeinc.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Cole Engineering Services",
+      "domain": "jobs-cesi.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Compass",
+      "domain": "www.compass.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "ConstructConnect",
+      "domain": "careers-constructconnect.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Corning",
+      "domain": "corningjobs.corning.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "DecisionPoint Corporation",
+      "domain": "careers-decisionpointcorp.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Deloitte",
+      "domain": "apply.deloitte.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "DigitalOcean",
+      "domain": "www.digitalocean.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Esri",
+      "domain": "www.esri.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Foundation Finance",
+      "domain": "careers.foundationfinance.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Foxconn Industrial Internet",
+      "domain": "foxconnggroup.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "General Dynamics Mission Systems",
+      "domain": "careers-gdms.icims.com",
+      "job_count": 4,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "GliaCell Technologies",
+      "domain": "gliacelltechnologies.applytojob.com",
+      "job_count": 2,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Google",
+      "domain": "www.google.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "H-E-B",
+      "domain": "careers.heb.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "HARMAN",
+      "domain": "jobsearch.harman.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "HarmonyTech",
+      "domain": "harmonytech.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Huntington Ingalls Industries",
+      "domain": "careers.huntingtoningalls.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "IXL Learning",
+      "domain": "www.ixl.com",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Illinois Tool Works",
+      "domain": "careers.itw.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Integration Innovation (i3)",
+      "domain": "careers-i3-corps.icims.com",
+      "job_count": 2,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "IntelliGenesis",
+      "domain": "intelligenesis.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Johns Hopkins Applied Physics Laboratory",
+      "domain": "careers.jhuapl.edu",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "LMI",
+      "domain": "careers-lmi.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Lentech Inc.",
+      "domain": "lentechinc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "METECS",
+      "domain": "metecs.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "MSA Safety",
+      "domain": "careers.msasafety.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Markem-Imaje",
+      "domain": "careers.dovercorporation.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Medpace",
+      "domain": "careers.medpace.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Mercury Insurance",
+      "domain": "careers-mercuryinsurance.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Microchip Technology",
+      "domain": "wd5.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Mindsmith",
+      "domain": "app.dover.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Muru",
+      "domain": "www.murumed.com",
+      "job_count": 4,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Nebo",
+      "domain": "neboagency.applytojob.com",
+      "job_count": 2,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Noblis",
+      "domain": "careers.noblis.org",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Old Mission",
+      "domain": "www.oldmissioncapital.com",
+      "job_count": 4,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Panasonic Holdings",
+      "domain": "careers.na.panasonic.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Pegatron Technologies LLC",
+      "domain": "pegatrontechnologiesllc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Peraton",
+      "domain": "careers-peraton.icims.com",
+      "job_count": 6,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Peterson Technologies",
+      "domain": "petersontechnologies.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Prospect Equities",
+      "domain": "prospectequities.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "SRI International",
+      "domain": "careers-sri.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Sandhills Global",
+      "domain": "www.sandhills.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Set of X",
+      "domain": "setofx.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "SiMa.ai",
+      "domain": "jobs.jobvite.com",
+      "job_count": 2,
+      "attempted_adapter": "jobvite",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "SimonComputing",
+      "domain": "simoncomputing.applicantpro.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Solerity",
+      "domain": "recruiting.paylocity.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Sonepar",
+      "domain": "career.sonepar.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Southern States, LLC",
+      "domain": "southernstatesllc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Space Dynamics Laboratory",
+      "domain": "spacedynamicslaboratory.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Specialisterne",
+      "domain": "specialisterne.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "State Farm",
+      "domain": "jobs.statefarm.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Stellar Science",
+      "domain": "stellarscience.applytojob.com",
+      "job_count": 2,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Sysco",
+      "domain": "wd5.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "T-Rex Solutions",
+      "domain": "www.trexsolutionsllc.com",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "T2 Systems",
+      "domain": "www.t2systems.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Talroo",
+      "domain": "www.talroo.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Tesla",
+      "domain": "www.tesla.com",
+      "job_count": 24,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Tower Research Capital",
+      "domain": "www.tower-research.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Universal Health Services",
+      "domain": "jobs.uhsinc.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Urban Science",
+      "domain": "careers-urbanscience.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Validity",
+      "domain": "validity.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Varsity Brands",
+      "domain": "careers.varsitybrands.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "VetsEZ",
+      "domain": "vetsez.breezy.hr",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "ViaSat",
+      "domain": "careers.viasat.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "VivSoft Technologies",
+      "domain": "vivsofttechnologiesfa.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "W.W. Grainger",
+      "domain": "jobs.grainger.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "WOOD Consulting Services",
+      "domain": "jobs-woodcons.icims.com",
+      "job_count": 3,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Walgreens",
+      "domain": "sjobs.brassring.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "iTradeNetwork",
+      "domain": "www.itradenetwork.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    }
+  ],
+  "generated_at": 1787514178
 }

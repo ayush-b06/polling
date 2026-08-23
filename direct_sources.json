@@ -1,4 +1,4999 @@
 {
   "version": 1,
-  "sources": []
+  "sources": [
+    {
+      "config": {
+        "company": "9to9 Software Solutions",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "9to9SoftwareSolutionsLLC",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 0,
+        "duration_ms": 439
+      }
+    },
+    {
+      "config": {
+        "company": "AHEAD",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "thinkahead",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 147,
+        "last_match_count": 1,
+        "duration_ms": 738
+      }
+    },
+    {
+      "config": {
+        "company": "AIR Control Concepts",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "aircontrolconcepts",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 417
+      }
+    },
+    {
+      "config": {
+        "company": "AbbVie",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "AbbVie",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 169
+      }
+    },
+    {
+      "config": {
+        "company": "Accenture",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "AccentureFederalServices",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 23,
+        "last_match_count": 0,
+        "duration_ms": 446
+      }
+    },
+    {
+      "config": {
+        "company": "Adidev Technologies Inc",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "adidev",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 25,
+        "last_match_count": 0,
+        "duration_ms": 489
+      }
+    },
+    {
+      "config": {
+        "company": "Agate Software",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "agatesoftware",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 0,
+        "duration_ms": 147
+      }
+    },
+    {
+      "config": {
+        "company": "Agile Defense",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "agile-defense",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 107,
+        "last_match_count": 2,
+        "duration_ms": 341
+      }
+    },
+    {
+      "config": {
+        "company": "Alkira",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "alkira",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 20,
+        "last_match_count": 2,
+        "duration_ms": 442
+      }
+    },
+    {
+      "config": {
+        "company": "Alpha Nexus Group",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "AlphaNexusGroup",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 4,
+        "last_match_count": 0,
+        "duration_ms": 1049
+      }
+    },
+    {
+      "config": {
+        "company": "Altamira Technologies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "altamiracorps",
+        "type": "jobvite"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 52,
+        "last_match_count": 10,
+        "duration_ms": 1619
+      }
+    },
+    {
+      "config": {
+        "company": "Altom Transport",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "altom-transport",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 506,
+        "last_match_count": 3,
+        "duration_ms": 533
+      }
+    },
+    {
+      "config": {
+        "company": "American Express",
+        "generated": true,
+        "host": "egug.fa.us2.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "egug.fa.us2.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 404,
+        "last_match_count": 9,
+        "duration_ms": 26934
+      }
+    },
+    {
+      "config": {
+        "company": "American Fidelity",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "External",
+        "tenant": "americanfidelity",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 993
+      }
+    },
+    {
+      "config": {
+        "company": "Amerisure",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "Amerisure",
+        "subdomain": "osv-amerisure",
+        "tenant": "osv_amerisure",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 29,
+        "last_match_count": 1,
+        "duration_ms": 602
+      }
+    },
+    {
+      "config": {
+        "company": "Antares Nuclear",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Antares",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 52,
+        "last_match_count": 0,
+        "duration_ms": 240
+      }
+    },
+    {
+      "config": {
+        "company": "Apollo Mission Critical Engineering",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "apollomce",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 26,
+        "last_match_count": 1,
+        "duration_ms": 441
+      }
+    },
+    {
+      "config": {
+        "company": "Appian",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "appian",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 176,
+        "last_match_count": 1,
+        "duration_ms": 200
+      }
+    },
+    {
+      "config": {
+        "company": "Applied Materials",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "External",
+        "tenant": "amat",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 1996
+      }
+    },
+    {
+      "config": {
+        "company": "Arevon",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "arevonenergyimpltest",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 13,
+        "last_match_count": 0,
+        "duration_ms": 75
+      }
+    },
+    {
+      "config": {
+        "company": "Arista Networks",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "AristaNetworks",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 2363
+      }
+    },
+    {
+      "config": {
+        "company": "Artera Technologies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "arteratechnologies",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 421
+      }
+    },
+    {
+      "config": {
+        "company": "Asure",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "asuresoftware",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 49,
+        "last_match_count": 2,
+        "duration_ms": 277
+      }
+    },
+    {
+      "config": {
+        "company": "Atoms",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "cssmerge",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 251,
+        "last_match_count": 2,
+        "duration_ms": 214
+      }
+    },
+    {
+      "config": {
+        "company": "Availity",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "availity_careers_us",
+        "tenant": "availity",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 19,
+        "last_match_count": 1,
+        "duration_ms": 730
+      }
+    },
+    {
+      "config": {
+        "company": "Avalore",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "avalore",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 33,
+        "last_match_count": 0,
+        "duration_ms": 214
+      }
+    },
+    {
+      "config": {
+        "company": "Axon",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "axontalentcommunity",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 8,
+        "last_match_count": 1,
+        "duration_ms": 163
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-barrios.icims.com",
+        "company": "Barrios",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "barrios",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 420
+      }
+    },
+    {
+      "config": {
+        "company": "Base Power",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "base-power",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 179,
+        "last_match_count": 1,
+        "duration_ms": 306
+      }
+    },
+    {
+      "config": {
+        "company": "Berkshire Hathaway Energy",
+        "generated": true,
+        "host": "fa-essf-saasfaprod1.fa.ocs.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "fa-essf-saasfaprod1.fa.ocs.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 170,
+        "last_match_count": 1,
+        "duration_ms": 12933
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-guard.icims.com",
+        "company": "Berkshire Hathaway GUARD Insurance Companies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "guard",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 236
+      }
+    },
+    {
+      "config": {
+        "company": "Binance",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "binance.us",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 11,
+        "last_match_count": 1,
+        "duration_ms": 196
+      }
+    },
+    {
+      "config": {
+        "company": "Black Cape",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "blackcape",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 638
+      }
+    },
+    {
+      "config": {
+        "company": "BlackEdge Capital",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "blackedgecapital",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 7,
+        "last_match_count": 2,
+        "duration_ms": 237
+      }
+    },
+    {
+      "config": {
+        "company": "BlackRock",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "BlackRock_Professional",
+        "tenant": "blackrock",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 200,
+        "last_match_count": 2,
+        "duration_ms": 4115
+      }
+    },
+    {
+      "config": {
+        "company": "Blackstone",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Blackstone_Campus_Careers",
+        "tenant": "blackstone",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 32,
+        "last_match_count": 1,
+        "duration_ms": 1438
+      }
+    },
+    {
+      "config": {
+        "company": "Blue Origin",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "blueorigin",
+        "tenant": "blueorigin",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1172
+      }
+    },
+    {
+      "config": {
+        "company": "Bosch Home Comfort",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "BoschGroup",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 681
+      }
+    },
+    {
+      "config": {
+        "company": "Boson Ai",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "bosonai",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 6,
+        "last_match_count": 1,
+        "duration_ms": 163
+      }
+    },
+    {
+      "config": {
+        "company": "Boston Engineering",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "BostonEngineeringCorporation",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 11,
+        "last_match_count": 1,
+        "duration_ms": 990
+      }
+    },
+    {
+      "config": {
+        "company": "Bot Auto",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "botauto",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 21,
+        "last_match_count": 2,
+        "duration_ms": 130
+      }
+    },
+    {
+      "config": {
+        "company": "CACI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "NextCenturyCorporation",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 3,
+        "last_match_count": 0,
+        "duration_ms": 425
+      }
+    },
+    {
+      "config": {
+        "company": "CWILL",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "cwill-us",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 34,
+        "last_match_count": 5,
+        "duration_ms": 226
+      }
+    },
+    {
+      "config": {
+        "company": "Caddi Workflow Automation",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "trycaddi",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 5,
+        "last_match_count": 0,
+        "duration_ms": 142
+      }
+    },
+    {
+      "config": {
+        "company": "Cadence Design Systems",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "University_Talent",
+        "tenant": "cadence",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 0,
+        "duration_ms": 754
+      }
+    },
+    {
+      "config": {
+        "company": "Cadence Design Systems",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "University_Talent_NCG",
+        "tenant": "cadence",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 0,
+        "duration_ms": 815
+      }
+    },
+    {
+      "config": {
+        "company": "Captivation",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "captivation",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 75,
+        "last_match_count": 2,
+        "duration_ms": 112
+      }
+    },
+    {
+      "config": {
+        "company": "Castleton Commodities International",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "CCICareers",
+        "subdomain": "osv-cci",
+        "tenant": "osv_cci",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 32,
+        "last_match_count": 0,
+        "duration_ms": 707
+      }
+    },
+    {
+      "config": {
+        "company": "Centerfield",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "centerfield",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 15,
+        "last_match_count": 1,
+        "duration_ms": 44
+      }
+    },
+    {
+      "config": {
+        "company": "Cerebras",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "cerebras",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 123,
+        "last_match_count": 1,
+        "duration_ms": 207
+      }
+    },
+    {
+      "config": {
+        "company": "Chamberlain Group",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Chamberlain_Group",
+        "tenant": "chamberlain",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 1131
+      }
+    },
+    {
+      "config": {
+        "company": "Chevron Corporation",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "University",
+        "tenant": "chevron",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 54,
+        "last_match_count": 1,
+        "duration_ms": 1076
+      }
+    },
+    {
+      "config": {
+        "company": "Chicago Trading Company",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "chicagotradingcampus",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 8,
+        "last_match_count": 1,
+        "duration_ms": 78
+      }
+    },
+    {
+      "config": {
+        "company": "Chicago Trading Company",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "ctccampusboard",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 6,
+        "last_match_count": 1,
+        "duration_ms": 100
+      }
+    },
+    {
+      "config": {
+        "company": "Clarity Innovations",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "clarityinnovates",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 47,
+        "last_match_count": 1,
+        "duration_ms": 106
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://jobs-cesi.icims.com",
+        "company": "Cole Engineering Services",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "cesi",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 390
+      }
+    },
+    {
+      "config": {
+        "company": "Color",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "color-health",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 14,
+        "last_match_count": 1,
+        "duration_ms": 162
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-constructconnect.icims.com",
+        "company": "ConstructConnect",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "constructconnect",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 683
+      }
+    },
+    {
+      "config": {
+        "company": "Crusoe",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Crusoe",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 370,
+        "last_match_count": 2,
+        "duration_ms": 462
+      }
+    },
+    {
+      "config": {
+        "company": "Cummins",
+        "generated": true,
+        "host": "fa-espx-saasfaprod1.fa.ocs.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "fa-espx-saasfaprod1.fa.ocs.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 970,
+        "last_match_count": 0,
+        "duration_ms": 86900
+      }
+    },
+    {
+      "config": {
+        "company": "Cylake",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "cylake-inc",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 12,
+        "last_match_count": 2,
+        "duration_ms": 104
+      }
+    },
+    {
+      "config": {
+        "company": "Daikin Applied",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Daikin-Careers",
+        "tenant": "daikinapplied",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1023
+      }
+    },
+    {
+      "config": {
+        "company": "Dark Wolf Solutions",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "darkwolfsolutions",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 52,
+        "last_match_count": 0,
+        "duration_ms": 82
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-decisionpointcorp.icims.com",
+        "company": "DecisionPoint Corporation",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "decisionpointcorp",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 314
+      }
+    },
+    {
+      "config": {
+        "company": "Dee Zee",
+        "generated": true,
+        "host": "wd108",
+        "promoted_from": "simplify",
+        "site": "DeeZee_Careers",
+        "tenant": "deezee",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1032
+      }
+    },
+    {
+      "config": {
+        "company": "Delta Dental",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "delta_dental_of_michigan",
+        "tenant": "rhsc",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 28,
+        "last_match_count": 1,
+        "duration_ms": 805
+      }
+    },
+    {
+      "config": {
+        "company": "Denso",
+        "generated": true,
+        "host": "hcwt.fa.us2.oraclecloud.com",
+        "path_site": "CX",
+        "promoted_from": "simplify",
+        "site": "CX",
+        "slug": "hcwt.fa.us2.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 91,
+        "last_match_count": 1,
+        "duration_ms": 7397
+      }
+    },
+    {
+      "config": {
+        "company": "Dexmate",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "dexmate",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 36,
+        "last_match_count": 0,
+        "duration_ms": 231
+      }
+    },
+    {
+      "config": {
+        "company": "Diesel Laptops",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "DieselLaptops",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 4,
+        "last_match_count": 0,
+        "duration_ms": 905
+      }
+    },
+    {
+      "config": {
+        "company": "Diversified Automation",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "diversified-automation",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 11,
+        "last_match_count": 1,
+        "duration_ms": 184
+      }
+    },
+    {
+      "config": {
+        "company": "E-Space",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "espace",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 145,
+        "last_match_count": 1,
+        "duration_ms": 379
+      }
+    },
+    {
+      "config": {
+        "company": "ERPA",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "ERPAnalysts1",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 0,
+        "duration_ms": 417
+      }
+    },
+    {
+      "config": {
+        "company": "EXL",
+        "generated": true,
+        "host": "fa-ewjt-saasfaprod1.fa.ocs.oraclecloud.com",
+        "path_site": "CX_2",
+        "promoted_from": "simplify",
+        "site": "CX_2",
+        "slug": "fa-ewjt-saasfaprod1.fa.ocs.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 3186,
+        "last_match_count": 0,
+        "duration_ms": 410290
+      }
+    },
+    {
+      "config": {
+        "company": "Encephalo Investments",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "EncephaloInvestments",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 3,
+        "last_match_count": 0,
+        "duration_ms": 458
+      }
+    },
+    {
+      "config": {
+        "company": "Excellus BCBS",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "ExcellusBCBSCareers",
+        "tenant": "lthc",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 36,
+        "last_match_count": 0,
+        "duration_ms": 1560
+      }
+    },
+    {
+      "config": {
+        "company": "Expedia Group",
+        "generated": true,
+        "host": "wd108",
+        "promoted_from": "simplify",
+        "site": "private",
+        "tenant": "expedia",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 138,
+        "last_match_count": 1,
+        "duration_ms": 2123
+      }
+    },
+    {
+      "config": {
+        "company": "Expedia Group",
+        "generated": true,
+        "host": "wd108",
+        "promoted_from": "simplify",
+        "site": "search",
+        "tenant": "expedia",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 159,
+        "last_match_count": 1,
+        "duration_ms": 2393
+      }
+    },
+    {
+      "config": {
+        "company": "Faros AI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "faros-ai",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 12,
+        "last_match_count": 0,
+        "duration_ms": 191
+      }
+    },
+    {
+      "config": {
+        "company": "Felix Magazine",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "LuxeMediaLLC",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 427
+      }
+    },
+    {
+      "config": {
+        "company": "Fidelity Investments",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "targeted",
+        "tenant": "fmr",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 2172
+      }
+    },
+    {
+      "config": {
+        "company": "Flexcompute",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "flexcompute",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 21,
+        "last_match_count": 1,
+        "duration_ms": 211
+      }
+    },
+    {
+      "config": {
+        "company": "Flock Safety",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Flock Safety",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 32,
+        "last_match_count": 1,
+        "duration_ms": 165
+      }
+    },
+    {
+      "config": {
+        "company": "Ford Motor Company",
+        "generated": true,
+        "host": "efds.fa.em5.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "efds.fa.em5.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 807,
+        "last_match_count": 1,
+        "duration_ms": 108282
+      }
+    },
+    {
+      "config": {
+        "company": "Foxconn Industrial Internet",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "foxconnggroup",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 427
+      }
+    },
+    {
+      "config": {
+        "company": "Freeform",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "freeformfuturecorp",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 74,
+        "last_match_count": 3,
+        "duration_ms": 146
+      }
+    },
+    {
+      "config": {
+        "company": "Fullbay",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "fullbay",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 0,
+        "duration_ms": 394
+      }
+    },
+    {
+      "config": {
+        "company": "GE Vernova",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "only_confidential_executive_recruiting",
+        "tenant": "gevernova",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 200,
+        "last_match_count": 1,
+        "duration_ms": 3102
+      }
+    },
+    {
+      "config": {
+        "company": "GM financial",
+        "generated": true,
+        "host": "fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 122,
+        "last_match_count": 2,
+        "duration_ms": 9015
+      }
+    },
+    {
+      "config": {
+        "company": "Generac",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "external",
+        "tenant": "generac",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 982
+      }
+    },
+    {
+      "config": {
+        "company": "General Dynamics Information Technology",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "external_career_site",
+        "tenant": "gdit",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1932
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-gdms.icims.com",
+        "company": "General Dynamics Mission Systems",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "gdms",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 718
+      }
+    },
+    {
+      "config": {
+        "company": "General Matter",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "generalmatter",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 109,
+        "last_match_count": 2,
+        "duration_ms": 149
+      }
+    },
+    {
+      "config": {
+        "company": "General Motors",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "Careers_GM",
+        "tenant": "generalmotors",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 2192
+      }
+    },
+    {
+      "config": {
+        "company": "Gentex Corporation",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "Gentex",
+        "tenant": "gentex",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1797
+      }
+    },
+    {
+      "config": {
+        "company": "Genuine Parts Company",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Careers",
+        "tenant": "genpt",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1540
+      }
+    },
+    {
+      "config": {
+        "company": "Gitar, Inc.",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "gitar-careers",
+        "type": "rippling"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 1,
+        "duration_ms": 250
+      }
+    },
+    {
+      "config": {
+        "company": "GliaCell Technologies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "gliacelltechnologies",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 392
+      }
+    },
+    {
+      "config": {
+        "company": "GlobalFoundries",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "External",
+        "tenant": "globalfoundries",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1273
+      }
+    },
+    {
+      "config": {
+        "company": "HD Supply",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "External",
+        "tenant": "hdsupply",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1345
+      }
+    },
+    {
+      "config": {
+        "company": "HPR (Hyannis Port Research)",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "hyannisportresearch",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 1,
+        "duration_ms": 56
+      }
+    },
+    {
+      "config": {
+        "company": "HarmonyTech",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "harmonytech",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 429
+      }
+    },
+    {
+      "config": {
+        "company": "Harris Computer",
+        "generated": true,
+        "host": "wd3",
+        "promoted_from": "simplify",
+        "site": "1",
+        "tenant": "harriscomputer",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 2263
+      }
+    },
+    {
+      "config": {
+        "company": "Hatch IT",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "hatchit",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 27,
+        "last_match_count": 0,
+        "duration_ms": 231
+      }
+    },
+    {
+      "config": {
+        "company": "Hilton Worldwide",
+        "generated": true,
+        "host": "efet.fa.us2.oraclecloud.com",
+        "path_site": "CX_1009",
+        "promoted_from": "simplify",
+        "site": "CX_1009",
+        "slug": "efet.fa.us2.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 4347,
+        "last_match_count": 1,
+        "duration_ms": 304717
+      }
+    },
+    {
+      "config": {
+        "company": "Hipp Health",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "hipp",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 5,
+        "last_match_count": 1,
+        "duration_ms": 108
+      }
+    },
+    {
+      "config": {
+        "company": "Honeywell",
+        "generated": true,
+        "host": "ibqbjb.fa.ocs.oraclecloud.com",
+        "path_site": "Honeywell",
+        "promoted_from": "simplify",
+        "site": "Honeywell",
+        "slug": "ibqbjb.fa.ocs.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 1332,
+        "last_match_count": 0,
+        "duration_ms": 128019
+      }
+    },
+    {
+      "config": {
+        "company": "Hyve Solutions",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "hyvecareers",
+        "tenant": "synnex",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 1361
+      }
+    },
+    {
+      "config": {
+        "company": "Inbulks",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "InbulksCorp",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 0,
+        "duration_ms": 408
+      }
+    },
+    {
+      "config": {
+        "company": "Incident IQ",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "incidentiq",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 9,
+        "last_match_count": 0,
+        "duration_ms": 110
+      }
+    },
+    {
+      "config": {
+        "company": "Insitu",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "careers",
+        "tenant": "insitu",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 12,
+        "last_match_count": 1,
+        "duration_ms": 1022
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-i3-corps.icims.com",
+        "company": "Integration Innovation (i3)",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "i3-corps",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 356
+      }
+    },
+    {
+      "config": {
+        "company": "Intel",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "external",
+        "tenant": "intel",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1570
+      }
+    },
+    {
+      "config": {
+        "company": "IntelliGenesis",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "intelligenesis",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 462
+      }
+    },
+    {
+      "config": {
+        "company": "InterImage",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "interimage",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 54,
+        "last_match_count": 3,
+        "duration_ms": 215
+      }
+    },
+    {
+      "config": {
+        "company": "Interco",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Interco",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 5,
+        "last_match_count": 2,
+        "duration_ms": 434
+      }
+    },
+    {
+      "config": {
+        "company": "Invesco",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "IVZearlycareers",
+        "tenant": "invesco",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 16,
+        "last_match_count": 0,
+        "duration_ms": 292
+      }
+    },
+    {
+      "config": {
+        "company": "JP Morgan Chase",
+        "generated": true,
+        "host": "jpmc.fa.oraclecloud.com",
+        "path_site": "CX_1001",
+        "promoted_from": "simplify",
+        "site": "CX_1001",
+        "slug": "jpmc.fa.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 7349,
+        "last_match_count": 6,
+        "duration_ms": 403826
+      }
+    },
+    {
+      "config": {
+        "company": "John Deere",
+        "domain": "johndeere.com",
+        "generated": true,
+        "promoted_from": "simplify",
+        "query": "software engineer",
+        "subdomain": "johndeere",
+        "type": "eightfold"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 77,
+        "last_match_count": 1,
+        "duration_ms": 3527
+      }
+    },
+    {
+      "config": {
+        "company": "KAYAK",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "KAYAK",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 44,
+        "last_match_count": 0,
+        "duration_ms": 150
+      }
+    },
+    {
+      "config": {
+        "company": "KLA Corporation",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "UR",
+        "tenant": "kla",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 39,
+        "last_match_count": 0,
+        "duration_ms": 649
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-lmi.icims.com",
+        "company": "LMI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "lmi",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 714
+      }
+    },
+    {
+      "config": {
+        "company": "LPL Financial Holdings",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "university",
+        "tenant": "lplfinancial",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 32,
+        "last_match_count": 0,
+        "duration_ms": 752
+      }
+    },
+    {
+      "config": {
+        "company": "Lennar",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Lennar_Jobs",
+        "tenant": "lennar",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1435
+      }
+    },
+    {
+      "config": {
+        "company": "Lennar Corporation",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Lennar_Jobs",
+        "tenant": "lennar",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1983
+      }
+    },
+    {
+      "config": {
+        "company": "Lentech Inc.",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "lentechinc",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 457
+      }
+    },
+    {
+      "config": {
+        "company": "Lexical Intelligence",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "lexical",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 7,
+        "last_match_count": 0,
+        "duration_ms": 374
+      }
+    },
+    {
+      "config": {
+        "company": "LexisNexis Risk Solutions",
+        "generated": true,
+        "host": "wd3",
+        "promoted_from": "simplify",
+        "site": "LexisNexisLegal",
+        "tenant": "relx",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 2276
+      }
+    },
+    {
+      "config": {
+        "company": "Lightfield",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Lightfield",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 19,
+        "last_match_count": 2,
+        "duration_ms": 144
+      }
+    },
+    {
+      "config": {
+        "company": "Lynk",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Lynk",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 20,
+        "last_match_count": 1,
+        "duration_ms": 133
+      }
+    },
+    {
+      "config": {
+        "company": "METECS",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "metecs",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 464
+      }
+    },
+    {
+      "config": {
+        "company": "Mach Industries",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "mach",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 103,
+        "last_match_count": 0,
+        "duration_ms": 297
+      }
+    },
+    {
+      "config": {
+        "company": "Mapjects",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Mapjectscom",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 432
+      }
+    },
+    {
+      "config": {
+        "company": "Marriott International",
+        "generated": true,
+        "host": "ejwl.fa.us2.oraclecloud.com",
+        "path_site": "CX",
+        "promoted_from": "simplify",
+        "site": "CX",
+        "slug": "ejwl.fa.us2.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10000,
+        "last_match_count": 2,
+        "duration_ms": 553953
+      }
+    },
+    {
+      "config": {
+        "company": "Mastercard",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "CorporateCareers",
+        "tenant": "mastercard",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1826
+      }
+    },
+    {
+      "config": {
+        "company": "Maxima",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "maxima",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 24,
+        "last_match_count": 0,
+        "duration_ms": 45
+      }
+    },
+    {
+      "config": {
+        "company": "Medtronic",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "redeploymentmedtroniccareers",
+        "tenant": "medtronic",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 3230
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-mercuryinsurance.icims.com",
+        "company": "Mercury Insurance",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "mercuryinsurance",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 296
+      }
+    },
+    {
+      "config": {
+        "company": "Meshy",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "meshy",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 23,
+        "last_match_count": 0,
+        "duration_ms": 76
+      }
+    },
+    {
+      "config": {
+        "company": "MiTek",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "MiTek",
+        "tenant": "mii",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 1645
+      }
+    },
+    {
+      "config": {
+        "company": "Monogram",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "monogram",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 5,
+        "last_match_count": 0,
+        "duration_ms": 117
+      }
+    },
+    {
+      "config": {
+        "company": "Mujin",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "mujin",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 31,
+        "last_match_count": 0,
+        "duration_ms": 918
+      }
+    },
+    {
+      "config": {
+        "company": "Muon Space",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "muonspace",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 105,
+        "last_match_count": 1,
+        "duration_ms": 116
+      }
+    },
+    {
+      "config": {
+        "company": "NVIDIA",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "NVIDIAExternalCareerSite",
+        "tenant": "nvidia",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1900
+      }
+    },
+    {
+      "config": {
+        "company": "Nebo",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "neboagency",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 539
+      }
+    },
+    {
+      "config": {
+        "company": "NewsBreak",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "newsbreak",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 41,
+        "last_match_count": 0,
+        "duration_ms": 85
+      }
+    },
+    {
+      "config": {
+        "company": "Nexthop.ai",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "nexthopai",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 39,
+        "last_match_count": 3,
+        "duration_ms": 249
+      }
+    },
+    {
+      "config": {
+        "company": "Nightwing Intelligence Solutions",
+        "generated": true,
+        "host": "wd12",
+        "promoted_from": "simplify",
+        "site": "NW",
+        "tenant": "nwis",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 4,
+        "duration_ms": 1482
+      }
+    },
+    {
+      "config": {
+        "company": "Northeastern University",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "careers",
+        "tenant": "northeastern",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1327
+      }
+    },
+    {
+      "config": {
+        "company": "Nova Talent",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "nova-talent",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 4,
+        "last_match_count": 0,
+        "duration_ms": 157
+      }
+    },
+    {
+      "config": {
+        "company": "Nucleus Biologics",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "nucleus-biologics-careers",
+        "type": "rippling"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 1,
+        "last_match_count": 0,
+        "duration_ms": 109
+      }
+    },
+    {
+      "config": {
+        "company": "Observable Space",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "observable-space",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 29,
+        "last_match_count": 0,
+        "duration_ms": 131
+      }
+    },
+    {
+      "config": {
+        "company": "Oligo Space",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "oligo",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 15,
+        "last_match_count": 0,
+        "duration_ms": 110
+      }
+    },
+    {
+      "config": {
+        "company": "Oracle",
+        "generated": true,
+        "host": "eeho.fa.us2.oraclecloud.com",
+        "path_site": "CX_45001",
+        "promoted_from": "simplify",
+        "site": "CX_45001",
+        "slug": "eeho.fa.us2.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2113,
+        "last_match_count": 0,
+        "duration_ms": 189875
+      }
+    },
+    {
+      "config": {
+        "company": "PIMCO",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "pimco-careers",
+        "tenant": "pimco",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 1226
+      }
+    },
+    {
+      "config": {
+        "company": "PMG",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "pmg",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 66,
+        "last_match_count": 2,
+        "duration_ms": 112
+      }
+    },
+    {
+      "config": {
+        "company": "PPLSI",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "lsc",
+        "tenant": "legalshieldcorp",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 11,
+        "last_match_count": 0,
+        "duration_ms": 610
+      }
+    },
+    {
+      "config": {
+        "company": "Pariveda Solutions",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "pariveda",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 25,
+        "last_match_count": 1,
+        "duration_ms": 177
+      }
+    },
+    {
+      "config": {
+        "company": "Parsons",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "search",
+        "tenant": "parsons",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1590
+      }
+    },
+    {
+      "config": {
+        "company": "Pattern Data",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "patterndata",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 7,
+        "last_match_count": 1,
+        "duration_ms": 61
+      }
+    },
+    {
+      "config": {
+        "company": "Pegatron Technologies LLC",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "pegatrontechnologiesllc",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 528
+      }
+    },
+    {
+      "config": {
+        "company": "People Culture Talent",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "people-culture-talent",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 20,
+        "last_match_count": 0,
+        "duration_ms": 127
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-peraton.icims.com",
+        "company": "Peraton",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "peraton",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 285
+      }
+    },
+    {
+      "config": {
+        "company": "Persona AI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "persona.ai",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 28,
+        "last_match_count": 2,
+        "duration_ms": 260
+      }
+    },
+    {
+      "config": {
+        "company": "Peterson Technologies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "petersontechnologies",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 442
+      }
+    },
+    {
+      "config": {
+        "company": "Presidency Solutions",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "PresidencySolutions1",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 8,
+        "last_match_count": 0,
+        "duration_ms": 389
+      }
+    },
+    {
+      "config": {
+        "company": "ProNexus",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "pronexus-1",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 11,
+        "last_match_count": 4,
+        "duration_ms": 235
+      }
+    },
+    {
+      "config": {
+        "company": "Prospect Equities",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "prospectequities",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 479
+      }
+    },
+    {
+      "config": {
+        "company": "Quantcast",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "quantcast",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 20,
+        "last_match_count": 2,
+        "duration_ms": 39
+      }
+    },
+    {
+      "config": {
+        "company": "RTX",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "Private_Posting_No_TMP",
+        "tenant": "globalhr",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 200,
+        "last_match_count": 20,
+        "duration_ms": 3055
+      }
+    },
+    {
+      "config": {
+        "company": "RegDesk",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "RegDeskInc",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 0,
+        "duration_ms": 451
+      }
+    },
+    {
+      "config": {
+        "company": "Repligen",
+        "generated": true,
+        "host": "wd108",
+        "promoted_from": "simplify",
+        "site": "Repligen_Careers",
+        "tenant": "repligen",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 70,
+        "last_match_count": 1,
+        "duration_ms": 1294
+      }
+    },
+    {
+      "config": {
+        "company": "Replit",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "replit",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 71,
+        "last_match_count": 1,
+        "duration_ms": 160
+      }
+    },
+    {
+      "config": {
+        "company": "Resmed",
+        "generated": true,
+        "host": "wd3",
+        "promoted_from": "simplify",
+        "site": "ResMed_External_Careers",
+        "tenant": "resmed",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 2267
+      }
+    },
+    {
+      "config": {
+        "company": "Retell AI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "retell-ai",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 37,
+        "last_match_count": 1,
+        "duration_ms": 180
+      }
+    },
+    {
+      "config": {
+        "company": "Revel",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "revel",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 21,
+        "last_match_count": 1,
+        "duration_ms": 40
+      }
+    },
+    {
+      "config": {
+        "company": "Ritchie Bros.",
+        "generated": true,
+        "host": "fa-exew-saasfaprod1.fa.ocs.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "fa-exew-saasfaprod1.fa.ocs.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 454,
+        "last_match_count": 1,
+        "duration_ms": 34690
+      }
+    },
+    {
+      "config": {
+        "company": "Rivian and Volkswagen Group Technologies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "rivianvw.tech",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 105,
+        "last_match_count": 0,
+        "duration_ms": 174
+      }
+    },
+    {
+      "config": {
+        "company": "Robert Bosch Venture Capital",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "BoschGroup",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 450
+      }
+    },
+    {
+      "config": {
+        "company": "Rocket Lab USA",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "rocketlab",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 422,
+        "last_match_count": 0,
+        "duration_ms": 628
+      }
+    },
+    {
+      "config": {
+        "company": "SOSi",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "SOSi1",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 136
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-sri.icims.com",
+        "company": "SRI International",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "sri",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 564
+      }
+    },
+    {
+      "config": {
+        "company": "SZNS Solutions",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "szns",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 0,
+        "duration_ms": 130
+      }
+    },
+    {
+      "config": {
+        "company": "Salesforce",
+        "generated": true,
+        "host": "wd12",
+        "promoted_from": "simplify",
+        "site": "External_Career_Site",
+        "tenant": "salesforce",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1019
+      }
+    },
+    {
+      "config": {
+        "company": "Salesforce",
+        "generated": true,
+        "host": "wd12",
+        "promoted_from": "simplify",
+        "site": "Futureforce_NewGradRoles",
+        "tenant": "salesforce",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 32,
+        "last_match_count": 0,
+        "duration_ms": 980
+      }
+    },
+    {
+      "config": {
+        "company": "Sandisk",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Sandisk",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 100,
+        "last_match_count": 0,
+        "duration_ms": 912
+      }
+    },
+    {
+      "config": {
+        "company": "Savannah River National Laboratory",
+        "generated": true,
+        "host": "ewvl.fa.us8.oraclecloud.com",
+        "path_site": "CX_1",
+        "promoted_from": "simplify",
+        "site": "CX_1",
+        "slug": "ewvl.fa.us8.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 22,
+        "last_match_count": 0,
+        "duration_ms": 4362
+      }
+    },
+    {
+      "config": {
+        "company": "Schweitzer Engineering Laboratories",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "SEL",
+        "tenant": "selinc",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1343
+      }
+    },
+    {
+      "config": {
+        "company": "Selector Software",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "selectorsoftware",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 18,
+        "last_match_count": 1,
+        "duration_ms": 393
+      }
+    },
+    {
+      "config": {
+        "company": "Semtech",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "SemtechCareers",
+        "tenant": "semtech",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1233
+      }
+    },
+    {
+      "config": {
+        "company": "Set of X",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "setofx",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 449
+      }
+    },
+    {
+      "config": {
+        "company": "SiMa.ai",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "simaai",
+        "type": "jobvite"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 1317
+      }
+    },
+    {
+      "config": {
+        "company": "Sigla",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "SiglaLLC",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 1,
+        "last_match_count": 0,
+        "duration_ms": 903
+      }
+    },
+    {
+      "config": {
+        "company": "SimpliSafe",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "simplisafe",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 46,
+        "last_match_count": 2,
+        "duration_ms": 96
+      }
+    },
+    {
+      "config": {
+        "company": "SoloPulse",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "solopulseco",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 1,
+        "duration_ms": 1376
+      }
+    },
+    {
+      "config": {
+        "company": "Southern States, LLC",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "southernstatesllc",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 418
+      }
+    },
+    {
+      "config": {
+        "company": "Space Dynamics Laboratory",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "spacedynamicslaboratory",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 492
+      }
+    },
+    {
+      "config": {
+        "company": "Spacial AI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "spacial",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 6,
+        "last_match_count": 0,
+        "duration_ms": 316
+      }
+    },
+    {
+      "config": {
+        "company": "Specialisterne",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "specialisterne",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 494
+      }
+    },
+    {
+      "config": {
+        "company": "Specter Aerospace",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "specteraerospace",
+        "type": "bamboohr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 34,
+        "last_match_count": 2,
+        "duration_ms": 252
+      }
+    },
+    {
+      "config": {
+        "company": "Stellar Science",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "stellarscience",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 537
+      }
+    },
+    {
+      "config": {
+        "company": "T-Mobile",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "External",
+        "tenant": "tmobile",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 2276
+      }
+    },
+    {
+      "config": {
+        "company": "T-Mobile",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "contractorconversion",
+        "tenant": "tmobile",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 5,
+        "last_match_count": 0,
+        "duration_ms": 618
+      }
+    },
+    {
+      "config": {
+        "company": "TP-Link Systems",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "tp-link-usa-corp",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 87,
+        "last_match_count": 0,
+        "duration_ms": 377
+      }
+    },
+    {
+      "config": {
+        "company": "Techtronic Industries (TTI)",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "tti_pe",
+        "tenant": "tti",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 1,
+        "duration_ms": 1013
+      }
+    },
+    {
+      "config": {
+        "company": "Tenstorrent",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "tenstorrentuniversity",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 25,
+        "last_match_count": 1,
+        "duration_ms": 657
+      }
+    },
+    {
+      "config": {
+        "company": "Terranova",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "terranova",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 15,
+        "last_match_count": 0,
+        "duration_ms": 182
+      }
+    },
+    {
+      "config": {
+        "company": "Texas Sports Academy",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "texas-sports-academy-main",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 46,
+        "last_match_count": 5,
+        "duration_ms": 179
+      }
+    },
+    {
+      "config": {
+        "company": "The Anywhere",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "the-anywhere-company",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 1,
+        "last_match_count": 0,
+        "duration_ms": 121
+      }
+    },
+    {
+      "config": {
+        "company": "The Boeing Company",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "external_subsidiary",
+        "tenant": "boeing",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 200,
+        "last_match_count": 1,
+        "duration_ms": 4031
+      }
+    },
+    {
+      "config": {
+        "company": "The Boeing Company",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "EXTERNAL_CAREERS",
+        "tenant": "boeing",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1800
+      }
+    },
+    {
+      "config": {
+        "company": "The Nuclear Company",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "thenuclearcompany",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 76,
+        "last_match_count": 3,
+        "duration_ms": 210
+      }
+    },
+    {
+      "config": {
+        "company": "The Walt Disney Company",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "disneycareerdc",
+        "tenant": "disney",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 200,
+        "last_match_count": 1,
+        "duration_ms": 3482
+      }
+    },
+    {
+      "config": {
+        "company": "The Walt Disney Company",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "disneycareer",
+        "tenant": "disney",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 200,
+        "last_match_count": 1,
+        "duration_ms": 4336
+      }
+    },
+    {
+      "config": {
+        "company": "Torc Robotics",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "torcrobotics",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 60,
+        "last_match_count": 1,
+        "duration_ms": 168
+      }
+    },
+    {
+      "config": {
+        "company": "TransMarket Group",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "transmarketgroup",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 18,
+        "last_match_count": 2,
+        "duration_ms": 68
+      }
+    },
+    {
+      "config": {
+        "company": "Truveta",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "truveta",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 186
+      }
+    },
+    {
+      "config": {
+        "company": "University Corporation for Atmospheric Research",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "UCAR_Careers",
+        "tenant": "ucar",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 10,
+        "last_match_count": 1,
+        "duration_ms": 344
+      }
+    },
+    {
+      "config": {
+        "company": "University of Central Florida",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "careers",
+        "tenant": "ucf",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1567
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://careers-urbanscience.icims.com",
+        "company": "Urban Science",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "urbanscience",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 320
+      }
+    },
+    {
+      "config": {
+        "company": "Validity",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "validity",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 388
+      }
+    },
+    {
+      "config": {
+        "company": "Vanguard",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "vanguard_external",
+        "tenant": "vanguard",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1790
+      }
+    },
+    {
+      "config": {
+        "company": "Vertiv",
+        "generated": true,
+        "host": "egup.fa.us2.oraclecloud.com",
+        "path_site": "CX",
+        "promoted_from": "simplify",
+        "site": "CX",
+        "slug": "egup.fa.us2.oraclecloud.com",
+        "type": "oracle_hcm"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2186,
+        "last_match_count": 0,
+        "duration_ms": 175375
+      }
+    },
+    {
+      "config": {
+        "company": "Visa",
+        "generated": true,
+        "host": "wd5",
+        "promoted_from": "simplify",
+        "site": "Visa",
+        "tenant": "visa",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 2049
+      }
+    },
+    {
+      "config": {
+        "company": "Vital Lyfe",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "vital-lyfe",
+        "type": "ashby"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 12,
+        "last_match_count": 1,
+        "duration_ms": 180
+      }
+    },
+    {
+      "config": {
+        "company": "VivSoft Technologies",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "vivsofttechnologiesfa",
+        "type": "jazzhr"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 470
+      }
+    },
+    {
+      "config": {
+        "company": "Voloridge",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "voloridgeinvestmentmanagement",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 6,
+        "last_match_count": 1,
+        "duration_ms": 138
+      }
+    },
+    {
+      "config": {
+        "base_url": "https://jobs-woodcons.icims.com",
+        "company": "WOOD Consulting Services",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "woodcons",
+        "type": "icims"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 0,
+        "last_match_count": 0,
+        "duration_ms": 366
+      }
+    },
+    {
+      "config": {
+        "company": "WallStreetQuants",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "wallstreetquants",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 19,
+        "last_match_count": 1,
+        "duration_ms": 204
+      }
+    },
+    {
+      "config": {
+        "company": "Walleye Capital",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "walleyecapital-external-students",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 4,
+        "last_match_count": 1,
+        "duration_ms": 79
+      }
+    },
+    {
+      "config": {
+        "company": "WeRide",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "weride",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 30,
+        "last_match_count": 2,
+        "duration_ms": 190
+      }
+    },
+    {
+      "config": {
+        "company": "White Cap Supply Holdings",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "careers",
+        "tenant": "whitecap",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1099
+      }
+    },
+    {
+      "config": {
+        "company": "Wolverine Trading",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "wolve",
+        "type": "pinpoint"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 20,
+        "last_match_count": 8,
+        "duration_ms": 1109
+      }
+    },
+    {
+      "config": {
+        "company": "Workstream",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "workstream",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 28,
+        "last_match_count": 0,
+        "duration_ms": 93
+      }
+    },
+    {
+      "config": {
+        "company": "Woven",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "woven-by-toyota",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 140,
+        "last_match_count": 1,
+        "duration_ms": 389
+      }
+    },
+    {
+      "config": {
+        "company": "Wyetech",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "wyetechllc",
+        "type": "lever"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 213,
+        "last_match_count": 0,
+        "duration_ms": 2104
+      }
+    },
+    {
+      "config": {
+        "company": "Zoro",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "Zoro",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 2,
+        "last_match_count": 0,
+        "duration_ms": 992
+      }
+    },
+    {
+      "config": {
+        "company": "Zurn Elkay Water Solutions",
+        "generated": true,
+        "host": "wd1",
+        "promoted_from": "simplify",
+        "site": "Elkay_External",
+        "tenant": "elkay",
+        "type": "workday"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 40,
+        "last_match_count": 0,
+        "duration_ms": 1164
+      }
+    },
+    {
+      "config": {
+        "company": "iFLIP4",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "iFLIP4",
+        "type": "smartrecruiters"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 29,
+        "last_match_count": 0,
+        "duration_ms": 427
+      }
+    },
+    {
+      "config": {
+        "company": "pony.ai",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "pony-dot-ai",
+        "type": "workable"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 11,
+        "last_match_count": 4,
+        "duration_ms": 189
+      }
+    },
+    {
+      "config": {
+        "company": "xAI",
+        "generated": true,
+        "promoted_from": "simplify",
+        "token": "xai",
+        "type": "greenhouse"
+      },
+      "verification": {
+        "status": "healthy",
+        "last_attempt_at": 1787514176,
+        "last_success_at": 1787514176,
+        "last_error": null,
+        "consecutive_failures": 0,
+        "consecutive_empty": 0,
+        "last_job_count": 261,
+        "last_match_count": 3,
+        "duration_ms": 212
+      }
+    }
+  ]
 }
