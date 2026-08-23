@@ -301,7 +301,7 @@
     {
       "company": "Muru",
       "domain": "www.murumed.com",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -322,7 +322,7 @@
     {
       "company": "Old Mission",
       "domain": "www.oldmissioncapital.com",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -565,5 +565,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787514178
+  "generated_at": 1787515697
 }
