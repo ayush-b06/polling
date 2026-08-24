@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 581,
-  "fallback_only_companies": 78,
-  "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 312,
+  "verified_direct_companies": 579,
+  "fallback_only_companies": 80,
+  "direct_source_failures": 2,
+  "simplify_missing_from_healthy_direct": 301,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -299,11 +299,25 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Nidec",
+      "domain": "nidec.wd1.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Noblis",
       "domain": "careers.noblis.org",
       "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Northrop Grumman",
+      "domain": "ngc.wd1.myworkdayjobs.com",
+      "job_count": 11,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Old Mission",
@@ -551,5 +565,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787572236
+  "generated_at": 1787573794
 }
