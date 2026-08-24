@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 584,
-  "fallback_only_companies": 81,
-  "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 316,
+  "verified_direct_companies": 588,
+  "fallback_only_companies": 80,
+  "direct_source_failures": 0,
+  "simplify_missing_from_healthy_direct": 321,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -140,7 +140,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 4,
+      "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -355,13 +355,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Savannah River National Laboratory",
-      "domain": "ewvl.fa.us8.oraclecloud.com",
-      "job_count": 1,
-      "attempted_adapter": "oracle_hcm",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Set of X",
       "domain": "setofx.applytojob.com",
       "job_count": 1,
@@ -572,5 +565,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787610336
+  "generated_at": 1787612290
 }
