@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 581,
-  "fallback_only_companies": 80,
+  "fallback_only_companies": 79,
   "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 314,
+  "simplify_missing_from_healthy_direct": 315,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -192,13 +192,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Huntington Ingalls Industries",
-      "domain": "careers.huntingtoningalls.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "IXL Learning",
@@ -565,5 +558,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787553627
+  "generated_at": 1787558032
 }
