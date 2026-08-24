@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 580,
-  "fallback_only_companies": 79,
-  "direct_source_failures": 1,
+  "verified_direct_companies": 581,
+  "fallback_only_companies": 78,
+  "direct_source_failures": 0,
   "simplify_missing_from_healthy_direct": 312,
   "fallback_companies": [
     {
@@ -269,13 +269,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Mercury Insurance",
-      "domain": "careers-mercuryinsurance.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Microchip Technology",
@@ -558,5 +551,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787567505
+  "generated_at": 1787569832
 }
