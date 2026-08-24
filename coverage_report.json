@@ -1,6 +1,6 @@
 {
   "verified_direct_companies": 582,
-  "fallback_only_companies": 80,
+  "fallback_only_companies": 79,
   "direct_source_failures": 0,
   "simplify_missing_from_healthy_direct": 317,
   "fallback_companies": [
@@ -143,13 +143,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Foxconn Industrial Internet",
-      "domain": "foxconnggroup.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -565,5 +558,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787584308
+  "generated_at": 1787586863
 }
