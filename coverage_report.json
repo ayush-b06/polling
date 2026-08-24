@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 590,
-  "fallback_only_companies": 79,
-  "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 322,
+  "verified_direct_companies": 589,
+  "fallback_only_companies": 80,
+  "direct_source_failures": 1,
+  "simplify_missing_from_healthy_direct": 321,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -341,6 +341,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Qualcomm",
+      "domain": "qualcomm.eightfold.ai",
+      "job_count": 1,
+      "attempted_adapter": "eightfold",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -558,5 +565,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787613950
+  "generated_at": 1787615535
 }
