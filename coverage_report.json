@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 602,
-  "fallback_only_companies": 76,
-  "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 323,
+  "verified_direct_companies": 603,
+  "fallback_only_companies": 77,
+  "direct_source_failures": 1,
+  "simplify_missing_from_healthy_direct": 326,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -124,6 +124,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Empirical Foods",
+      "domain": "careers-empiricalfoods.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Foundation Finance",
       "domain": "careers.foundationfinance.com",
       "job_count": 1,
@@ -203,7 +210,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -537,5 +544,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787693214
+  "generated_at": 1787695073
 }
