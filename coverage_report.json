@@ -1,6 +1,6 @@
 {
   "verified_direct_companies": 602,
-  "fallback_only_companies": 77,
+  "fallback_only_companies": 76,
   "direct_source_failures": 0,
   "simplify_missing_from_healthy_direct": 323,
   "fallback_companies": [
@@ -31,13 +31,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Artera Technologies",
-      "domain": "arteratechnologies.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Astrion",
@@ -544,5 +537,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787691572
+  "generated_at": 1787693214
 }
