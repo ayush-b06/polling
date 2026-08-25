@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 597,
+  "verified_direct_companies": 601,
   "fallback_only_companies": 77,
   "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 322,
+  "simplify_missing_from_healthy_direct": 324,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -140,7 +140,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 5,
+      "job_count": 6,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -544,5 +544,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787680812
+  "generated_at": 1787682810
 }
