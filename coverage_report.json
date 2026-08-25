@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 603,
-  "fallback_only_companies": 77,
+  "fallback_only_companies": 78,
   "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 326,
+  "simplify_missing_from_healthy_direct": 328,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -306,6 +306,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "PayIt",
+      "domain": "payitgov.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Pegatron Technologies LLC",
       "domain": "pegatrontechnologiesllc.applytojob.com",
       "job_count": 1,
@@ -544,5 +551,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787695073
+  "generated_at": 1787696771
 }
