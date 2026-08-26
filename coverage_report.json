@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 611,
-  "fallback_only_companies": 82,
+  "verified_direct_companies": 613,
+  "fallback_only_companies": 83,
   "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 337,
+  "simplify_missing_from_healthy_direct": 338,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -469,7 +469,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 22,
+      "job_count": 25,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -507,6 +507,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "V2X",
+      "domain": "careers.gov2x.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Validity",
@@ -579,5 +586,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787769783
+  "generated_at": 1787778840
 }
