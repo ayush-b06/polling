@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 604,
-  "fallback_only_companies": 78,
-  "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 326,
+  "verified_direct_companies": 605,
+  "fallback_only_companies": 79,
+  "direct_source_failures": 1,
+  "simplify_missing_from_healthy_direct": 328,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -434,7 +434,7 @@
     {
       "company": "T-Rex Solutions",
       "domain": "www.trexsolutionsllc.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -456,6 +456,13 @@
       "company": "Tesla",
       "domain": "www.tesla.com",
       "job_count": 23,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Textron",
+      "domain": "textron.taleo.net",
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -551,5 +558,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787702157
+  "generated_at": 1787703405
 }
