@@ -2,7 +2,7 @@
   "verified_direct_companies": 608,
   "fallback_only_companies": 81,
   "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 333,
+  "simplify_missing_from_healthy_direct": 332,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -572,5 +572,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787722857
+  "generated_at": 1787725075
 }
