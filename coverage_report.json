@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 618,
-  "fallback_only_companies": 84,
-  "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 336,
+  "verified_direct_companies": 619,
+  "fallback_only_companies": 83,
+  "direct_source_failures": 0,
+  "simplify_missing_from_healthy_direct": 340,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -22,6 +22,13 @@
       "company": "AMD",
       "domain": "careers.amd.com",
       "job_count": 5,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "ASM International",
+      "domain": "www.asm.com",
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -336,7 +343,7 @@
     {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
-      "job_count": 6,
+      "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -366,13 +373,6 @@
       "domain": "setofx.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "SiMa.ai",
-      "domain": "jobs.jobvite.com",
-      "job_count": 1,
-      "attempted_adapter": "jobvite",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -490,7 +490,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -511,13 +511,6 @@
     {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "V2X",
-      "domain": "careers.gov2x.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -593,5 +586,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787827730
+  "generated_at": 1787864316
 }
