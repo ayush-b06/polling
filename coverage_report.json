@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 613,
-  "fallback_only_companies": 83,
-  "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 338,
+  "verified_direct_companies": 618,
+  "fallback_only_companies": 84,
+  "direct_source_failures": 1,
+  "simplify_missing_from_healthy_direct": 340,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -45,6 +45,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Bectran",
+      "domain": "recruiting.paylocity.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Berkshire Hathaway GUARD Insurance Companies",
@@ -259,7 +266,7 @@
     {
       "company": "Microchip Technology",
       "domain": "wd5.myworkdaysite.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -411,6 +418,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Spirit AeroSystems",
+      "domain": "careers.spiritaero.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Springs Window Fashions",
       "domain": "careers-springswindowfashions.icims.com",
       "job_count": 1,
@@ -502,13 +516,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Urban Science",
-      "domain": "careers-urbanscience.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "V2X",
       "domain": "careers.gov2x.com",
       "job_count": 1,
@@ -586,5 +593,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787778840
+  "generated_at": 1787792265
 }
