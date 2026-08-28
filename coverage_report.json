@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 619,
-  "fallback_only_companies": 83,
+  "verified_direct_companies": 628,
+  "fallback_only_companies": 85,
   "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 340,
+  "simplify_missing_from_healthy_direct": 343,
   "fallback_companies": [
     {
       "company": "AAR",
@@ -106,6 +106,13 @@
       "company": "Compass",
       "domain": "www.compass.com",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Constellation Energy",
+      "domain": "jobs.constellationenergy.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -229,6 +236,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Keysight Technologies",
+      "domain": "jobs.keysight.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "LMI",
       "domain": "careers-lmi.icims.com",
       "job_count": 1,
@@ -273,7 +287,7 @@
     {
       "company": "Microchip Technology",
       "domain": "wd5.myworkdaysite.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -483,7 +497,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 25,
+      "job_count": 28,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -539,7 +553,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -586,5 +600,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787864316
+  "generated_at": 1787893716
 }
