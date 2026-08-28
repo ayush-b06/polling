@@ -1,16 +1,9 @@
 {
-  "verified_direct_companies": 628,
-  "fallback_only_companies": 85,
+  "verified_direct_companies": 630,
+  "fallback_only_companies": 84,
   "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 343,
+  "simplify_missing_from_healthy_direct": 353,
   "fallback_companies": [
-    {
-      "company": "AAR",
-      "domain": "aarcorp.taleo.net",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
     {
       "company": "AIR Control Concepts",
       "domain": "aircontrolconcepts.applytojob.com",
@@ -96,13 +89,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Cole Engineering Services",
-      "domain": "jobs-cesi.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Compass",
       "domain": "www.compass.com",
       "job_count": 2,
@@ -147,6 +133,13 @@
     {
       "company": "Empirical Foods",
       "domain": "careers-empiricalfoods.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Empower AI",
+      "domain": "careers-empowerai.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -497,7 +490,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 28,
+      "job_count": 29,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -600,5 +593,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787893716
+  "generated_at": 1787937982
 }
