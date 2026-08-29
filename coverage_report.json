@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 630,
-  "fallback_only_companies": 86,
-  "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 360,
+  "verified_direct_companies": 625,
+  "fallback_only_companies": 88,
+  "direct_source_failures": 8,
+  "simplify_missing_from_healthy_direct": 357,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -77,7 +77,7 @@
     {
       "company": "Clerkie",
       "domain": "getfiber.ai",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -92,13 +92,6 @@
       "company": "Compass",
       "domain": "www.compass.com",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Constellation Energy",
-      "domain": "jobs.constellationenergy.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -157,6 +150,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "GE Appliances",
+      "domain": "haier.wd3.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -311,6 +311,13 @@
       "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "domain": "nxp.wd3.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Nebo",
@@ -504,7 +511,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 29,
+      "job_count": 27,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -600,6 +607,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Wolters Kluwer",
+      "domain": "wk.wd3.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "iTradeNetwork",
       "domain": "www.itradenetwork.com",
       "job_count": 2,
@@ -607,5 +621,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787965985
+  "generated_at": 1787990499
 }
