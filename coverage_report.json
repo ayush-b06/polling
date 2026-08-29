@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 625,
-  "fallback_only_companies": 88,
-  "direct_source_failures": 8,
+  "verified_direct_companies": 631,
+  "fallback_only_companies": 84,
+  "direct_source_failures": 1,
   "simplify_missing_from_healthy_direct": 357,
   "fallback_companies": [
     {
@@ -103,13 +103,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Corning",
-      "domain": "corningjobs.corning.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "DecisionPoint Corporation",
       "domain": "careers-decisionpointcorp.icims.com",
       "job_count": 1,
@@ -150,13 +143,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "GE Appliances",
-      "domain": "haier.wd3.myworkdayjobs.com",
-      "job_count": 2,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -311,13 +297,6 @@
       "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "NXP Semiconductors",
-      "domain": "nxp.wd3.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Nebo",
@@ -607,13 +586,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Wolters Kluwer",
-      "domain": "wk.wd3.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "iTradeNetwork",
       "domain": "www.itradenetwork.com",
       "job_count": 2,
@@ -621,5 +593,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787990499
+  "generated_at": 1788010578
 }
