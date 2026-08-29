@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 630,
-  "fallback_only_companies": 84,
-  "direct_source_failures": 0,
-  "simplify_missing_from_healthy_direct": 353,
+  "fallback_only_companies": 86,
+  "direct_source_failures": 1,
+  "simplify_missing_from_healthy_direct": 360,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -33,6 +33,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Altice USA",
+      "domain": "www.optimumcareers.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Astrion",
       "domain": "careers.astrion.us",
       "job_count": 1,
@@ -45,13 +52,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Bectran",
-      "domain": "recruiting.paylocity.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Berkshire Hathaway GUARD Insurance Companies",
@@ -77,7 +77,7 @@
     {
       "company": "Clerkie",
       "domain": "getfiber.ai",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -121,6 +121,13 @@
       "domain": "careers-decisionpointcorp.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "DefenseStorm",
+      "domain": "defensestorm.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -220,6 +227,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Intuit",
+      "domain": "jobs.intuit.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
@@ -593,5 +607,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1787937982
+  "generated_at": 1787965985
 }
