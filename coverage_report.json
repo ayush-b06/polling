@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 630,
+  "verified_direct_companies": 632,
   "fallback_only_companies": 85,
-  "direct_source_failures": 2,
-  "simplify_missing_from_healthy_direct": 355,
+  "direct_source_failures": 1,
+  "simplify_missing_from_healthy_direct": 352,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -362,18 +362,18 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "ProNexus",
-      "domain": "apply.workable.com",
-      "job_count": 1,
-      "attempted_adapter": "workable",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Prospect Equities",
       "domain": "prospectequities.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Qorvo",
+      "domain": "careers.qorvo.com",
+      "job_count": 9,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Sandhills Global",
@@ -497,7 +497,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 27,
+      "job_count": 20,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -600,5 +600,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788141421
+  "generated_at": 1788162924
 }
