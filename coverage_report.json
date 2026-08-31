@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 632,
+  "verified_direct_companies": 639,
   "fallback_only_companies": 84,
   "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 343,
+  "simplify_missing_from_healthy_direct": 346,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -28,13 +28,6 @@
     {
       "company": "Advanced Energy",
       "domain": "jobs.advanced-energy.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Altice USA",
-      "domain": "www.optimumcareers.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -66,6 +59,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "C3.ai",
+      "domain": "c3.ai",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Caris",
@@ -301,7 +301,7 @@
     {
       "company": "Noblis",
       "domain": "careers.noblis.org",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -593,5 +593,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788190970
+  "generated_at": 1788211094
 }
