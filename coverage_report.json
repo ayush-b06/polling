@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 639,
-  "fallback_only_companies": 84,
+  "verified_direct_companies": 642,
+  "fallback_only_companies": 83,
   "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 346,
+  "simplify_missing_from_healthy_direct": 342,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -185,13 +185,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "IXL Learning",
-      "domain": "www.ixl.com",
-      "job_count": 3,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Illinois Tool Works",
@@ -593,5 +586,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788211094
+  "generated_at": 1788223715
 }
