@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 651,
-  "fallback_only_companies": 89,
-  "direct_source_failures": 2,
-  "simplify_missing_from_healthy_direct": 349,
+  "verified_direct_companies": 649,
+  "fallback_only_companies": 90,
+  "direct_source_failures": 4,
+  "simplify_missing_from_healthy_direct": 351,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -276,6 +276,13 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Mach Industries",
+      "domain": "jobs.ashbyhq.com",
+      "job_count": 1,
+      "attempted_adapter": "ashby",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Markem-Imaje",
@@ -628,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788259450
+  "generated_at": 1788276087
 }
