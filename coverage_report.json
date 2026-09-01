@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 642,
-  "fallback_only_companies": 83,
-  "direct_source_failures": 1,
-  "simplify_missing_from_healthy_direct": 342,
+  "verified_direct_companies": 647,
+  "fallback_only_companies": 88,
+  "direct_source_failures": 2,
+  "simplify_missing_from_healthy_direct": 350,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -31,6 +31,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Aerotech",
+      "domain": "aerotech.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Astrion",
@@ -103,6 +110,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Cvent",
+      "domain": "careers.cvent.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "DecisionPoint Corporation",
       "domain": "careers-decisionpointcorp.icims.com",
       "job_count": 1,
@@ -147,7 +161,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 7,
+      "job_count": 6,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -185,6 +199,20 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "ISN Software",
+      "domain": "isnetworld.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "IXL Learning",
+      "domain": "www.ixl.com",
+      "job_count": 4,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Illinois Tool Works",
@@ -406,7 +434,7 @@
     {
       "company": "Space Dynamics Laboratory",
       "domain": "spacedynamicslaboratory.applytojob.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -574,9 +602,16 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "WhatNot",
+      "domain": "jobs.ashbyhq.com",
+      "job_count": 2,
+      "attempted_adapter": "ashby",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "iTradeNetwork",
@@ -586,5 +621,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788223715
+  "generated_at": 1788242059
 }
