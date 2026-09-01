@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 656,
-  "fallback_only_companies": 91,
-  "direct_source_failures": 3,
-  "simplify_missing_from_healthy_direct": 363,
+  "fallback_only_companies": 93,
+  "direct_source_failures": 4,
+  "simplify_missing_from_healthy_direct": 362,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -264,6 +264,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Kinder Morgan",
+      "domain": "careers.kindermorgan.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "LMI",
       "domain": "careers-lmi.icims.com",
       "job_count": 1,
@@ -411,6 +418,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "SRI International",
+      "domain": "careers-sri.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -539,7 +553,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 22,
+      "job_count": 21,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -642,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788298259
+  "generated_at": 1788305953
 }
