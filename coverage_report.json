@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 647,
-  "fallback_only_companies": 88,
+  "verified_direct_companies": 651,
+  "fallback_only_companies": 89,
   "direct_source_failures": 2,
-  "simplify_missing_from_healthy_direct": 350,
+  "simplify_missing_from_healthy_direct": 349,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -22,13 +22,6 @@
       "company": "ASM International",
       "domain": "www.asm.com",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Advanced Energy",
-      "domain": "jobs.advanced-energy.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -199,6 +192,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Huntington Ingalls Industries",
+      "domain": "careers.huntingtoningalls.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "ISN Software",
@@ -404,6 +404,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Siemens",
+      "domain": "siemens.avature.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "SimonComputing",
       "domain": "simoncomputing.applicantpro.com",
       "job_count": 1,
@@ -511,14 +518,14 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 20,
+      "job_count": 22,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 3,
+      "job_count": 9,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -621,5 +628,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788242059
+  "generated_at": 1788259450
 }
