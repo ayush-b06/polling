@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 649,
-  "fallback_only_companies": 90,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 351,
+  "verified_direct_companies": 651,
+  "fallback_only_companies": 92,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 354,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -31,6 +31,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Altice USA",
+      "domain": "www.optimumcareers.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Astrion",
@@ -238,7 +245,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -283,6 +290,13 @@
       "job_count": 1,
       "attempted_adapter": "ashby",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Magna",
+      "domain": "wd3.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Markem-Imaje",
@@ -635,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788276087
+  "generated_at": 1788288150
 }
