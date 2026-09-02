@@ -2,7 +2,7 @@
   "verified_direct_companies": 662,
   "fallback_only_companies": 90,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 370,
+  "simplify_missing_from_healthy_direct": 373,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -560,7 +560,7 @@
     {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -635,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788361255
+  "generated_at": 1788373379
 }
