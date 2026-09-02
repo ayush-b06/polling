@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 659,
-  "fallback_only_companies": 93,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 361,
+  "verified_direct_companies": 660,
+  "fallback_only_companies": 92,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 366,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -432,13 +432,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Set of X",
-      "domain": "setofx.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Siemens",
       "domain": "siemens.avature.net",
       "job_count": 2,
@@ -553,14 +546,14 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 22,
+      "job_count": 20,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 9,
+      "job_count": 11,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -656,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788312517
+  "generated_at": 1788329264
 }
