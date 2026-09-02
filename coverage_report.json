@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 662,
   "fallback_only_companies": 90,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 364,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 370,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -110,6 +110,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Constellation Energy",
+      "domain": "jobs.constellationenergy.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "ConstructConnect",
       "domain": "careers-constructconnect.icims.com",
       "job_count": 1,
@@ -147,13 +154,6 @@
     {
       "company": "Empirical Foods",
       "domain": "careers-empiricalfoods.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Empower AI",
-      "domain": "careers-empowerai.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -635,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788347041
+  "generated_at": 1788361255
 }
