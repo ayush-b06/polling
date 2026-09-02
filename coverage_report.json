@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 660,
-  "fallback_only_companies": 92,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 366,
+  "verified_direct_companies": 662,
+  "fallback_only_companies": 90,
+  "direct_source_failures": 4,
+  "simplify_missing_from_healthy_direct": 364,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -31,13 +31,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Altice USA",
-      "domain": "www.optimumcareers.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Astrion",
@@ -565,13 +558,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "United Launch Alliance",
-      "domain": "jobs.ulalaunch.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
       "job_count": 1,
@@ -649,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788329264
+  "generated_at": 1788347041
 }
