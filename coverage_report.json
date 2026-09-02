@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 656,
+  "verified_direct_companies": 659,
   "fallback_only_companies": 93,
   "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 362,
+  "simplify_missing_from_healthy_direct": 361,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -553,7 +553,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 21,
+      "job_count": 22,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -656,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788305953
+  "generated_at": 1788312517
 }
