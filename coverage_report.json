@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 662,
+  "verified_direct_companies": 664,
   "fallback_only_companies": 90,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 373,
+  "direct_source_failures": 4,
+  "simplify_missing_from_healthy_direct": 374,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -635,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788373379
+  "generated_at": 1788383800
 }
