@@ -1,20 +1,13 @@
 {
-  "verified_direct_companies": 676,
+  "verified_direct_companies": 677,
   "fallback_only_companies": 94,
   "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 383,
+  "simplify_missing_from_healthy_direct": 386,
   "fallback_companies": [
-    {
-      "company": "AIR Control Concepts",
-      "domain": "aircontrolconcepts.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
     {
       "company": "AMD",
       "domain": "careers.amd.com",
-      "job_count": 5,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -89,8 +82,8 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -168,7 +161,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 5,
+      "job_count": 3,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -245,7 +238,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 7,
+      "job_count": 8,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -553,7 +546,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 23,
+      "job_count": 19,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -568,6 +561,13 @@
       "company": "Tower Research Capital",
       "domain": "www.tower-research.com",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Transcard Payments",
+      "domain": "recruiting.paylocity.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -623,7 +623,7 @@
     {
       "company": "WOOD Consulting Services",
       "domain": "jobs-woodcons.icims.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -663,5 +663,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788447535
+  "generated_at": 1788459637
 }
