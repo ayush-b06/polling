@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 677,
-  "fallback_only_companies": 94,
-  "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 386,
+  "verified_direct_companies": 678,
+  "fallback_only_companies": 91,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 384,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -24,6 +24,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Akuna Capital University",
+      "domain": "www.akunacapital.com",
+      "job_count": 6,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Astrion",
@@ -77,13 +84,6 @@
     {
       "company": "Chewy",
       "domain": "wd5.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel Securities",
-      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -369,13 +369,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Pegatron Technologies LLC",
-      "domain": "pegatrontechnologiesllc.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
       "job_count": 6,
@@ -399,7 +392,7 @@
     {
       "company": "Qorvo",
       "domain": "careers.qorvo.com",
-      "job_count": 9,
+      "job_count": 8,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -460,16 +453,9 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Southern States, LLC",
-      "domain": "southernstatesllc.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Space Dynamics Laboratory",
       "domain": "spacedynamicslaboratory.applytojob.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -479,13 +465,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Spirit AeroSystems",
-      "domain": "careers.spiritaero.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Springs Window Fashions",
@@ -546,7 +525,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 19,
+      "job_count": 18,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -663,5 +642,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788459637
+  "generated_at": 1788469988
 }
