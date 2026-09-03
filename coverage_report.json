@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 678,
+  "verified_direct_companies": 677,
   "fallback_only_companies": 91,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 384,
+  "direct_source_failures": 6,
+  "simplify_missing_from_healthy_direct": 378,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -84,6 +84,20 @@
     {
       "company": "Chewy",
       "domain": "wd5.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -404,13 +418,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "SRI International",
-      "domain": "careers-sri.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -441,13 +448,6 @@
     {
       "company": "Solerity",
       "domain": "recruiting.paylocity.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Sonepar",
-      "domain": "career.sonepar.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -642,5 +642,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788469988
+  "generated_at": 1788477917
 }
