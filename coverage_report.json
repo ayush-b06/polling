@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 665,
+  "verified_direct_companies": 677,
   "fallback_only_companies": 93,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 371,
+  "direct_source_failures": 4,
+  "simplify_missing_from_healthy_direct": 373,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -161,7 +161,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 7,
+      "job_count": 6,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -546,7 +546,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 19,
+      "job_count": 23,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -574,7 +574,7 @@
     {
       "company": "V2X",
       "domain": "careers.gov2x.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -595,7 +595,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -644,7 +644,7 @@
     {
       "company": "WhatNot",
       "domain": "jobs.ashbyhq.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "ashby",
       "reason": "adapter discovered but not yet verified"
     },
@@ -656,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788415453
+  "generated_at": 1788432701
 }
