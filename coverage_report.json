@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 677,
-  "fallback_only_companies": 93,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 373,
+  "verified_direct_companies": 676,
+  "fallback_only_companies": 94,
+  "direct_source_failures": 6,
+  "simplify_missing_from_healthy_direct": 383,
   "fallback_companies": [
     {
       "company": "AIR Control Concepts",
@@ -89,6 +89,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -161,7 +168,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 6,
+      "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -287,7 +294,7 @@
     {
       "company": "Magna",
       "domain": "wd3.myworkdaysite.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -644,7 +651,7 @@
     {
       "company": "WhatNot",
       "domain": "jobs.ashbyhq.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "ashby",
       "reason": "adapter discovered but not yet verified"
     },
@@ -656,5 +663,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788432701
+  "generated_at": 1788447535
 }
