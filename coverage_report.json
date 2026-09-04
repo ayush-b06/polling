@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 679,
+  "verified_direct_companies": 686,
   "fallback_only_companies": 89,
   "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 375,
+  "simplify_missing_from_healthy_direct": 376,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -222,6 +222,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Innovative Systems",
+      "domain": "innovativesystems.applytojob.com",
+      "job_count": 2,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Integration Innovation (i3)",
       "domain": "careers-i3-corps.icims.com",
       "job_count": 2,
@@ -308,7 +315,7 @@
     {
       "company": "Microchip Technology",
       "domain": "wd5.myworkdaysite.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -393,13 +400,6 @@
       "company": "Qorvo",
       "domain": "careers.qorvo.com",
       "job_count": 8,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Rivian",
-      "domain": "careers.rivian.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -511,7 +511,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 18,
+      "job_count": 21,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -628,5 +628,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788484546
+  "generated_at": 1788501811
 }
