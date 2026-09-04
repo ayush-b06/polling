@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 688,
-  "fallback_only_companies": 89,
+  "verified_direct_companies": 690,
+  "fallback_only_companies": 90,
   "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 369,
+  "simplify_missing_from_healthy_direct": 371,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -390,6 +390,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Principal Financial Group",
+      "domain": "careers.principal.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Prospect Equities",
       "domain": "prospectequities.applytojob.com",
       "job_count": 1,
@@ -511,7 +518,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 20,
+      "job_count": 21,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -609,7 +616,7 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -628,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788532254
+  "generated_at": 1788544477
 }
