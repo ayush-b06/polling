@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 689,
-  "fallback_only_companies": 90,
+  "verified_direct_companies": 696,
+  "fallback_only_companies": 93,
   "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 367,
+  "simplify_missing_from_healthy_direct": 366,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -21,7 +21,7 @@
     {
       "company": "Aerotech",
       "domain": "aerotech.applytojob.com",
-      "job_count": 1,
+      "job_count": 3,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -110,6 +110,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Constellation Energy",
+      "domain": "jobs.constellationenergy.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "ConstructConnect",
       "domain": "careers-constructconnect.icims.com",
       "job_count": 1,
@@ -161,7 +168,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -198,6 +205,13 @@
       "domain": "harmonytech.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "HealthEdge",
+      "domain": "careers-healthedge.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -245,7 +259,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 8,
+      "job_count": 9,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -411,6 +425,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Rivian",
+      "domain": "careers.rivian.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -423,13 +444,6 @@
       "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Siemens",
-      "domain": "siemens.avature.net",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "SimonComputing",
@@ -458,6 +472,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Spirit AeroSystems",
+      "domain": "careers.spiritaero.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Springs Window Fashions",
@@ -635,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788560568
+  "generated_at": 1788567644
 }
