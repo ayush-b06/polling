@@ -539,7 +539,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 22,
+      "job_count": 20,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -649,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788649670
+  "generated_at": 1788656393
 }
