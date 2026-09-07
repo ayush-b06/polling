@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 698,
-  "fallback_only_companies": 91,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 355,
+  "verified_direct_companies": 697,
+  "fallback_only_companies": 90,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 356,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -208,13 +208,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Huntington Ingalls Industries",
-      "domain": "careers.huntingtoningalls.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
       "job_count": 4,
@@ -322,7 +315,7 @@
     {
       "company": "Microchip Technology",
       "domain": "wd5.myworkdaysite.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -642,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788775165
+  "generated_at": 1788795189
 }
