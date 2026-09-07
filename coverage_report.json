@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 696,
-  "fallback_only_companies": 92,
-  "direct_source_failures": 5,
+  "verified_direct_companies": 698,
+  "fallback_only_companies": 91,
+  "direct_source_failures": 4,
   "simplify_missing_from_healthy_direct": 355,
   "fallback_companies": [
     {
@@ -106,13 +106,6 @@
       "company": "Compass",
       "domain": "www.compass.com",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Constellation Energy",
-      "domain": "jobs.constellationenergy.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -649,5 +642,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788756885
+  "generated_at": 1788775165
 }
