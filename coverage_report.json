@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 696,
-  "fallback_only_companies": 92,
-  "direct_source_failures": 7,
-  "simplify_missing_from_healthy_direct": 358,
+  "verified_direct_companies": 702,
+  "fallback_only_companies": 93,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 366,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -89,20 +89,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel Securities",
-      "domain": "www.citadelsecurities.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -166,6 +152,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Fervo Energy",
+      "domain": "recruiting.paylocity.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Foundation Finance",
       "domain": "careers.foundationfinance.com",
       "job_count": 1,
@@ -220,6 +213,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Huntington Ingalls Industries",
+      "domain": "careers.huntingtoningalls.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "IXL Learning",
@@ -392,7 +392,7 @@
     {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
-      "job_count": 6,
+      "job_count": 7,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -565,6 +565,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "United Launch Alliance",
+      "domain": "jobs.ulalaunch.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
       "job_count": 2,
@@ -595,7 +602,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -649,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788876274
+  "generated_at": 1788889894
 }
