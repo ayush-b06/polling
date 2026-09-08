@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 702,
-  "fallback_only_companies": 93,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 366,
+  "verified_direct_companies": 703,
+  "fallback_only_companies": 92,
+  "direct_source_failures": 4,
+  "simplify_missing_from_healthy_direct": 368,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -205,13 +205,6 @@
       "domain": "harmonytech.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "HealthEdge",
-      "domain": "careers-healthedge.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -656,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788889894
+  "generated_at": 1788899494
 }
