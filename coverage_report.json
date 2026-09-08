@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 699,
-  "fallback_only_companies": 90,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 361,
+  "verified_direct_companies": 696,
+  "fallback_only_companies": 92,
+  "direct_source_failures": 7,
+  "simplify_missing_from_healthy_direct": 358,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -84,6 +84,20 @@
     {
       "company": "Chewy",
       "domain": "wd5.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -635,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788860556
+  "generated_at": 1788876274
 }
