@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 712,
-  "fallback_only_companies": 92,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 386,
+  "verified_direct_companies": 717,
+  "fallback_only_companies": 93,
+  "direct_source_failures": 6,
+  "simplify_missing_from_healthy_direct": 395,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -558,6 +558,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Two Sigma",
+      "domain": "twosigma.avature.net",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "United Launch Alliance",
       "domain": "jobs.ulalaunch.com",
       "job_count": 1,
@@ -649,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788987205
+  "generated_at": 1788994741
 }
