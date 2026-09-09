@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 712,
+  "verified_direct_companies": 711,
   "fallback_only_companies": 94,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 379,
+  "direct_source_failures": 6,
+  "simplify_missing_from_healthy_direct": 384,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -29,6 +29,13 @@
       "company": "Akuna Capital University",
       "domain": "www.akunacapital.com",
       "job_count": 6,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Ascension",
+      "domain": "jobs.ascension.org",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -215,13 +222,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Huntington Ingalls Industries",
-      "domain": "careers.huntingtoningalls.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
       "job_count": 4,
@@ -392,7 +392,7 @@
     {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
-      "job_count": 7,
+      "job_count": 8,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -421,13 +421,6 @@
       "company": "Qorvo",
       "domain": "careers.qorvo.com",
       "job_count": 7,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Rivian",
-      "domain": "careers.rivian.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -572,6 +565,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Two Sigma",
+      "domain": "twosigma.avature.net",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "United Launch Alliance",
       "domain": "jobs.ulalaunch.com",
       "job_count": 1,
@@ -663,5 +663,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788964540
+  "generated_at": 1788977286
 }
