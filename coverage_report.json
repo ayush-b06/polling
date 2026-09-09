@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 712,
   "fallback_only_companies": 94,
-  "direct_source_failures": 4,
-  "simplify_missing_from_healthy_direct": 373,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 376,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -546,7 +546,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 20,
+      "job_count": 22,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -663,5 +663,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788932031
+  "generated_at": 1788948714
 }
