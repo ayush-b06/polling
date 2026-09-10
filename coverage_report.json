@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 717,
-  "fallback_only_companies": 93,
-  "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 395,
+  "verified_direct_companies": 725,
+  "fallback_only_companies": 94,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 399,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -175,7 +175,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 6,
+      "job_count": 8,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -350,7 +350,7 @@
     {
       "company": "Noblis",
       "domain": "careers.noblis.org",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -360,6 +360,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Nova-Tech",
+      "domain": "novatechengineering.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Old Mission",
@@ -411,6 +418,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Publicis Groupe",
+      "domain": "careers.publicisgroupe.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Qorvo",
       "domain": "careers.qorvo.com",
       "job_count": 7,
@@ -427,7 +441,7 @@
     {
       "company": "Shure",
       "domain": "careersus-shure.icims.com",
-      "job_count": 4,
+      "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -476,7 +490,7 @@
     {
       "company": "State Farm",
       "domain": "jobs.statefarm.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -532,7 +546,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 22,
+      "job_count": 24,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -553,13 +567,6 @@
     {
       "company": "Transcard Payments",
       "domain": "recruiting.paylocity.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Two Sigma",
-      "domain": "twosigma.avature.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -656,5 +663,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1788994741
+  "generated_at": 1789001484
 }
