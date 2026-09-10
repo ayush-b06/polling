@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 727,
-  "fallback_only_companies": 92,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 397,
+  "verified_direct_companies": 726,
+  "fallback_only_companies": 93,
+  "direct_source_failures": 6,
+  "simplify_missing_from_healthy_direct": 398,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -544,6 +544,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "The Anywhere",
+      "domain": "apply.workable.com",
+      "job_count": 1,
+      "attempted_adapter": "workable",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Tower Research Capital",
       "domain": "www.tower-research.com",
       "job_count": 2,
@@ -649,5 +656,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789034736
+  "generated_at": 1789049881
 }
