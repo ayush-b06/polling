@@ -1,6 +1,6 @@
 {
-  "verified_direct_companies": 725,
-  "fallback_only_companies": 94,
+  "verified_direct_companies": 727,
+  "fallback_only_companies": 92,
   "direct_source_failures": 5,
   "simplify_missing_from_healthy_direct": 399,
   "fallback_companies": [
@@ -29,13 +29,6 @@
       "company": "Akuna Capital University",
       "domain": "www.akunacapital.com",
       "job_count": 6,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Ascension",
-      "domain": "jobs.ascension.org",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -488,13 +481,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "State Farm",
-      "domain": "jobs.statefarm.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Steel Dynamics",
       "domain": "careers-aluminumdynamics.icims.com",
       "job_count": 1,
@@ -663,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789001484
+  "generated_at": 1789018417
 }
