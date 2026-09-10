@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 726,
-  "fallback_only_companies": 93,
-  "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 398,
+  "fallback_only_companies": 95,
+  "direct_source_failures": 7,
+  "simplify_missing_from_healthy_direct": 437,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -168,7 +168,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 8,
+      "job_count": 9,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -397,6 +397,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Planview",
+      "domain": "careers.planview.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Principal Financial Group",
       "domain": "careers.principal.com",
       "job_count": 1,
@@ -481,6 +488,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "State Farm",
+      "domain": "jobs.statefarm.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Steel Dynamics",
       "domain": "careers-aluminumdynamics.icims.com",
       "job_count": 1,
@@ -542,13 +556,6 @@
       "job_count": 11,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "The Anywhere",
-      "domain": "apply.workable.com",
-      "job_count": 1,
-      "attempted_adapter": "workable",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Tower Research Capital",
@@ -649,6 +656,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "WonderBotz",
+      "domain": "wonderbotz.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "iTradeNetwork",
       "domain": "www.itradenetwork.com",
       "job_count": 2,
@@ -656,5 +670,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789049881
+  "generated_at": 1789062913
 }
