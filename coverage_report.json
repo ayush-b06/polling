@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 726,
+  "verified_direct_companies": 733,
   "fallback_only_companies": 95,
   "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 440,
+  "simplify_missing_from_healthy_direct": 445,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -49,7 +49,7 @@
     {
       "company": "Barrios",
       "domain": "careers-barrios.icims.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -670,5 +670,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789071490
+  "generated_at": 1789080397
 }
