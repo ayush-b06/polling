@@ -2,7 +2,7 @@
   "verified_direct_companies": 727,
   "fallback_only_companies": 92,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 399,
+  "simplify_missing_from_healthy_direct": 397,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -89,13 +89,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Chewy",
-      "domain": "wd5.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -122,6 +115,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Consumer Direct Care Network",
+      "domain": "cdcn.avature.net",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Cvent",
@@ -649,5 +649,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789018417
+  "generated_at": 1789034736
 }
