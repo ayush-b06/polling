@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 747,
-  "fallback_only_companies": 96,
-  "direct_source_failures": 5,
+  "verified_direct_companies": 746,
+  "fallback_only_companies": 99,
+  "direct_source_failures": 8,
   "simplify_missing_from_healthy_direct": 461,
   "fallback_companies": [
     {
@@ -84,6 +84,20 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -245,7 +259,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 12,
+      "job_count": 13,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -553,7 +567,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 24,
+      "job_count": 26,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -574,6 +588,13 @@
     {
       "company": "Transcard Payments",
       "domain": "recruiting.paylocity.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Two Sigma",
+      "domain": "twosigma.avature.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -677,5 +698,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789135333
+  "generated_at": 1789148668
 }
