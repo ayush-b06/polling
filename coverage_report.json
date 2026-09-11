@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 748,
-  "fallback_only_companies": 96,
-  "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 464,
+  "verified_direct_companies": 751,
+  "fallback_only_companies": 98,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 466,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -432,6 +432,20 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Quantinuum",
+      "domain": "jobs.eu.lever.co",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "REI Systems",
+      "domain": "careers-reisystems.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -677,5 +691,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789157649
+  "generated_at": 1789166521
 }
