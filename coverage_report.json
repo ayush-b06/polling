@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 746,
-  "fallback_only_companies": 99,
-  "direct_source_failures": 8,
-  "simplify_missing_from_healthy_direct": 461,
+  "verified_direct_companies": 748,
+  "fallback_only_companies": 96,
+  "direct_source_failures": 6,
+  "simplify_missing_from_healthy_direct": 464,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -84,20 +84,6 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel Securities",
-      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -593,13 +579,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Two Sigma",
-      "domain": "twosigma.avature.net",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "United Launch Alliance",
       "domain": "jobs.ulalaunch.com",
       "job_count": 1,
@@ -698,5 +677,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789148668
+  "generated_at": 1789157649
 }
