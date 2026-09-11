@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 743,
-  "fallback_only_companies": 96,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 458,
+  "verified_direct_companies": 741,
+  "fallback_only_companies": 97,
+  "direct_source_failures": 7,
+  "simplify_missing_from_healthy_direct": 459,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -206,6 +206,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Hudson River Trading",
+      "domain": "www.hudsonrivertrading.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "IXL Learning",
@@ -677,5 +684,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789087530
+  "generated_at": 1789104130
 }
