@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 741,
-  "fallback_only_companies": 97,
-  "direct_source_failures": 7,
-  "simplify_missing_from_healthy_direct": 459,
+  "verified_direct_companies": 746,
+  "fallback_only_companies": 95,
+  "direct_source_failures": 5,
+  "simplify_missing_from_healthy_direct": 461,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -208,13 +208,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Hudson River Trading",
-      "domain": "www.hudsonrivertrading.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
       "job_count": 4,
@@ -413,13 +406,6 @@
     {
       "company": "Planview",
       "domain": "careers.planview.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Principal Financial Group",
-      "domain": "careers.principal.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -684,5 +670,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789104130
+  "generated_at": 1789120502
 }
