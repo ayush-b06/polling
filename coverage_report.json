@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 760,
-  "fallback_only_companies": 98,
-  "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 465,
+  "verified_direct_companies": 758,
+  "fallback_only_companies": 99,
+  "direct_source_failures": 7,
+  "simplify_missing_from_healthy_direct": 471,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -84,6 +84,13 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -691,5 +698,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789174077
+  "generated_at": 1789190021
 }
