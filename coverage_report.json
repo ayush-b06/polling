@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 764,
-  "fallback_only_companies": 99,
+  "verified_direct_companies": 768,
+  "fallback_only_companies": 102,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 472,
+  "simplify_missing_from_healthy_direct": 479,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -70,7 +70,7 @@
     {
       "company": "C3.ai",
       "domain": "c3.ai",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -136,6 +136,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "DecisionPoint",
+      "domain": "careers-decisionpointcorp.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "DefenseStorm",
@@ -238,7 +245,7 @@
     {
       "company": "Integration Innovation (i3)",
       "domain": "careers-i3-corps.icims.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -418,6 +425,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Principal Financial Group",
+      "domain": "careers.principal.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Prospect Equities",
       "domain": "prospectequities.applytojob.com",
       "job_count": 1,
@@ -481,13 +495,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Space Dynamics Laboratory",
-      "domain": "spacedynamicslaboratory.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Specialisterne",
       "domain": "specialisterne.applytojob.com",
       "job_count": 1,
@@ -511,7 +518,7 @@
     {
       "company": "State Farm",
       "domain": "jobs.statefarm.com",
-      "job_count": 1,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -593,6 +600,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "URBN",
+      "domain": "homeoffice-na-urbn.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "United Launch Alliance",
       "domain": "jobs.ulalaunch.com",
       "job_count": 1,
@@ -663,6 +677,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Wells Fargo",
+      "domain": "wd1.myworkdaysite.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Western & Southern Financial Group",
       "domain": "careers-westernsouthern.icims.com",
       "job_count": 2,
@@ -698,5 +719,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789395642
+  "generated_at": 1789414454
 }
