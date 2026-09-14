@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 764,
-  "fallback_only_companies": 100,
+  "fallback_only_companies": 99,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 474,
+  "simplify_missing_from_healthy_direct": 472,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -446,13 +446,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "REI Systems",
-      "domain": "careers-reisystems.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -705,5 +698,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789370764
+  "generated_at": 1789395642
 }
