@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 768,
-  "fallback_only_companies": 102,
+  "verified_direct_companies": 778,
+  "fallback_only_companies": 108,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 479,
+  "simplify_missing_from_healthy_direct": 482,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -45,6 +45,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Awardco",
+      "domain": "award.co",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Barrios",
@@ -138,6 +145,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "DEKA Research & Development Corp.",
+      "domain": "deka.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "DecisionPoint",
       "domain": "careers-decisionpointcorp.icims.com",
       "job_count": 1,
@@ -164,6 +178,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "EquipmentShare",
+      "domain": "www.equipmentshare.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Fervo Energy",
@@ -255,6 +276,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Intuit",
+      "domain": "jobs.intuit.com",
+      "job_count": 4,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
@@ -406,7 +434,7 @@
     {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
-      "job_count": 9,
+      "job_count": 8,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -495,6 +523,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Space Dynamics Laboratory",
+      "domain": "spacedynamicslaboratory.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Specialisterne",
       "domain": "specialisterne.applytojob.com",
       "job_count": 1,
@@ -574,7 +609,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 26,
+      "job_count": 27,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -624,6 +659,13 @@
       "company": "V2X",
       "domain": "careers.gov2x.com",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "VTG",
+      "domain": "careers.vtgdefense.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -719,5 +761,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789414454
+  "generated_at": 1789426112
 }
