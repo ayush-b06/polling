@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 778,
+  "verified_direct_companies": 779,
   "fallback_only_companies": 110,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 470,
+  "simplify_missing_from_healthy_direct": 467,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -42,6 +42,13 @@
     {
       "company": "Atlassian",
       "domain": "careers-americas.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Atlassian",
+      "domain": "campus-americas.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -775,5 +782,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789434554
+  "generated_at": 1789452434
 }
