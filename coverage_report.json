@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 779,
+  "verified_direct_companies": 780,
   "fallback_only_companies": 110,
   "direct_source_failures": 5,
-  "simplify_missing_from_healthy_direct": 467,
+  "simplify_missing_from_healthy_direct": 461,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -782,5 +782,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789452434
+  "generated_at": 1789472695
 }
