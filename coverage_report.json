@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 780,
-  "fallback_only_companies": 113,
+  "fallback_only_companies": 112,
   "direct_source_failures": 7,
-  "simplify_missing_from_healthy_direct": 473,
+  "simplify_missing_from_healthy_direct": 472,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -255,13 +255,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Hardin Design",
-      "domain": "jobs.smartrecruiters.com",
-      "job_count": 2,
-      "attempted_adapter": "smartrecruiters",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "HarmonyTech",
@@ -651,7 +644,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 10,
+      "job_count": 9,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -803,5 +796,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789487663
+  "generated_at": 1789500617
 }
