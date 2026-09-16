@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 797,
-  "fallback_only_companies": 118,
+  "verified_direct_companies": 799,
+  "fallback_only_companies": 119,
   "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 481,
+  "simplify_missing_from_healthy_direct": 485,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -217,6 +217,13 @@
     {
       "company": "Fervo Energy",
       "domain": "recruiting.paylocity.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Foot Locker",
+      "domain": "careers.footlocker.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -838,5 +845,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789519692
+  "generated_at": 1789536411
 }
