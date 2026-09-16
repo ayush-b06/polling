@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 799,
-  "fallback_only_companies": 119,
+  "verified_direct_companies": 800,
+  "fallback_only_companies": 117,
   "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 485,
+  "simplify_missing_from_healthy_direct": 487,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -364,7 +364,7 @@
     {
       "company": "Magna",
       "domain": "wd3.myworkdaysite.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -416,13 +416,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Nova-Tech",
-      "domain": "novatechengineering.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Old Mission",
@@ -490,7 +483,7 @@
     {
       "company": "Principal Financial Group",
       "domain": "careers.principal.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -677,13 +670,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Trane Technologies",
-      "domain": "careers.tranetechnologies.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Transcard Payments",
       "domain": "recruiting.paylocity.com",
       "job_count": 1,
@@ -845,5 +831,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789536411
+  "generated_at": 1789553764
 }
