@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 800,
-  "fallback_only_companies": 117,
+  "verified_direct_companies": 802,
+  "fallback_only_companies": 118,
   "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 487,
+  "simplify_missing_from_healthy_direct": 496,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -138,13 +138,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Compass",
-      "domain": "www.compass.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Constellation Energy",
       "domain": "jobs.constellationenergy.com",
       "job_count": 1,
@@ -203,6 +196,13 @@
     {
       "company": "Empirical Foods",
       "domain": "careers-empiricalfoods.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Enterprise Holdings",
+      "domain": "us-erac.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -364,7 +364,7 @@
     {
       "company": "Magna",
       "domain": "wd3.myworkdaysite.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -416,6 +416,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Nova-Tech",
+      "domain": "novatechengineering.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Old Mission",
@@ -483,7 +490,7 @@
     {
       "company": "Principal Financial Group",
       "domain": "careers.principal.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -528,13 +535,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Scientific Research Corporation",
-      "domain": "careers-scires.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Shure",
@@ -666,6 +666,13 @@
       "company": "Tower Research Capital",
       "domain": "www.tower-research.com",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Trane Technologies",
+      "domain": "careers.tranetechnologies.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -831,5 +838,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789553764
+  "generated_at": 1789571164
 }
