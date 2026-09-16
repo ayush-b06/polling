@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 781,
-  "fallback_only_companies": 111,
+  "verified_direct_companies": 797,
+  "fallback_only_companies": 118,
   "direct_source_failures": 6,
-  "simplify_missing_from_healthy_direct": 475,
+  "simplify_missing_from_healthy_direct": 481,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -86,6 +86,13 @@
       "domain": "blackcape.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Bruno Independent Living Aids",
+      "domain": "careers-bruno.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -334,13 +341,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Lentech Inc.",
-      "domain": "lentechinc.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "METECS",
       "domain": "metecs.applytojob.com",
       "job_count": 1,
@@ -446,6 +446,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "PeopleTec",
+      "domain": "careers-peopletec.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
       "job_count": 8,
@@ -509,6 +516,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "SSOE Group",
+      "domain": "careers-ssoe.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -528,6 +542,13 @@
       "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "SimVentions",
+      "domain": "simventions.jibeapply.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "SimonComputing",
@@ -649,11 +670,25 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Trane Technologies",
+      "domain": "careers.tranetechnologies.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Transcard Payments",
       "domain": "recruiting.paylocity.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Tyler Technologies",
+      "domain": "jobs.jobvite.com",
+      "job_count": 1,
+      "attempted_adapter": "jobvite",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "URBN",
@@ -689,6 +724,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Valitana",
+      "domain": "valitanallc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Varsity Brands",
@@ -782,6 +824,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Zions Bank",
+      "domain": "zionsbancorp.taleo.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "iTradeNetwork",
       "domain": "www.itradenetwork.com",
       "job_count": 1,
@@ -789,5 +838,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789511643
+  "generated_at": 1789519692
 }
