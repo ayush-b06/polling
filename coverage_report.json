@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 810,
-  "fallback_only_companies": 117,
-  "direct_source_failures": 7,
-  "simplify_missing_from_healthy_direct": 514,
+  "verified_direct_companies": 814,
+  "fallback_only_companies": 120,
+  "direct_source_failures": 8,
+  "simplify_missing_from_healthy_direct": 519,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -86,6 +86,13 @@
       "domain": "blackcape.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Bruno Independent Living Aids",
+      "domain": "careers-bruno.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -224,7 +231,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 12,
+      "job_count": 14,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -315,7 +322,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 2,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -336,6 +343,13 @@
     {
       "company": "LMI",
       "domain": "careers-lmi.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Lennox International",
+      "domain": "uscareers-lennox.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -761,6 +775,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "W.R. Berkley",
+      "domain": "careers-berkley.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "W.W. Grainger",
       "domain": "jobs.grainger.com",
       "job_count": 1,
@@ -831,5 +852,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789678194
+  "generated_at": 1789687290
 }
