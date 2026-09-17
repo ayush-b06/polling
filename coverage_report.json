@@ -2,7 +2,7 @@
   "verified_direct_companies": 809,
   "fallback_only_companies": 118,
   "direct_source_failures": 8,
-  "simplify_missing_from_healthy_direct": 512,
+  "simplify_missing_from_healthy_direct": 513,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -399,7 +399,7 @@
     {
       "company": "Noblis",
       "domain": "careers.noblis.org",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -838,5 +838,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789653803
+  "generated_at": 1789668236
 }
