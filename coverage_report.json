@@ -1,13 +1,13 @@
 {
-  "verified_direct_companies": 801,
-  "fallback_only_companies": 116,
+  "verified_direct_companies": 808,
+  "fallback_only_companies": 118,
   "direct_source_failures": 7,
-  "simplify_missing_from_healthy_direct": 504,
+  "simplify_missing_from_healthy_direct": 510,
   "fallback_companies": [
     {
       "company": "AMD",
       "domain": "careers.amd.com",
-      "job_count": 4,
+      "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -168,7 +168,7 @@
     {
       "company": "DecisionPoint",
       "domain": "careers-decisionpointcorp.icims.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -215,13 +215,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Foot Locker",
-      "domain": "careers.footlocker.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Foundation Finance",
       "domain": "careers.foundationfinance.com",
       "job_count": 1,
@@ -231,7 +224,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 10,
+      "job_count": 12,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -259,6 +252,13 @@
     {
       "company": "HarmonyTech",
       "domain": "harmonytech.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "ITC Defense",
+      "domain": "itcdefense.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
@@ -322,6 +322,13 @@
     {
       "company": "Kinder Morgan",
       "domain": "careers.kindermorgan.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Koch Industries",
+      "domain": "koch.avature.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -507,6 +514,13 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Ragle Inc",
+      "domain": "ragleinc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "SSOE Group",
@@ -824,5 +838,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789595813
+  "generated_at": 1789603759
 }
