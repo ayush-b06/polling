@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 815,
-  "fallback_only_companies": 121,
-  "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 533,
+  "verified_direct_companies": 814,
+  "fallback_only_companies": 122,
+  "direct_source_failures": 10,
+  "simplify_missing_from_healthy_direct": 526,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -89,13 +89,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Bruno Independent Living Aids",
-      "domain": "careers-bruno.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "C3.ai",
       "domain": "c3.ai",
       "job_count": 3,
@@ -133,6 +126,13 @@
     {
       "company": "Clyde Companies",
       "domain": "careers.clydeinc.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "CoBank",
+      "domain": "careers.cobank.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -483,6 +483,13 @@
     {
       "company": "Peterson Technologies",
       "domain": "petersontechnologies.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Phase 2",
+      "domain": "phase2.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
@@ -859,5 +866,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789766161
+  "generated_at": 1789774193
 }
