@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 814,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 10,
+  "verified_direct_companies": 815,
+  "fallback_only_companies": 121,
+  "direct_source_failures": 9,
   "simplify_missing_from_healthy_direct": 533,
   "fallback_companies": [
     {
@@ -170,6 +170,13 @@
       "domain": "deka.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Dayton Freight Lines",
+      "domain": "careers-daytonfreight.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -693,7 +700,7 @@
     {
       "company": "Tyler Technologies",
       "domain": "jobs.jobvite.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "jobvite",
       "reason": "adapter discovered but not yet verified"
     },
@@ -777,7 +784,7 @@
     {
       "company": "W.R. Berkley",
       "domain": "careers-berkley.icims.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -852,5 +859,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789756439
+  "generated_at": 1789766161
 }
