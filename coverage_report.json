@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 814,
   "fallback_only_companies": 120,
-  "direct_source_failures": 8,
-  "simplify_missing_from_healthy_direct": 520,
+  "direct_source_failures": 9,
+  "simplify_missing_from_healthy_direct": 517,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -322,7 +322,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 4,
+      "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +852,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789695144
+  "generated_at": 1789712273
 }
