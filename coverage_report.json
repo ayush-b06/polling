@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 825,
-  "fallback_only_companies": 122,
+  "fallback_only_companies": 121,
   "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 523,
+  "simplify_missing_from_healthy_direct": 522,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -544,13 +544,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "SSOE Group",
-      "domain": "careers-ssoe.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -866,5 +859,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789868896
+  "generated_at": 1789888325
 }
