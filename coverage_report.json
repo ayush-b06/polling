@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 825,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 523,
+  "fallback_only_companies": 122,
+  "direct_source_failures": 10,
+  "simplify_missing_from_healthy_direct": 525,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -115,6 +115,13 @@
       "job_count": 1,
       "attempted_adapter": "ashby",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Clerkie",
@@ -287,7 +294,7 @@
     {
       "company": "Illinois Tool Works",
       "domain": "careers.itw.com",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -311,6 +318,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Interstates",
+      "domain": "www.interstates.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Intuit",
@@ -852,5 +866,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789954104
+  "generated_at": 1789973001
 }
