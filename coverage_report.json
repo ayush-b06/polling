@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 826,
+  "verified_direct_companies": 827,
   "fallback_only_companies": 121,
   "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 524,
+  "simplify_missing_from_healthy_direct": 527,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -63,7 +63,7 @@
     {
       "company": "Awardco",
       "domain": "award.co",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -859,5 +859,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1789997495
+  "generated_at": 1790017424
 }
