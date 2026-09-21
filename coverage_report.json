@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 827,
-  "fallback_only_companies": 121,
+  "fallback_only_companies": 122,
   "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 527,
+  "simplify_missing_from_healthy_direct": 535,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -551,6 +551,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "SRI International",
+      "domain": "careers-sri.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Sandhills Global",
       "domain": "www.sandhills.com",
       "job_count": 1,
@@ -859,5 +866,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790017424
+  "generated_at": 1790030154
 }
