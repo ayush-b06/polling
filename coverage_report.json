@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 836,
-  "fallback_only_companies": 123,
+  "fallback_only_companies": 122,
   "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 560,
+  "simplify_missing_from_healthy_direct": 567,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -238,7 +238,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 14,
+      "job_count": 13,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -789,13 +789,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "VivSoft Technologies",
-      "domain": "vivsofttechnologiesfa.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "W.R. Berkley",
       "domain": "careers-berkley.icims.com",
       "job_count": 2,
@@ -873,5 +866,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790092518
+  "generated_at": 1790104969
 }
