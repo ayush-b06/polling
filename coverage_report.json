@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 836,
-  "fallback_only_companies": 122,
+  "fallback_only_companies": 121,
   "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 567,
+  "simplify_missing_from_healthy_direct": 566,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -353,13 +353,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "LMI",
-      "domain": "careers-lmi.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Lennox International",
@@ -866,5 +859,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790104969
+  "generated_at": 1790116237
 }
