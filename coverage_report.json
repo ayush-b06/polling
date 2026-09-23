@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 836,
-  "fallback_only_companies": 121,
+  "verified_direct_companies": 840,
+  "fallback_only_companies": 117,
   "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 566,
+  "simplify_missing_from_healthy_direct": 570,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -257,13 +257,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "HARMAN",
-      "domain": "jobsearch.harman.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "HarmonyTech",
       "domain": "harmonytech.applytojob.com",
       "job_count": 1,
@@ -336,7 +329,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 5,
+      "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -383,22 +376,8 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Markem-Imaje",
-      "domain": "careers.dovercorporation.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Medpace",
       "domain": "careers.medpace.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Mindsmith",
-      "domain": "app.dover.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -556,13 +535,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Sandhills Global",
-      "domain": "www.sandhills.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Shure",
@@ -761,13 +733,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "VetsEZ",
-      "domain": "vetsez.breezy.hr",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
       "job_count": 4,
@@ -831,6 +796,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "William Blair",
+      "domain": "www.williamblair.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "WonderBotz",
       "domain": "wonderbotz.applytojob.com",
       "job_count": 1,
@@ -859,5 +831,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790116237
+  "generated_at": 1790124984
 }
