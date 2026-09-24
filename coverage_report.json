@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 842,
+  "verified_direct_companies": 845,
   "fallback_only_companies": 117,
-  "direct_source_failures": 11,
-  "simplify_missing_from_healthy_direct": 558,
+  "direct_source_failures": 9,
+  "simplify_missing_from_healthy_direct": 559,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -89,6 +89,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Bruno Independent Living Aids",
+      "domain": "careers-bruno.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "C3.ai",
       "domain": "c3.ai",
       "job_count": 3,
@@ -105,20 +112,6 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel Securities",
-      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -421,6 +414,13 @@
       "company": "Old Mission",
       "domain": "www.oldmissioncapital.com",
       "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Pacific Northwest National Laboratory",
+      "domain": "careers.pnnl.gov",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -831,5 +831,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790278257
+  "generated_at": 1790290004
 }
