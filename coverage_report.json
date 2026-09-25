@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 845,
+  "verified_direct_companies": 848,
   "fallback_only_companies": 117,
-  "direct_source_failures": 9,
-  "simplify_missing_from_healthy_direct": 559,
+  "direct_source_failures": 10,
+  "simplify_missing_from_healthy_direct": 566,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -112,6 +112,13 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -231,7 +238,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 13,
+      "job_count": 14,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -252,13 +259,6 @@
     {
       "company": "HarmonyTech",
       "domain": "harmonytech.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "ITC Defense",
-      "domain": "itcdefense.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
@@ -322,7 +322,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 6,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -831,5 +831,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790290004
+  "generated_at": 1790298200
 }
