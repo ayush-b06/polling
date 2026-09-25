@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 847,
-  "fallback_only_companies": 117,
-  "direct_source_failures": 11,
-  "simplify_missing_from_healthy_direct": 568,
+  "fallback_only_companies": 120,
+  "direct_source_failures": 12,
+  "simplify_missing_from_healthy_direct": 567,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -124,6 +124,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -229,6 +236,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "First Citizens BancShares",
+      "domain": "firstcitizens.jibeapply.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Foundation Finance",
       "domain": "careers.foundationfinance.com",
       "job_count": 1,
@@ -245,7 +259,7 @@
     {
       "company": "GliaCell Technologies",
       "domain": "gliacelltechnologies.applytojob.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -315,7 +329,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 13,
+      "job_count": 14,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -346,6 +360,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Lutron Electronics",
+      "domain": "careers.lutron.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "METECS",
@@ -831,5 +852,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790315215
+  "generated_at": 1790351217
 }
