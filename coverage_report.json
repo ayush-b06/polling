@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 857,
+  "verified_direct_companies": 856,
   "fallback_only_companies": 121,
-  "direct_source_failures": 11,
+  "direct_source_failures": 12,
   "simplify_missing_from_healthy_direct": 547,
   "fallback_companies": [
     {
@@ -859,5 +859,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790448404
+  "generated_at": 1790459193
 }
