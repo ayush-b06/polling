@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 857,
-  "fallback_only_companies": 117,
-  "direct_source_failures": 11,
-  "simplify_missing_from_healthy_direct": 526,
+  "verified_direct_companies": 855,
+  "fallback_only_companies": 118,
+  "direct_source_failures": 13,
+  "simplify_missing_from_healthy_direct": 523,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -117,6 +117,20 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -182,7 +196,7 @@
     {
       "company": "DecisionPoint",
       "domain": "careers-decisionpointcorp.icims.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -644,7 +658,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 9,
+      "job_count": 8,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -822,14 +836,7 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "iTradeNetwork",
-      "domain": "www.itradenetwork.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790622317
+  "generated_at": 1790639415
 }
