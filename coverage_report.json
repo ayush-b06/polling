@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 859,
+  "verified_direct_companies": 857,
   "fallback_only_companies": 114,
-  "direct_source_failures": 10,
-  "simplify_missing_from_healthy_direct": 484,
+  "direct_source_failures": 12,
+  "simplify_missing_from_healthy_direct": 528,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -117,6 +117,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Citadel",
+      "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -182,7 +189,7 @@
     {
       "company": "DecisionPoint",
       "domain": "careers-decisionpointcorp.icims.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -266,7 +273,7 @@
     {
       "company": "Illinois Tool Works",
       "domain": "careers.itw.com",
-      "job_count": 4,
+      "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -355,6 +362,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Magna",
+      "domain": "wd3.myworkdaysite.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Medpace",
       "domain": "careers.medpace.com",
       "job_count": 1,
@@ -406,13 +420,6 @@
     {
       "company": "Pacific Northwest National Laboratory",
       "domain": "careers.pnnl.gov",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Panasonic Holdings",
-      "domain": "careers.na.panasonic.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -551,13 +558,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "State Farm",
-      "domain": "jobs.statefarm.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Steel Dynamics",
       "domain": "careers-aluminumdynamics.icims.com",
       "job_count": 1,
@@ -630,7 +630,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 8,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -721,7 +721,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -810,5 +810,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790697717
+  "generated_at": 1790714052
 }
