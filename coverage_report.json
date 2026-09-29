@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 856,
-  "fallback_only_companies": 117,
-  "direct_source_failures": 12,
+  "verified_direct_companies": 859,
+  "fallback_only_companies": 116,
+  "direct_source_failures": 10,
   "simplify_missing_from_healthy_direct": 524,
   "fallback_companies": [
     {
@@ -112,13 +112,6 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -831,5 +824,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790650635
+  "generated_at": 1790673785
 }
