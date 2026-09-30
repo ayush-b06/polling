@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 862,
-  "fallback_only_companies": 117,
+  "fallback_only_companies": 116,
   "direct_source_failures": 10,
-  "simplify_missing_from_healthy_direct": 503,
+  "simplify_missing_from_healthy_direct": 501,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -133,13 +133,6 @@
     {
       "company": "Clyde Companies",
       "domain": "careers.clydeinc.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "CoBank",
-      "domain": "careers.cobank.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -644,7 +637,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 34,
+      "job_count": 36,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -831,5 +824,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790726561
+  "generated_at": 1790736301
 }
