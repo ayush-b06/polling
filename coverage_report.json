@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 857,
-  "fallback_only_companies": 114,
-  "direct_source_failures": 12,
-  "simplify_missing_from_healthy_direct": 528,
+  "verified_direct_companies": 862,
+  "fallback_only_companies": 117,
+  "direct_source_failures": 10,
+  "simplify_missing_from_healthy_direct": 503,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -17,6 +17,13 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "ASSA ABLOY",
+      "domain": "assaabloy.jobs2web.com",
+      "job_count": 1,
+      "attempted_adapter": "successfactors",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Aerotech",
@@ -117,13 +124,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -171,13 +171,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "DEKA Research & Development Corp.",
-      "domain": "deka.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Dayton Freight Lines",
@@ -264,6 +257,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "ITC Defense",
+      "domain": "itcdefense.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
       "job_count": 4,
@@ -313,6 +313,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Iridium Communications",
+      "domain": "careers-iridium.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
       "job_count": 12,
@@ -322,7 +329,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 9,
+      "job_count": 10,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -425,6 +432,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Panasonic Holdings",
+      "domain": "careers.na.panasonic.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "PathAI",
       "domain": "www.pathai.com",
       "job_count": 1,
@@ -514,6 +528,13 @@
       "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "SAS",
+      "domain": "careers-sas.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Shure",
@@ -623,7 +644,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 33,
+      "job_count": 34,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -714,7 +735,7 @@
     {
       "company": "Varsity Brands",
       "domain": "careers.varsitybrands.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -770,7 +791,7 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 4,
+      "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -810,5 +831,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790714052
+  "generated_at": 1790726561
 }
