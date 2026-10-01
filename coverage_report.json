@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 864,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 13,
-  "simplify_missing_from_healthy_direct": 512,
+  "verified_direct_companies": 863,
+  "fallback_only_companies": 119,
+  "direct_source_failures": 14,
+  "simplify_missing_from_healthy_direct": 524,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -259,7 +259,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 14,
+      "job_count": 16,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -507,13 +507,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Principal Financial Group",
-      "domain": "careers.principal.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "PrizePicks",
@@ -852,5 +845,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790856591
+  "generated_at": 1790877846
 }
