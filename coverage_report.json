@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 863,
-  "fallback_only_companies": 117,
+  "verified_direct_companies": 865,
+  "fallback_only_companies": 119,
   "direct_source_failures": 12,
-  "simplify_missing_from_healthy_direct": 511,
+  "simplify_missing_from_healthy_direct": 518,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -110,6 +110,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "CTC Group",
+      "domain": "ctcgroup.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "CTG",
       "domain": "careers.ctg.com",
       "job_count": 1,
@@ -187,6 +194,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Electronic Arts",
+      "domain": "jobs.ea.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Empirical Foods",
       "domain": "careers-empiricalfoods.icims.com",
       "job_count": 1,
@@ -227,6 +241,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Frontier Technology",
+      "domain": "careers-ftidefense.icims.com",
+      "job_count": 2,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -621,13 +642,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "T-Rex Solutions",
-      "domain": "www.trexsolutionsllc.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "T2 Systems",
       "domain": "www.t2systems.com",
       "job_count": 2,
@@ -831,5 +845,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790800684
+  "generated_at": 1790813941
 }
