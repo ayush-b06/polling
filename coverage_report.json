@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 872,
+  "verified_direct_companies": 873,
   "fallback_only_companies": 119,
-  "direct_source_failures": 13,
-  "simplify_missing_from_healthy_direct": 534,
+  "direct_source_failures": 12,
+  "simplify_missing_from_healthy_direct": 536,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -138,13 +138,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Citadel Securities",
-      "domain": "www.citadelsecurities.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -213,6 +206,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Deloitte",
+      "domain": "apply.deloitte.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Electronic Arts",
@@ -845,5 +845,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790950927
+  "generated_at": 1790969526
 }
