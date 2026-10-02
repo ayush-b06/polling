@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 863,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 531,
+  "verified_direct_companies": 871,
+  "fallback_only_companies": 118,
+  "direct_source_failures": 12,
+  "simplify_missing_from_healthy_direct": 538,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -131,20 +131,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Citadel",
-      "domain": "www.citadel.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citadel Securities",
-      "domain": "www.citadelsecurities.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -178,6 +164,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Corgan",
+      "domain": "campus-us-corgan.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Cvent",
@@ -332,13 +325,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Interstates",
-      "domain": "www.interstates.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Intuit",
@@ -551,6 +537,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Reliance",
+      "domain": "careers.reliance.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Rivian",
       "domain": "careers.rivian.com",
       "job_count": 6,
@@ -560,7 +553,7 @@
     {
       "company": "SAS",
       "domain": "careers-sas.icims.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -721,7 +714,7 @@
     {
       "company": "United Launch Alliance",
       "domain": "jobs.ulalaunch.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -838,13 +831,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "X Development",
-      "domain": "x.company",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Zions Bank",
       "domain": "zionsbancorp.taleo.net",
       "job_count": 2,
@@ -852,5 +838,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1790892882
+  "generated_at": 1790905914
 }
