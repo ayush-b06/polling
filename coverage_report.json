@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 873,
-  "fallback_only_companies": 119,
-  "direct_source_failures": 12,
-  "simplify_missing_from_healthy_direct": 536,
+  "verified_direct_companies": 874,
+  "fallback_only_companies": 122,
+  "direct_source_failures": 14,
+  "simplify_missing_from_healthy_direct": 540,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -133,6 +133,13 @@
     {
       "company": "Citadel",
       "domain": "www.citadel.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -309,6 +316,13 @@
       "company": "Illinois Tool Works",
       "domain": "careers.itw.com",
       "job_count": 5,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "InComm Payments",
+      "domain": "jobs.incommpayments.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -665,14 +679,14 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 38,
+      "job_count": 39,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 7,
+      "job_count": 8,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -843,7 +857,14 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "iPipeline",
+      "domain": "careers-ipipeline.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1790969526
+  "generated_at": 1790983368
 }
