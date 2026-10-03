@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 874,
-  "fallback_only_companies": 122,
+  "verified_direct_companies": 875,
+  "fallback_only_companies": 120,
   "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 540,
+  "simplify_missing_from_healthy_direct": 538,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -355,13 +355,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Iridium Communications",
-      "domain": "careers-iridium.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
       "job_count": 12,
@@ -556,13 +549,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Reliance",
-      "domain": "careers.reliance.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Rivian",
@@ -866,5 +852,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1790983368
+  "generated_at": 1790993278
 }
