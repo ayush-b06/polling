@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 875,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 538,
+  "verified_direct_companies": 842,
+  "fallback_only_companies": 129,
+  "direct_source_failures": 56,
+  "simplify_missing_from_healthy_direct": 536,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -45,6 +45,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Arrowstreet Capital",
+      "domain": "arrowstreetcapital.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Astrion",
@@ -115,13 +122,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "CTG",
-      "domain": "careers.ctg.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Caris",
@@ -271,10 +271,24 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Freddie Mac",
+      "domain": "freddiemac.wd5.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Frontier Technology",
       "domain": "careers-ftidefense.icims.com",
       "job_count": 2,
       "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "GE Appliances",
+      "domain": "haier.wd3.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -292,6 +306,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Globus Medical",
+      "domain": "globusmedical.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Google",
       "domain": "www.google.com",
       "job_count": 1,
@@ -303,6 +324,13 @@
       "domain": "harmonytech.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Hewlett Packard Enterprise",
+      "domain": "hpe.wd5.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -362,9 +390,30 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Johnson & Johnson",
+      "domain": "jj.wd5.myworkdayjobs.com",
+      "job_count": 5,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Johnson Controls",
+      "domain": "jci.wd5.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "KBR",
+      "domain": "kbr.wd5.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 11,
+      "job_count": 12,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -381,6 +430,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Leidos",
+      "domain": "leidos.wd5.myworkdayjobs.com",
+      "job_count": 6,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Lennox International",
@@ -418,6 +474,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Motorola",
+      "domain": "motorolasolutions.wd5.myworkdayjobs.com",
+      "job_count": 9,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "NASCO",
       "domain": "careers-nasco.icims.com",
       "job_count": 1,
@@ -434,7 +497,7 @@
     {
       "company": "Noblis",
       "domain": "careers.noblis.org",
-      "job_count": 5,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -542,6 +605,13 @@
       "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "REI Systems",
+      "domain": "careers-reisystems.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Ragle Inc",
@@ -680,13 +750,6 @@
       "company": "Tower Research Capital",
       "domain": "www.tower-research.com",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Trane Technologies",
-      "domain": "careers.tranetechnologies.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +915,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1790993278
+  "generated_at": 1791014502
 }
