@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 878,
+  "verified_direct_companies": 879,
   "fallback_only_companies": 120,
-  "direct_source_failures": 12,
-  "simplify_missing_from_healthy_direct": 506,
+  "direct_source_failures": 14,
+  "simplify_missing_from_healthy_direct": 541,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -42,7 +42,7 @@
     {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -126,6 +126,13 @@
     {
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Citadel Securities",
+      "domain": "www.citadelsecurities.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -341,6 +348,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Intelliforce-IT Solutions Group",
+      "domain": "intelliforceitsolutionsgroup.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Intuit",
       "domain": "jobs.intuit.com",
       "job_count": 4,
@@ -357,7 +371,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 9,
+      "job_count": 12,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -495,13 +509,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Point",
-      "domain": "point.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "PowerSchool Group",
       "domain": "careers-powerschool.icims.com",
       "job_count": 1,
@@ -567,7 +574,7 @@
     {
       "company": "SAS",
       "domain": "careers-sas.icims.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -747,13 +754,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Valitana",
-      "domain": "valitanallc.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Varsity Brands",
       "domain": "careers.varsitybrands.com",
       "job_count": 2,
@@ -852,5 +852,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791121595
+  "generated_at": 1791137229
 }
