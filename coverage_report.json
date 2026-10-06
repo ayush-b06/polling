@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 885,
-  "fallback_only_companies": 124,
-  "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 538,
+  "verified_direct_companies": 886,
+  "fallback_only_companies": 125,
+  "direct_source_failures": 13,
+  "simplify_missing_from_healthy_direct": 530,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -392,7 +392,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 12,
+      "job_count": 13,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -413,6 +413,13 @@
     {
       "company": "Lennox International",
       "domain": "uscareers-lennox.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Liberty Mutual",
+      "domain": "campus-libertymutual.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -880,5 +887,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791247207
+  "generated_at": 1791269561
 }
