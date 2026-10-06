@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 888,
-  "fallback_only_companies": 128,
+  "verified_direct_companies": 890,
+  "fallback_only_companies": 130,
   "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 554,
+  "simplify_missing_from_healthy_direct": 560,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -49,7 +49,7 @@
     {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -145,6 +145,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Chenega",
+      "domain": "careers.chenega.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Cirrus Logic",
       "domain": "jobs.eu.lever.co",
       "job_count": 2,
@@ -208,6 +215,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "D'Addario",
+      "domain": "careers-daddario.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Dayton Freight Lines",
       "domain": "careers-daytonfreight.icims.com",
       "job_count": 1,
@@ -238,7 +252,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -301,7 +315,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 17,
+      "job_count": 18,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -908,5 +922,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791314762
+  "generated_at": 1791328837
 }
