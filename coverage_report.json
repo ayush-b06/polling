@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 880,
-  "fallback_only_companies": 120,
+  "verified_direct_companies": 885,
+  "fallback_only_companies": 124,
   "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 535,
+  "simplify_missing_from_healthy_direct": 538,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -36,6 +36,13 @@
       "company": "Akuna Capital University",
       "domain": "www.akunacapital.com",
       "job_count": 6,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Altice USA",
+      "domain": "www.optimumcareers.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -77,7 +84,7 @@
     {
       "company": "Barrios",
       "domain": "careers-barrios.icims.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -119,7 +126,7 @@
     {
       "company": "Capgemini",
       "domain": "careers.capgemini.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -127,6 +134,13 @@
       "company": "Caris",
       "domain": "wd12.myworkdaysite.com",
       "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Cirrus Logic",
+      "domain": "jobs.eu.lever.co",
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -171,6 +185,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Corning",
+      "domain": "corningjobs.corning.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Cvent",
@@ -273,7 +294,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 16,
+      "job_count": 17,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -299,6 +320,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "IDEMIA",
+      "domain": "uscareers-idemia.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
       "job_count": 4,
@@ -308,7 +336,7 @@
     {
       "company": "Illinois Tool Works",
       "domain": "careers.itw.com",
-      "job_count": 5,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -560,7 +588,7 @@
     {
       "company": "Rivian",
       "domain": "careers.rivian.com",
-      "job_count": 6,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -679,7 +707,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 39,
+      "job_count": 38,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +880,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791226838
+  "generated_at": 1791247207
 }
