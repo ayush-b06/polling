@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 887,
-  "fallback_only_companies": 126,
-  "direct_source_failures": 16,
-  "simplify_missing_from_healthy_direct": 547,
+  "verified_direct_companies": 888,
+  "fallback_only_companies": 128,
+  "direct_source_failures": 15,
+  "simplify_missing_from_healthy_direct": 554,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -122,6 +122,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "CTG",
+      "domain": "careers.ctg.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Capgemini",
@@ -290,13 +297,6 @@
       "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Garmin",
-      "domain": "careers.garmin.com",
-      "job_count": 18,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -635,6 +635,20 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Southern Star Central Gas Pipeline",
+      "domain": "careers-sscgp.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Space Dynamics Laboratory",
+      "domain": "spacedynamicslaboratory.applytojob.com",
+      "job_count": 2,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Specialisterne",
       "domain": "specialisterne.applytojob.com",
       "job_count": 1,
@@ -894,5 +908,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791294993
+  "generated_at": 1791314762
 }
