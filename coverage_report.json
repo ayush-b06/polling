@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 892,
-  "fallback_only_companies": 130,
-  "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 563,
+  "verified_direct_companies": 893,
+  "fallback_only_companies": 129,
+  "direct_source_failures": 14,
+  "simplify_missing_from_healthy_direct": 561,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -40,16 +40,9 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Altice USA",
-      "domain": "www.optimumcareers.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -922,5 +915,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791340513
+  "generated_at": 1791364063
 }
