@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 890,
+  "verified_direct_companies": 892,
   "fallback_only_companies": 130,
   "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 560,
+  "simplify_missing_from_healthy_direct": 563,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -35,7 +35,7 @@
     {
       "company": "Akuna Capital University",
       "domain": "www.akunacapital.com",
-      "job_count": 6,
+      "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -252,7 +252,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -413,7 +413,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 13,
+      "job_count": 15,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -798,7 +798,7 @@
     {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -819,7 +819,7 @@
     {
       "company": "Varsity Brands",
       "domain": "careers.varsitybrands.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -922,5 +922,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791328837
+  "generated_at": 1791340513
 }
