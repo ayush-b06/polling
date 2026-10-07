@@ -1,13 +1,13 @@
 {
-  "verified_direct_companies": 893,
+  "verified_direct_companies": 892,
   "fallback_only_companies": 129,
-  "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 561,
+  "direct_source_failures": 15,
+  "simplify_missing_from_healthy_direct": 563,
   "fallback_companies": [
     {
       "company": "AMD",
       "domain": "careers.amd.com",
-      "job_count": 5,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -115,13 +115,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "CTG",
-      "domain": "careers.ctg.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Capgemini",
@@ -397,9 +390,16 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Iridium Communications",
+      "domain": "careers-iridium.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 12,
+      "job_count": 13,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -551,6 +551,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Planview",
+      "domain": "careers.planview.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "PowerSchool Group",
       "domain": "careers-powerschool.icims.com",
       "job_count": 1,
@@ -560,7 +567,7 @@
     {
       "company": "PrizePicks",
       "domain": "prizepicks.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -646,13 +653,6 @@
       "domain": "careers-sscgp.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Space Dynamics Laboratory",
-      "domain": "spacedynamicslaboratory.applytojob.com",
-      "job_count": 2,
-      "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -915,5 +915,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791364063
+  "generated_at": 1791390307
 }
