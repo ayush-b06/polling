@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 892,
-  "fallback_only_companies": 129,
-  "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 563,
+  "verified_direct_companies": 894,
+  "fallback_only_companies": 128,
+  "direct_source_failures": 13,
+  "simplify_missing_from_healthy_direct": 571,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -455,7 +455,7 @@
     {
       "company": "Magna",
       "domain": "wd3.myworkdaysite.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -563,13 +563,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "PrizePicks",
-      "domain": "prizepicks.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Prospect Equities",
@@ -915,5 +908,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791390307
+  "generated_at": 1791409053
 }
