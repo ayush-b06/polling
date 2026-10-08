@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 901,
-  "fallback_only_companies": 126,
-  "direct_source_failures": 13,
-  "simplify_missing_from_healthy_direct": 583,
+  "verified_direct_companies": 900,
+  "fallback_only_companies": 125,
+  "direct_source_failures": 14,
+  "simplify_missing_from_healthy_direct": 576,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -219,13 +219,6 @@
       "domain": "careers-decisionpointcorp.icims.com",
       "job_count": 2,
       "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "DefenseStorm",
-      "domain": "defensestorm.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -770,7 +763,7 @@
     {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -894,5 +887,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791444985
+  "generated_at": 1791471648
 }
