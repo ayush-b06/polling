@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 900,
-  "fallback_only_companies": 128,
-  "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 575,
+  "verified_direct_companies": 901,
+  "fallback_only_companies": 126,
+  "direct_source_failures": 13,
+  "simplify_missing_from_healthy_direct": 583,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -278,13 +278,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "First Citizens BancShares",
-      "domain": "firstcitizens.jibeapply.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Foundation Finance",
       "domain": "careers.foundationfinance.com",
       "job_count": 1,
@@ -318,6 +311,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Harbor Foods",
+      "domain": "wholesale-harborfoods.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "HarmonyTech",
@@ -530,13 +530,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "PeopleTec",
-      "domain": "careers-peopletec.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
       "job_count": 6,
@@ -549,13 +542,6 @@
       "job_count": 2,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Planview",
-      "domain": "careers.planview.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "PowerSchool Group",
@@ -908,5 +894,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791422505
+  "generated_at": 1791444985
 }
