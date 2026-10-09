@@ -1,5 +1,5 @@
 {
-  "verified_direct_companies": 906,
+  "verified_direct_companies": 907,
   "fallback_only_companies": 121,
   "direct_source_failures": 15,
   "simplify_missing_from_healthy_direct": 588,
@@ -250,16 +250,16 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "EquipmentShare",
-      "domain": "www.equipmentshare.com",
+      "company": "Fervo Energy",
+      "domain": "recruiting.paylocity.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Fervo Energy",
-      "domain": "recruiting.paylocity.com",
-      "job_count": 1,
+      "company": "Forge Nano",
+      "domain": "forge-nano.breezy.hr",
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -392,7 +392,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 16,
+      "job_count": 15,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -483,7 +483,7 @@
     {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -859,5 +859,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791506539
+  "generated_at": 1791528624
 }
