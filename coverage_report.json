@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 900,
-  "fallback_only_companies": 123,
+  "verified_direct_companies": 906,
+  "fallback_only_companies": 121,
   "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 585,
+  "simplify_missing_from_healthy_direct": 588,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -119,7 +119,7 @@
     {
       "company": "Capgemini",
       "domain": "careers.capgemini.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -224,7 +224,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 5,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -392,7 +392,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 15,
+      "job_count": 16,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -404,22 +404,8 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Koch Industries",
-      "domain": "koch.avature.net",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Lennox International",
       "domain": "uscareers-lennox.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Liberty Mutual",
-      "domain": "campus-libertymutual.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
@@ -511,7 +497,7 @@
     {
       "company": "Peraton",
       "domain": "careers-peraton.icims.com",
-      "job_count": 6,
+      "job_count": 7,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -873,5 +859,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791491546
+  "generated_at": 1791506539
 }
