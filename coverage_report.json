@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 914,
-  "fallback_only_companies": 119,
-  "direct_source_failures": 14,
-  "simplify_missing_from_healthy_direct": 573,
+  "verified_direct_companies": 911,
+  "fallback_only_companies": 120,
+  "direct_source_failures": 17,
+  "simplify_missing_from_healthy_direct": 569,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -551,6 +551,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Ragle Inc",
+      "domain": "ragleinc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Rivian",
       "domain": "careers.rivian.com",
       "job_count": 7,
@@ -845,5 +852,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791600185
+  "generated_at": 1791622752
 }
