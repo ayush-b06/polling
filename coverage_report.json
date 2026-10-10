@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 912,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 576,
+  "verified_direct_companies": 914,
+  "fallback_only_companies": 119,
+  "direct_source_failures": 14,
+  "simplify_missing_from_healthy_direct": 573,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -224,7 +224,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 9,
+      "job_count": 10,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -304,6 +304,13 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Hudson River Trading",
+      "domain": "www.hudsonrivertrading.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "IDEMIA",
@@ -544,13 +551,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Ragle Inc",
-      "domain": "ragleinc.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Rivian",
       "domain": "careers.rivian.com",
       "job_count": 7,
@@ -645,13 +645,6 @@
       "company": "Study.com",
       "domain": "study.com",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Systems Planning and Analysis",
-      "domain": "spa.jibeapply.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +845,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791588588
+  "generated_at": 1791600185
 }
