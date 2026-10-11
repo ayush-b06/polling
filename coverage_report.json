@@ -2,7 +2,7 @@
   "verified_direct_companies": 912,
   "fallback_only_companies": 120,
   "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 563,
+  "simplify_missing_from_healthy_direct": 574,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -385,7 +385,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 12,
+      "job_count": 11,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +852,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791682121
+  "generated_at": 1791703798
 }
