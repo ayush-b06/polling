@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 911,
+  "verified_direct_companies": 920,
   "fallback_only_companies": 115,
-  "direct_source_failures": 17,
-  "simplify_missing_from_healthy_direct": 580,
+  "direct_source_failures": 15,
+  "simplify_missing_from_healthy_direct": 584,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -364,7 +364,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 15,
+      "job_count": 13,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -637,7 +637,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 38,
+      "job_count": 37,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -714,7 +714,7 @@
     {
       "company": "Varsity Brands",
       "domain": "careers.varsitybrands.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -817,5 +817,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791829124
+  "generated_at": 1791852466
 }
