@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 920,
-  "fallback_only_companies": 115,
-  "direct_source_failures": 16,
-  "simplify_missing_from_healthy_direct": 580,
+  "verified_direct_companies": 919,
+  "fallback_only_companies": 114,
+  "direct_source_failures": 17,
+  "simplify_missing_from_healthy_direct": 574,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -357,14 +357,14 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 11,
+      "job_count": 10,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 13,
+      "job_count": 12,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -441,13 +441,6 @@
     {
       "company": "Old Mission",
       "domain": "www.oldmissioncapital.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Otter.ai",
-      "domain": "otter.ai",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -644,7 +637,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 8,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -817,5 +810,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791904520
+  "generated_at": 1791924925
 }
