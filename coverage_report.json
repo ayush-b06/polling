@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 917,
-  "fallback_only_companies": 114,
-  "direct_source_failures": 17,
-  "simplify_missing_from_healthy_direct": 579,
+  "verified_direct_companies": 920,
+  "fallback_only_companies": 115,
+  "direct_source_failures": 16,
+  "simplify_missing_from_healthy_direct": 580,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -733,6 +733,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "VivSoft Technologies",
+      "domain": "vivsofttechnologiesfa.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "W.R. Berkley",
       "domain": "careers-berkley.icims.com",
       "job_count": 2,
@@ -810,5 +817,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791876104
+  "generated_at": 1791904520
 }
