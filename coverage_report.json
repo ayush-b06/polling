@@ -1,6 +1,6 @@
 {
   "verified_direct_companies": 922,
-  "fallback_only_companies": 116,
+  "fallback_only_companies": 117,
   "direct_source_failures": 17,
   "simplify_missing_from_healthy_direct": 566,
   "fallback_companies": [
@@ -586,6 +586,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Space Tango",
+      "domain": "recruiting.paylocity.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Specialisterne",
       "domain": "specialisterne.applytojob.com",
       "job_count": 1,
@@ -824,5 +831,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1791936680
+  "generated_at": 1791949306
 }
