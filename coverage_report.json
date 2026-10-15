@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 929,
-  "fallback_only_companies": 117,
+  "fallback_only_companies": 115,
   "direct_source_failures": 17,
-  "simplify_missing_from_healthy_direct": 558,
+  "simplify_missing_from_healthy_direct": 549,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -600,13 +600,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Specialisterne",
-      "domain": "specialisterne.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Springs Window Fashions",
       "domain": "careers-springswindowfashions.icims.com",
       "job_count": 1,
@@ -637,13 +630,6 @@
     {
       "company": "Study.com",
       "domain": "study.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "T2 Systems",
-      "domain": "www.t2systems.com",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -831,5 +817,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792090637
+  "generated_at": 1792102023
 }
