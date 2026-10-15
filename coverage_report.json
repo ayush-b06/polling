@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 932,
+  "verified_direct_companies": 929,
   "fallback_only_companies": 117,
-  "direct_source_failures": 15,
-  "simplify_missing_from_healthy_direct": 560,
+  "direct_source_failures": 17,
+  "simplify_missing_from_healthy_direct": 558,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -35,7 +35,7 @@
     {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -831,5 +831,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792075819
+  "generated_at": 1792090637
 }
