@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 932,
+  "verified_direct_companies": 933,
   "fallback_only_companies": 116,
-  "direct_source_failures": 17,
-  "simplify_missing_from_healthy_direct": 553,
+  "direct_source_failures": 16,
+  "simplify_missing_from_healthy_direct": 560,
   "fallback_companies": [
     {
       "company": "AMD",
@@ -824,5 +824,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792159965
+  "generated_at": 1792174053
 }
