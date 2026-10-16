@@ -1,9 +1,16 @@
 {
-  "verified_direct_companies": 932,
-  "fallback_only_companies": 116,
-  "direct_source_failures": 17,
-  "simplify_missing_from_healthy_direct": 565,
+  "verified_direct_companies": 934,
+  "fallback_only_companies": 119,
+  "direct_source_failures": 19,
+  "simplify_missing_from_healthy_direct": 559,
   "fallback_companies": [
+    {
+      "company": "AGCO",
+      "domain": "careers.agcocorp.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
     {
       "company": "AMD",
       "domain": "careers.amd.com",
@@ -35,7 +42,7 @@
     {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -299,6 +306,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Huntington Ingalls Industries",
+      "domain": "careers.huntingtoningalls.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "IDEMIA",
       "domain": "uscareers-idemia.icims.com",
       "job_count": 2,
@@ -378,7 +392,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 14,
+      "job_count": 15,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -500,6 +514,13 @@
       "job_count": 2,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Planview",
+      "domain": "careers.planview.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "PowerSchool Group",
@@ -824,5 +845,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792182414
+  "generated_at": 1792192362
 }
