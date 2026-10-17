@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 925,
-  "fallback_only_companies": 124,
-  "direct_source_failures": 29,
-  "simplify_missing_from_healthy_direct": 567,
+  "verified_direct_companies": 929,
+  "fallback_only_companies": 123,
+  "direct_source_failures": 25,
+  "simplify_missing_from_healthy_direct": 553,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -37,13 +37,6 @@
       "domain": "careers-amtrustgroup.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Ambarella",
-      "domain": "ambarella.wd108.myworkdayjobs.com",
-      "job_count": 2,
-      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -245,7 +238,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 9,
+      "job_count": 8,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -880,5 +873,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792215564
+  "generated_at": 1792230918
 }
