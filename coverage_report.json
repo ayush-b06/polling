@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 929,
-  "fallback_only_companies": 123,
-  "direct_source_failures": 25,
-  "simplify_missing_from_healthy_direct": 553,
+  "verified_direct_companies": 925,
+  "fallback_only_companies": 126,
+  "direct_source_failures": 29,
+  "simplify_missing_from_healthy_direct": 548,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -131,18 +131,18 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Centric Software",
+      "domain": "centricsoftware.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Cirrus Logic",
       "domain": "jobs.eu.lever.co",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citizens Financial Group",
-      "domain": "hcgn.fa.us2.oraclecloud.com",
-      "job_count": 2,
-      "attempted_adapter": "oracle_hcm",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Clerkie",
@@ -178,13 +178,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Copart",
-      "domain": "copart.wd12.myworkdayjobs.com",
-      "job_count": 5,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Corgan",
@@ -236,6 +229,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Direct Supply",
+      "domain": "directsupply.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
       "job_count": 8,
@@ -261,6 +261,13 @@
       "domain": "us-erac.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "First National Bank",
+      "domain": "fnbcorp.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -304,6 +311,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Graco",
+      "domain": "graco.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "H&R Block",
@@ -432,13 +446,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Litera",
-      "domain": "litera.wd12.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "METECS",
       "domain": "metecs.applytojob.com",
       "job_count": 1,
@@ -467,6 +474,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Modernizing Medicine",
+      "domain": "modmed.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Monti Inc",
       "domain": "recruiting.paylocity.com",
       "job_count": 1,
@@ -493,6 +507,13 @@
       "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Nordson",
+      "domain": "nordsonhcm.wd501.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "North Atlantic Industries",
@@ -873,5 +894,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792230918
+  "generated_at": 1792243616
 }
