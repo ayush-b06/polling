@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 940,
+  "verified_direct_companies": 941,
   "fallback_only_companies": 119,
-  "direct_source_failures": 15,
+  "direct_source_failures": 14,
   "simplify_missing_from_healthy_direct": 544,
   "fallback_companies": [
     {
@@ -217,7 +217,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 8,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -845,5 +845,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792343913
+  "generated_at": 1792352484
 }
