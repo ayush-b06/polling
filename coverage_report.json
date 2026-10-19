@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 937,
-  "fallback_only_companies": 119,
+  "fallback_only_companies": 118,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 544,
+  "simplify_missing_from_healthy_direct": 559,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -134,13 +134,6 @@
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Clyde Companies",
-      "domain": "careers.clydeinc.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -845,5 +838,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792367742
+  "generated_at": 1792375712
 }
