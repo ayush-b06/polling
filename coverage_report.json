@@ -2,7 +2,7 @@
   "verified_direct_companies": 946,
   "fallback_only_companies": 117,
   "direct_source_failures": 16,
-  "simplify_missing_from_healthy_direct": 550,
+  "simplify_missing_from_healthy_direct": 546,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -831,5 +831,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792520036
+  "generated_at": 1792532322
 }
