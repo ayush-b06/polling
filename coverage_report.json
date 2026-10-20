@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 944,
-  "fallback_only_companies": 119,
-  "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 542,
+  "verified_direct_companies": 943,
+  "fallback_only_companies": 118,
+  "direct_source_failures": 19,
+  "simplify_missing_from_healthy_direct": 544,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -481,13 +481,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Pacific Northwest National Laboratory",
-      "domain": "careers.pnnl.gov",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
       "job_count": 3,
@@ -845,5 +838,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792454834
+  "generated_at": 1792463487
 }
