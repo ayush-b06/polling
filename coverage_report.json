@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 943,
-  "fallback_only_companies": 118,
-  "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 539,
+  "verified_direct_companies": 945,
+  "fallback_only_companies": 117,
+  "direct_source_failures": 17,
+  "simplify_missing_from_healthy_direct": 541,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -432,13 +432,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Monti Inc",
-      "domain": "recruiting.paylocity.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Nebo",
       "domain": "neboagency.applytojob.com",
       "job_count": 2,
@@ -838,5 +831,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792482688
+  "generated_at": 1792502338
 }
