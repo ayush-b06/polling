@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 945,
   "fallback_only_companies": 119,
-  "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 549,
+  "direct_source_failures": 18,
+  "simplify_missing_from_healthy_direct": 545,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -217,7 +217,7 @@
     {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
-      "job_count": 7,
+      "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -308,7 +308,7 @@
     {
       "company": "Huntington Ingalls Industries",
       "domain": "careers.huntingtoningalls.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -586,6 +586,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Safran",
+      "domain": "careers.safran-dsi.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "SageSure",
       "domain": "www.sagesure.com",
       "job_count": 1,
@@ -726,13 +733,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "V2X",
-      "domain": "careers.gov2x.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "VTG",
       "domain": "careers.vtgdefense.com",
       "job_count": 4,
@@ -845,5 +845,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792610334
+  "generated_at": 1792622087
 }
