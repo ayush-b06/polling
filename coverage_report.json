@@ -2,7 +2,7 @@
   "verified_direct_companies": 950,
   "fallback_only_companies": 120,
   "direct_source_failures": 18,
-  "simplify_missing_from_healthy_direct": 557,
+  "simplify_missing_from_healthy_direct": 565,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -35,7 +35,7 @@
     {
       "company": "Aerotech",
       "domain": "aerotech.applytojob.com",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -852,5 +852,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792666299
+  "generated_at": 1792684536
 }
