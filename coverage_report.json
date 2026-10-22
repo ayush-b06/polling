@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 949,
-  "fallback_only_companies": 120,
+  "verified_direct_companies": 954,
+  "fallback_only_companies": 121,
   "direct_source_failures": 17,
-  "simplify_missing_from_healthy_direct": 565,
+  "simplify_missing_from_healthy_direct": 569,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -49,7 +49,7 @@
     {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -553,7 +553,7 @@
     {
       "company": "Qorvo",
       "domain": "careers.qorvo.com",
-      "job_count": 6,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -747,6 +747,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Ursa Major",
+      "domain": "ursamajor.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "VTG",
       "domain": "careers.vtgdefense.com",
       "job_count": 4,
@@ -812,7 +819,7 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 6,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +859,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792698340
+  "generated_at": 1792710120
 }
