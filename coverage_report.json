@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 955,
-  "fallback_only_companies": 120,
-  "direct_source_failures": 18,
-  "simplify_missing_from_healthy_direct": 550,
+  "verified_direct_companies": 954,
+  "fallback_only_companies": 121,
+  "direct_source_failures": 19,
+  "simplify_missing_from_healthy_direct": 574,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -399,7 +399,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 12,
+      "job_count": 17,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -409,13 +409,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Lean TECHniques",
-      "domain": "jobs.ashbyhq.com",
-      "job_count": 1,
-      "attempted_adapter": "ashby",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Lennox International",
@@ -458,6 +451,13 @@
       "job_count": 2,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "NetApp",
+      "domain": "jobs.netapp.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Netflix",
@@ -600,6 +600,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Safran",
+      "domain": "careers.safran-dsi.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "SageSure",
       "domain": "www.sagesure.com",
       "job_count": 1,
@@ -740,6 +747,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Ursa Major",
+      "domain": "ursamajor.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "VTG",
       "domain": "careers.vtgdefense.com",
       "job_count": 4,
@@ -752,13 +766,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Varsity Brands",
-      "domain": "careers.varsitybrands.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "ViaSat",
@@ -812,7 +819,7 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 4,
+      "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +859,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792771736
+  "generated_at": 1792785562
 }
