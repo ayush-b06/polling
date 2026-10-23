@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 954,
-  "fallback_only_companies": 121,
-  "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 580,
+  "verified_direct_companies": 955,
+  "fallback_only_companies": 105,
+  "direct_source_failures": 18,
+  "simplify_missing_from_healthy_direct": 468,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -14,7 +14,7 @@
     {
       "company": "AMD",
       "domain": "careers.amd.com",
-      "job_count": 4,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -112,7 +112,7 @@
     {
       "company": "C3.ai",
       "domain": "c3.ai",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -133,13 +133,6 @@
     {
       "company": "Cirrus Logic",
       "domain": "jobs.eu.lever.co",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Clerkie",
-      "domain": "getfiber.ai",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -182,7 +175,7 @@
     {
       "company": "Cvent",
       "domain": "careers.cvent.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -273,20 +266,13 @@
     {
       "company": "GliaCell Technologies",
       "domain": "gliacelltechnologies.applytojob.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Google",
       "domain": "www.google.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "H&R Block",
-      "domain": "careers.hrblock.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -329,7 +315,7 @@
     {
       "company": "Illinois Tool Works",
       "domain": "careers.itw.com",
-      "job_count": 5,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -399,13 +385,6 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 17,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Kinder Morgan",
-      "domain": "careers.kindermorgan.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -432,13 +411,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Magna",
-      "domain": "wd3.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Medpace",
       "domain": "careers.medpace.com",
       "job_count": 1,
@@ -451,13 +423,6 @@
       "job_count": 2,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "NetApp",
-      "domain": "jobs.netapp.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Netflix",
@@ -544,25 +509,11 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Qorvo",
-      "domain": "careers.qorvo.com",
-      "job_count": 4,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Quantinuum",
       "domain": "jobs.eu.lever.co",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Quantum Signal AI",
-      "domain": "quantumsignalai.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "REI Systems",
@@ -572,16 +523,9 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Ragle Inc",
-      "domain": "ragleinc.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Rivian",
       "domain": "careers.rivian.com",
-      "job_count": 8,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -600,32 +544,11 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Safran",
-      "domain": "careers.safran-dsi.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "SageSure",
-      "domain": "www.sagesure.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Shure",
       "domain": "careersus-shure.icims.com",
       "job_count": 5,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "SimVentions",
-      "domain": "simventions.jibeapply.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Southern Star Central Gas Pipeline",
@@ -693,14 +616,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 6,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Trane Technologies",
-      "domain": "careers.tranetechnologies.com",
-      "job_count": 1,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -726,30 +642,9 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Udig",
-      "domain": "udig.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "United Launch Alliance",
-      "domain": "jobs.ulalaunch.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Ursa Major",
-      "domain": "ursamajor.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -819,23 +714,16 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 6,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "WhatNot",
       "domain": "jobs.ashbyhq.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "ashby",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "William Blair",
-      "domain": "www.williamblair.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "WonderBotz",
@@ -859,5 +747,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792736100
+  "generated_at": 1792755718
 }
