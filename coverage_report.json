@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 955,
-  "fallback_only_companies": 120,
+  "verified_direct_companies": 956,
+  "fallback_only_companies": 121,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 572,
+  "simplify_missing_from_healthy_direct": 577,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -614,6 +614,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Siemens",
+      "domain": "siemens.avature.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "SimVentions",
       "domain": "simventions.jibeapply.com",
       "job_count": 1,
@@ -679,7 +686,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 37,
+      "job_count": 36,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -852,5 +859,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792796254
+  "generated_at": 1792805277
 }
