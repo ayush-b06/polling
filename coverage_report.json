@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 955,
-  "fallback_only_companies": 119,
-  "direct_source_failures": 19,
+  "verified_direct_companies": 956,
+  "fallback_only_companies": 87,
+  "direct_source_failures": 18,
   "simplify_missing_from_healthy_direct": 563,
   "fallback_companies": [
     {
@@ -40,13 +40,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "AmTrust Financial",
-      "domain": "careers-amtrustgroup.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Arcfield",
       "domain": "careers.arcfield.com",
       "job_count": 1,
@@ -61,20 +54,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Atlassian",
-      "domain": "careers-americas.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Atlassian",
-      "domain": "campus-americas.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Awardco",
       "domain": "award.co",
       "job_count": 2,
@@ -82,31 +61,10 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Barrios",
-      "domain": "careers-barrios.icims.com",
-      "job_count": 3,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Berkshire Hathaway GUARD Insurance Companies",
-      "domain": "careers-guard.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Black Cape",
       "domain": "blackcape.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Bruno Independent Living Aids",
-      "domain": "careers-bruno.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -145,13 +103,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "ConstructConnect",
-      "domain": "careers-constructconnect.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Consumer Direct Care Network",
       "domain": "cdcn.avature.net",
       "job_count": 1,
@@ -159,39 +110,11 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Corgan",
-      "domain": "campus-us-corgan.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Cvent",
       "domain": "careers.cvent.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "D'Addario",
-      "domain": "careers-daddario.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Dayton Freight Lines",
-      "domain": "careers-daytonfreight.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "DecisionPoint",
-      "domain": "careers-decisionpointcorp.icims.com",
-      "job_count": 2,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Deloitte",
@@ -215,20 +138,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Empirical Foods",
-      "domain": "careers-empiricalfoods.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Enterprise Holdings",
-      "domain": "us-erac.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Forge Nano",
       "domain": "forge-nano.breezy.hr",
       "job_count": 2,
@@ -241,20 +150,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Frontier Technology",
-      "domain": "careers-ftidefense.icims.com",
-      "job_count": 2,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "General Dynamics Mission Systems",
-      "domain": "careers-gdms.icims.com",
-      "job_count": 19,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "GliaCell Technologies",
@@ -282,13 +177,6 @@
       "domain": "healthpeak.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "IDEMIA",
-      "domain": "uscareers-idemia.icims.com",
-      "job_count": 2,
-      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -320,13 +208,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Integration Innovation (i3)",
-      "domain": "careers-i3-corps.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "IntelliGenesis",
       "domain": "intelligenesis.applytojob.com",
       "job_count": 1,
@@ -346,13 +227,6 @@
       "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Iridium Communications",
-      "domain": "careers-iridium.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
@@ -381,13 +255,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Lennox International",
-      "domain": "uscareers-lennox.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "METECS",
@@ -474,13 +341,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Peraton",
-      "domain": "careers-peraton.icims.com",
-      "job_count": 7,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Peterson Technologies",
       "domain": "petersontechnologies.applytojob.com",
       "job_count": 2,
@@ -493,13 +353,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "PowerSchool Group",
-      "domain": "careers-powerschool.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Prospect Equities",
@@ -537,13 +390,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "REI Systems",
-      "domain": "careers-reisystems.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Ragle Inc",
       "domain": "ragleinc.applytojob.com",
       "job_count": 1,
@@ -556,20 +402,6 @@
       "job_count": 8,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "RoviSys",
-      "domain": "careers-additionalrovisysopportunities.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "SAS",
-      "domain": "careers-sas.icims.com",
-      "job_count": 2,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Safran",
@@ -586,13 +418,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Shure",
-      "domain": "careersus-shure.icims.com",
-      "job_count": 5,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Siemens",
       "domain": "siemens.avature.net",
       "job_count": 2,
@@ -607,32 +432,11 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Southern Star Central Gas Pipeline",
-      "domain": "careers-sscgp.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Space Tango",
       "domain": "recruiting.paylocity.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Springs Window Fashions",
-      "domain": "careers-springswindowfashions.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Steel Dynamics",
-      "domain": "careers-aluminumdynamics.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Stellar Science",
@@ -691,24 +495,10 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Two Sigma",
-      "domain": "twosigma.avature.net",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Tyler Technologies",
       "domain": "jobs.jobvite.com",
       "job_count": 4,
       "attempted_adapter": "jobvite",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "URBN",
-      "domain": "homeoffice-na-urbn.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -775,13 +565,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "W.R. Berkley",
-      "domain": "careers-berkley.icims.com",
-      "job_count": 2,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "W.W. Grainger",
       "domain": "jobs.grainger.com",
       "job_count": 1,
@@ -794,13 +577,6 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Western & Southern Financial Group",
-      "domain": "careers-westernsouthern.icims.com",
-      "job_count": 2,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Westinghouse Electric Company",
@@ -836,14 +612,7 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "iPipeline",
-      "domain": "careers-ipipeline.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792863809
+  "generated_at": 1792880161
 }
