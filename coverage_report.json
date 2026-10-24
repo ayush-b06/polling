@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 956,
-  "fallback_only_companies": 121,
+  "fallback_only_companies": 119,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 577,
+  "simplify_missing_from_healthy_direct": 570,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -278,13 +278,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "H&R Block",
-      "domain": "careers.hrblock.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "HarmonyTech",
       "domain": "harmonytech.applytojob.com",
       "job_count": 1,
@@ -297,13 +290,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Huntington Ingalls Industries",
-      "domain": "careers.huntingtoningalls.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "IDEMIA",
@@ -859,5 +845,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1792805277
+  "generated_at": 1792822478
 }
