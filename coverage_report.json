@@ -2,7 +2,7 @@
   "verified_direct_companies": 956,
   "fallback_only_companies": 87,
   "direct_source_failures": 18,
-  "simplify_missing_from_healthy_direct": 562,
+  "simplify_missing_from_healthy_direct": 560,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -614,5 +614,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1792903959
+  "generated_at": 1792921384
 }
