@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 956,
-  "fallback_only_companies": 87,
-  "direct_source_failures": 18,
-  "simplify_missing_from_healthy_direct": 562,
+  "verified_direct_companies": 957,
+  "fallback_only_companies": 88,
+  "direct_source_failures": 19,
+  "simplify_missing_from_healthy_direct": 559,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -551,6 +551,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Vigil Labs",
+      "domain": "simplify.jobs",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Virtual Technologies Group",
       "domain": "virtualtechnologygroupllc.applytojob.com",
       "job_count": 1,
@@ -614,5 +621,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1792992243
+  "generated_at": 1793013755
 }
