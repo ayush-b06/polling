@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 962,
-  "fallback_only_companies": 87,
-  "direct_source_failures": 19,
+  "verified_direct_companies": 961,
+  "fallback_only_companies": 88,
+  "direct_source_failures": 20,
   "simplify_missing_from_healthy_direct": 553,
   "fallback_companies": [
     {
@@ -105,6 +105,13 @@
     {
       "company": "Consumer Direct Care Network",
       "domain": "cdcn.avature.net",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "CoreWeave",
+      "domain": "coreweave.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -614,5 +621,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793081639
+  "generated_at": 1793102744
 }
