@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 982,
-  "fallback_only_companies": 90,
+  "verified_direct_companies": 986,
+  "fallback_only_companies": 89,
   "direct_source_failures": 18,
-  "simplify_missing_from_healthy_direct": 568,
+  "simplify_missing_from_healthy_direct": 573,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -80,13 +80,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Caris",
-      "domain": "wd12.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Clerkie",
@@ -210,7 +203,7 @@
     {
       "company": "Innovative Systems",
       "domain": "innovativesystems.applytojob.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -635,5 +628,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793194121
+  "generated_at": 1793214794
 }
