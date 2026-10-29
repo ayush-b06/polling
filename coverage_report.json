@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 993,
+  "verified_direct_companies": 998,
   "fallback_only_companies": 91,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 581,
+  "simplify_missing_from_healthy_direct": 589,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -68,6 +68,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Burns Engineering",
+      "domain": "www.burns-group.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "C3.ai",
       "domain": "c3.ai",
       "job_count": 3,
@@ -80,13 +87,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Cambridge Mobile Telematics",
-      "domain": "www.cmtelematics.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Clerkie",
@@ -490,7 +490,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 34,
+      "job_count": 35,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -642,5 +642,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793264159
+  "generated_at": 1793289294
 }
