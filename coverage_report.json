@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 987,
-  "fallback_only_companies": 90,
+  "verified_direct_companies": 988,
+  "fallback_only_companies": 91,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 589,
+  "simplify_missing_from_healthy_direct": 584,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -203,6 +203,13 @@
     {
       "company": "InComm Payments",
       "domain": "jobs.incommpayments.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Indie",
+      "domain": "www.indie.inc",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -483,7 +490,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 35,
+      "job_count": 34,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -635,5 +642,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793229224
+  "generated_at": 1793240746
 }
