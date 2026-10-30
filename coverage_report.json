@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 999,
-  "fallback_only_companies": 91,
-  "direct_source_failures": 18,
-  "simplify_missing_from_healthy_direct": 582,
+  "verified_direct_companies": 1004,
+  "fallback_only_companies": 89,
+  "direct_source_failures": 19,
+  "simplify_missing_from_healthy_direct": 580,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -299,13 +299,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "NetApp",
-      "domain": "jobs.netapp.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Netflix",
       "domain": "explore.jobs.netflix.net",
       "job_count": 1,
@@ -337,13 +330,6 @@
       "company": "Otter.ai",
       "domain": "otter.ai",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Pacific Northwest National Laboratory",
-      "domain": "careers.pnnl.gov",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -518,7 +504,7 @@
     {
       "company": "Tyler Technologies",
       "domain": "jobs.jobvite.com",
-      "job_count": 4,
+      "job_count": 5,
       "attempted_adapter": "jobvite",
       "reason": "adapter discovered but not yet verified"
     },
@@ -642,5 +628,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793306930
+  "generated_at": 1793320744
 }
