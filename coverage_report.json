@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 1004,
-  "fallback_only_companies": 89,
+  "fallback_only_companies": 88,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 580,
+  "simplify_missing_from_healthy_direct": 571,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -530,13 +530,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Ursa Major",
-      "domain": "ursamajor.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "VTG",
       "domain": "careers.vtgdefense.com",
       "job_count": 4,
@@ -628,5 +621,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793320744
+  "generated_at": 1793341369
 }
