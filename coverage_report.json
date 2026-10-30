@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1004,
+  "verified_direct_companies": 1007,
   "fallback_only_companies": 88,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 571,
+  "simplify_missing_from_healthy_direct": 578,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -75,13 +75,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "C3.ai",
-      "domain": "c3.ai",
-      "job_count": 3,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "CTC Group",
       "domain": "ctcgroup.applytojob.com",
       "job_count": 1,
@@ -140,6 +133,13 @@
     {
       "company": "Electronic Arts",
       "domain": "jobs.ea.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "F&G",
+      "domain": "www.fglife.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -476,7 +476,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 35,
+      "job_count": 34,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -621,5 +621,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793341369
+  "generated_at": 1793365561
 }
