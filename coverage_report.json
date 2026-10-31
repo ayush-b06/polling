@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1007,
-  "fallback_only_companies": 88,
-  "direct_source_failures": 21,
-  "simplify_missing_from_healthy_direct": 578,
+  "verified_direct_companies": 1009,
+  "fallback_only_companies": 90,
+  "direct_source_failures": 22,
+  "simplify_missing_from_healthy_direct": 571,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -38,6 +38,13 @@
       "job_count": 4,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Altice USA",
+      "domain": "www.optimumcareers.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Arcfield",
@@ -143,6 +150,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Elucid",
+      "domain": "elucid.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "F&G",
@@ -315,7 +329,7 @@
     {
       "company": "Noblis",
       "domain": "careers.noblis.org",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -343,7 +357,7 @@
     {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -621,5 +635,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793400290
+  "generated_at": 1793412394
 }
