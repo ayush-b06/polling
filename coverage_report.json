@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1009,
-  "fallback_only_companies": 90,
-  "direct_source_failures": 22,
-  "simplify_missing_from_healthy_direct": 571,
+  "verified_direct_companies": 991,
+  "fallback_only_companies": 97,
+  "direct_source_failures": 44,
+  "simplify_missing_from_healthy_direct": 564,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -96,6 +96,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Clearwater Analytics",
+      "domain": "clearwateranalytics.wd1.myworkdayjobs.com",
+      "job_count": 5,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -180,6 +187,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "GE Appliances",
+      "domain": "haier.wd3.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "GliaCell Technologies",
       "domain": "gliacelltechnologies.applytojob.com",
       "job_count": 2,
@@ -243,6 +257,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Integration Innovation (i3)",
+      "domain": "i3-corps.jibeapply.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "IntelliGenesis",
       "domain": "intelligenesis.applytojob.com",
       "job_count": 1,
@@ -269,6 +290,13 @@
       "job_count": 11,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Johnson & Johnson",
+      "domain": "jj.wd5.myworkdayjobs.com",
+      "job_count": 4,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Keysight Technologies",
@@ -341,6 +369,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Northrop Grumman",
+      "domain": "ngc.wd1.myworkdayjobs.com",
+      "job_count": 9,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Nova-Tech",
       "domain": "novatechengineering.applytojob.com",
       "job_count": 1,
@@ -369,6 +404,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Peraton",
+      "domain": "peraton.jibeapply.com",
+      "job_count": 6,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Peterson Technologies",
       "domain": "petersontechnologies.applytojob.com",
       "job_count": 2,
@@ -391,8 +433,8 @@
     },
     {
       "company": "Publicis Groupe",
-      "domain": "careers.publicisgroupe.com",
-      "job_count": 1,
+      "domain": "publicisgroupe.jibeapply.com",
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -530,6 +572,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Uline",
+      "domain": "uline.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "United Launch Alliance",
       "domain": "jobs.ulalaunch.com",
       "job_count": 1,
@@ -635,5 +684,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793412394
+  "generated_at": 1793432919
 }
