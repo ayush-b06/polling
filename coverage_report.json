@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 1010,
-  "fallback_only_companies": 92,
-  "direct_source_failures": 19,
+  "verified_direct_companies": 1009,
+  "fallback_only_companies": 91,
+  "direct_source_failures": 20,
   "simplify_missing_from_healthy_direct": 564,
   "fallback_companies": [
     {
@@ -511,14 +511,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 6,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Trane Technologies",
-      "domain": "careers.tranetechnologies.com",
-      "job_count": 1,
+      "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -649,5 +642,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793493861
+  "generated_at": 1793516167
 }
