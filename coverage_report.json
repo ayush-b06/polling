@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1010,
-  "fallback_only_companies": 81,
+  "verified_direct_companies": 1009,
+  "fallback_only_companies": 80,
   "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 561,
+  "simplify_missing_from_healthy_direct": 560,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -124,13 +124,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Deloitte",
-      "domain": "apply.deloitte.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "DocuSign",
       "domain": "careers.docusign.com",
       "job_count": 6,
@@ -189,7 +182,7 @@
     {
       "company": "Huntington Ingalls Industries",
       "domain": "careers.huntingtoningalls.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -572,5 +565,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793585109
+  "generated_at": 1793608985
 }
