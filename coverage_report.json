@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1009,
-  "fallback_only_companies": 92,
+  "verified_direct_companies": 1010,
+  "fallback_only_companies": 81,
   "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 563,
+  "simplify_missing_from_healthy_direct": 561,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -66,13 +66,6 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Black Cape",
-      "domain": "blackcape.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "BodySpec",
@@ -180,25 +173,11 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "GliaCell Technologies",
-      "domain": "gliacelltechnologies.applytojob.com",
-      "job_count": 2,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Google",
       "domain": "www.google.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "HarmonyTech",
-      "domain": "harmonytech.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Healthpeak Properties",
@@ -257,13 +236,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "IntelliGenesis",
-      "domain": "intelligenesis.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Intelliforce-IT Solutions Group",
       "domain": "intelliforceitsolutionsgroup.applytojob.com",
       "job_count": 1,
@@ -299,13 +271,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "METECS",
-      "domain": "metecs.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "MSA Safety",
       "domain": "careers.msasafety.com",
       "job_count": 2,
@@ -325,13 +290,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Nebo",
-      "domain": "neboagency.applytojob.com",
-      "job_count": 2,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Netflix",
@@ -390,25 +348,11 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Peterson Technologies",
-      "domain": "petersontechnologies.applytojob.com",
-      "job_count": 2,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Planview",
       "domain": "careers.planview.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Prospect Equities",
-      "domain": "prospectequities.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Publicis Groupe",
@@ -479,13 +423,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Stellar Science",
-      "domain": "stellarscience.applytojob.com",
-      "job_count": 2,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Steven's Capital Management",
@@ -607,13 +544,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Walgreens",
-      "domain": "sjobs.brassring.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
       "job_count": 4,
@@ -635,13 +565,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "WonderBotz",
-      "domain": "wonderbotz.applytojob.com",
-      "job_count": 1,
-      "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Zions Bank",
       "domain": "zionsbancorp.taleo.net",
       "job_count": 2,
@@ -649,5 +572,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793573184
+  "generated_at": 1793585109
 }
