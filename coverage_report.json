@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1017,
-  "fallback_only_companies": 83,
-  "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 568,
+  "verified_direct_companies": 1018,
+  "fallback_only_companies": 84,
+  "direct_source_failures": 18,
+  "simplify_missing_from_healthy_direct": 563,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -203,7 +203,7 @@
     {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -330,6 +330,13 @@
       "company": "Otter.ai",
       "domain": "otter.ai",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Paccar",
+      "domain": "jobs.paccar.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -586,5 +593,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793669876
+  "generated_at": 1793694158
 }
