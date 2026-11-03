@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1011,
-  "fallback_only_companies": 80,
-  "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 557,
+  "verified_direct_companies": 1017,
+  "fallback_only_companies": 83,
+  "direct_source_failures": 20,
+  "simplify_missing_from_healthy_direct": 568,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -38,13 +38,6 @@
       "job_count": 4,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Altice USA",
-      "domain": "www.optimumcareers.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Arcfield",
@@ -89,6 +82,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Capgemini",
+      "domain": "careers.capgemini.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -112,6 +112,13 @@
     {
       "company": "CoreWeave",
       "domain": "coreweave.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Costco",
+      "domain": "phf.tbe.taleo.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -168,6 +175,13 @@
     {
       "company": "Google",
       "domain": "www.google.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "H&R Block",
+      "domain": "careers.hrblock.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -266,7 +280,7 @@
     {
       "company": "MSA Safety",
       "domain": "careers.msasafety.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -315,6 +329,13 @@
     {
       "company": "Otter.ai",
       "domain": "otter.ai",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Pacific Northwest National Laboratory",
+      "domain": "careers.pnnl.gov",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -565,5 +586,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793646256
+  "generated_at": 1793669876
 }
