@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1017,
+  "verified_direct_companies": 1020,
   "fallback_only_companies": 83,
   "direct_source_failures": 19,
-  "simplify_missing_from_healthy_direct": 547,
+  "simplify_missing_from_healthy_direct": 553,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -259,7 +259,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 17,
+      "job_count": 18,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -586,5 +586,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793743624
+  "generated_at": 1793757872
 }
