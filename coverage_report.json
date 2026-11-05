@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 1020,
-  "fallback_only_companies": 81,
+  "fallback_only_companies": 79,
   "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 559,
+  "simplify_missing_from_healthy_direct": 556,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -50,13 +50,6 @@
       "company": "Astrion",
       "domain": "careers.astrion.us",
       "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Awardco",
-      "domain": "award.co",
-      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -155,13 +148,6 @@
       "company": "Forge Nano",
       "domain": "forge-nano.breezy.hr",
       "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Foundation Finance",
-      "domain": "careers.foundationfinance.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -572,5 +558,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1793830795
+  "generated_at": 1793845929
 }
