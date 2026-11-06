@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 1027,
-  "fallback_only_companies": 107,
+  "fallback_only_companies": 106,
   "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 562,
+  "simplify_missing_from_healthy_direct": 559,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -579,13 +579,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Space Tango",
-      "domain": "recruiting.paylocity.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Springs Window Fashions",
       "domain": "careers-springswindowfashions.icims.com",
       "job_count": 1,
@@ -623,7 +616,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 33,
+      "job_count": 32,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -768,5 +761,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1793936005
+  "generated_at": 1793963873
 }
