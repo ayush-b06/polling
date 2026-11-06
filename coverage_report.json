@@ -1,6 +1,6 @@
 {
-  "verified_direct_companies": 1025,
-  "fallback_only_companies": 105,
+  "verified_direct_companies": 1027,
+  "fallback_only_companies": 107,
   "direct_source_failures": 20,
   "simplify_missing_from_healthy_direct": 562,
   "fallback_companies": [
@@ -84,7 +84,7 @@
     {
       "company": "Barrios",
       "domain": "careers-barrios.icims.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -122,6 +122,13 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Connecticut State Community College",
+      "domain": "ctstatecommunitycollege.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Constellation Energy",
@@ -183,6 +190,13 @@
       "company": "Docusign",
       "domain": "careers.docusign.com",
       "job_count": 4,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "DwyerOmega",
+      "domain": "recruiting.paylocity.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -266,7 +280,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 27,
+      "job_count": 26,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -378,14 +392,14 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 11,
+      "job_count": 12,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 17,
+      "job_count": 18,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -754,5 +768,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1793920633
+  "generated_at": 1793936005
 }
