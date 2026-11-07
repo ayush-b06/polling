@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 1036,
-  "fallback_only_companies": 108,
-  "direct_source_failures": 21,
+  "verified_direct_companies": 1034,
+  "fallback_only_companies": 107,
+  "direct_source_failures": 23,
   "simplify_missing_from_healthy_direct": 529,
   "fallback_companies": [
     {
@@ -726,13 +726,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Wells Fargo",
-      "domain": "wd1.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Western & Southern Financial Group",
       "domain": "careers-westernsouthern.icims.com",
       "job_count": 1,
@@ -775,5 +768,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794066796
+  "generated_at": 1794081319
 }
