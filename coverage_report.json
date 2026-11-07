@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1030,
-  "fallback_only_companies": 105,
-  "direct_source_failures": 20,
-  "simplify_missing_from_healthy_direct": 546,
+  "verified_direct_companies": 1035,
+  "fallback_only_companies": 108,
+  "direct_source_failures": 21,
+  "simplify_missing_from_healthy_direct": 553,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -117,6 +117,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Chewy",
+      "domain": "wd5.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Clerkie",
       "domain": "getfiber.ai",
       "job_count": 2,
@@ -143,6 +150,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Cook Group",
+      "domain": "americas-cookmedical.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "CoreWeave",
@@ -609,7 +623,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 32,
+      "job_count": 33,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -679,7 +693,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 3,
+      "job_count": 4,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -710,6 +724,13 @@
       "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Wells Fargo",
+      "domain": "wd1.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Western & Southern Financial Group",
@@ -754,5 +775,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794006271
+  "generated_at": 1794019536
 }
