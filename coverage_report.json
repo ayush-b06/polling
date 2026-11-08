@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 1034,
   "fallback_only_companies": 107,
-  "direct_source_failures": 23,
-  "simplify_missing_from_healthy_direct": 530,
+  "direct_source_failures": 22,
+  "simplify_missing_from_healthy_direct": 531,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -768,5 +768,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794105763
+  "generated_at": 1794130497
 }
