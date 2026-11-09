@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 1033,
+  "verified_direct_companies": 1032,
   "fallback_only_companies": 106,
-  "direct_source_failures": 24,
+  "direct_source_failures": 25,
   "simplify_missing_from_healthy_direct": 524,
   "fallback_companies": [
     {
@@ -761,5 +761,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794183491
+  "generated_at": 1794204794
 }
