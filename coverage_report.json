@@ -1,6 +1,6 @@
 {
-  "verified_direct_companies": 1032,
-  "fallback_only_companies": 104,
+  "verified_direct_companies": 1037,
+  "fallback_only_companies": 108,
   "direct_source_failures": 25,
   "simplify_missing_from_healthy_direct": 522,
   "fallback_companies": [
@@ -54,6 +54,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Art of Problem Solving",
+      "domain": "artofproblemsolving.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Astrion",
       "domain": "careers.astrion.us",
       "job_count": 1,
@@ -80,6 +87,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Biodesix",
+      "domain": "www.biodesix.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "BodySpec",
@@ -133,13 +147,6 @@
     {
       "company": "Constellation Energy",
       "domain": "jobs.constellationenergy.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Consumer Direct Care Network",
-      "domain": "cdcn.avature.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -287,7 +294,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 26,
+      "job_count": 27,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -383,6 +390,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Iridium Communications",
+      "domain": "careers-iridium.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
       "job_count": 12,
@@ -420,6 +434,20 @@
     {
       "company": "Medpace",
       "domain": "careers.medpace.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Mercury Insurance",
+      "domain": "careers-mercuryinsurance.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Mettler Toledo",
+      "domain": "mt.avature.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -747,5 +775,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794236913
+  "generated_at": 1794268561
 }
