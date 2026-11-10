@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 1044,
   "fallback_only_companies": 106,
-  "direct_source_failures": 23,
-  "simplify_missing_from_healthy_direct": 518,
+  "direct_source_failures": 24,
+  "simplify_missing_from_healthy_direct": 511,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -392,7 +392,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 12,
+      "job_count": 11,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -761,5 +761,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794287248
+  "generated_at": 1794317010
 }
