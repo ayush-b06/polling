@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1037,
-  "fallback_only_companies": 108,
-  "direct_source_failures": 25,
-  "simplify_missing_from_healthy_direct": 522,
+  "verified_direct_companies": 1044,
+  "fallback_only_companies": 106,
+  "direct_source_failures": 23,
+  "simplify_missing_from_healthy_direct": 518,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -152,13 +152,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Cook Group",
-      "domain": "americas-cookmedical.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "CoreWeave",
       "domain": "coreweave.com",
       "job_count": 1,
@@ -294,7 +287,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 27,
+      "job_count": 28,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -406,7 +399,7 @@
     {
       "company": "Keysight Technologies",
       "domain": "jobs.keysight.com",
-      "job_count": 18,
+      "job_count": 19,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -481,23 +474,9 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Pacific Northwest National Laboratory",
-      "domain": "careers.pnnl.gov",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
       "job_count": 3,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "PathAI",
-      "domain": "www.pathai.com",
-      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -518,7 +497,7 @@
     {
       "company": "Planview",
       "domain": "careers.planview.com",
-      "job_count": 1,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -700,7 +679,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 4,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -731,6 +710,13 @@
       "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Wells Fargo",
+      "domain": "wd1.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Western & Southern Financial Group",
@@ -775,5 +761,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794268561
+  "generated_at": 1794287248
 }
