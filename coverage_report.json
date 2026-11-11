@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1048,
-  "fallback_only_companies": 104,
-  "direct_source_failures": 24,
-  "simplify_missing_from_healthy_direct": 516,
+  "verified_direct_companies": 1050,
+  "fallback_only_companies": 105,
+  "direct_source_failures": 22,
+  "simplify_missing_from_healthy_direct": 512,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -21,7 +21,7 @@
     {
       "company": "AMD",
       "domain": "careers.amd.com",
-      "job_count": 3,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -516,6 +516,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Rantec Power Systems Inc.",
+      "domain": "rantecpowersystemsinc.applytojob.com",
+      "job_count": 1,
+      "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Rivian",
       "domain": "careers.rivian.com",
       "job_count": 8,
@@ -609,7 +616,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 33,
+      "job_count": 34,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -747,5 +754,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794359546
+  "generated_at": 1794382828
 }
