@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1051,
-  "fallback_only_companies": 105,
+  "verified_direct_companies": 1053,
+  "fallback_only_companies": 103,
   "direct_source_failures": 22,
-  "simplify_missing_from_healthy_direct": 511,
+  "simplify_missing_from_healthy_direct": 509,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -38,13 +38,6 @@
       "job_count": 4,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Altice USA",
-      "domain": "www.optimumcareers.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Art of Problem Solving",
@@ -418,13 +411,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "McDonald's",
-      "domain": "jobs.mcdonalds.com",
-      "job_count": 3,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Medpace",
       "domain": "careers.medpace.com",
       "job_count": 1,
@@ -483,7 +469,7 @@
     {
       "company": "Peraton",
       "domain": "peraton.jibeapply.com",
-      "job_count": 6,
+      "job_count": 5,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -754,5 +740,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794412273
+  "generated_at": 1794436222
 }
