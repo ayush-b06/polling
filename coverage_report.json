@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1045,
-  "fallback_only_companies": 103,
+  "verified_direct_companies": 1048,
+  "fallback_only_companies": 104,
   "direct_source_failures": 24,
-  "simplify_missing_from_healthy_direct": 511,
+  "simplify_missing_from_healthy_direct": 516,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -33,18 +33,18 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "ASM International",
-      "domain": "www.asm.com",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Aerotech",
       "domain": "aerotech.applytojob.com",
       "job_count": 4,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Altice USA",
+      "domain": "www.optimumcareers.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Art of Problem Solving",
@@ -273,7 +273,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 28,
+      "job_count": 29,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -376,6 +376,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "JMP Statistical Discovery",
+      "domain": "jmp-sas.icims.com",
+      "job_count": 1,
+      "attempted_adapter": "icims",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
       "job_count": 11,
@@ -407,6 +414,13 @@
       "company": "MSA Safety",
       "domain": "careers.msasafety.com",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "McDonald's",
+      "domain": "jobs.mcdonalds.com",
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -602,7 +616,7 @@
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 5,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -698,13 +712,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Wells Fargo",
-      "domain": "wd1.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Western & Southern Financial Group",
       "domain": "careers-westernsouthern.icims.com",
       "job_count": 1,
@@ -740,5 +747,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794343639
+  "generated_at": 1794359546
 }
