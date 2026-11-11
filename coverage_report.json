@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1050,
+  "verified_direct_companies": 1051,
   "fallback_only_companies": 105,
   "direct_source_failures": 22,
-  "simplify_missing_from_healthy_direct": 512,
+  "simplify_missing_from_healthy_direct": 511,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -616,7 +616,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 34,
+      "job_count": 33,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -754,5 +754,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794382828
+  "generated_at": 1794412273
 }
