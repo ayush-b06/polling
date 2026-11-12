@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1056,
-  "fallback_only_companies": 105,
-  "direct_source_failures": 23,
-  "simplify_missing_from_healthy_direct": 509,
+  "verified_direct_companies": 1063,
+  "fallback_only_companies": 104,
+  "direct_source_failures": 22,
+  "simplify_missing_from_healthy_direct": 519,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -38,13 +38,6 @@
       "job_count": 4,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Art of Problem Solving",
-      "domain": "artofproblemsolving.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Astrion",
@@ -313,13 +306,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Illinois Tool Works",
-      "domain": "careers.itw.com",
-      "job_count": 5,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "InComm Payments",
       "domain": "jobs.incommpayments.com",
       "job_count": 1,
@@ -385,7 +371,7 @@
     {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
-      "job_count": 11,
+      "job_count": 12,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -418,6 +404,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Markon",
+      "domain": "markonsolutions.jibeapply.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Medpace",
       "domain": "careers.medpace.com",
       "job_count": 1,
@@ -432,16 +425,16 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Mettler Toledo",
-      "domain": "mt.avature.net",
+      "company": "Netflix",
+      "domain": "explore.jobs.netflix.net",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Netflix",
-      "domain": "explore.jobs.netflix.net",
-      "job_count": 1,
+      "company": "Nintendo",
+      "domain": "careers.nintendo.com",
+      "job_count": 9,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -469,7 +462,7 @@
     {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -754,5 +747,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794453787
+  "generated_at": 1794510360
 }
