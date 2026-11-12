@@ -1,7 +1,7 @@
 {
-  "verified_direct_companies": 1053,
-  "fallback_only_companies": 103,
-  "direct_source_failures": 22,
+  "verified_direct_companies": 1056,
+  "fallback_only_companies": 105,
+  "direct_source_failures": 23,
   "simplify_missing_from_healthy_direct": 509,
   "fallback_companies": [
     {
@@ -266,7 +266,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 29,
+      "job_count": 27,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -376,6 +376,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Jamf",
+      "domain": "www.jamf.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
       "job_count": 11,
@@ -462,7 +469,7 @@
     {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -532,6 +539,13 @@
     {
       "company": "SageSure",
       "domain": "www.sagesure.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Shive-Hattery",
+      "domain": "recruiting.paylocity.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -672,7 +686,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -740,5 +754,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794436222
+  "generated_at": 1794453787
 }
