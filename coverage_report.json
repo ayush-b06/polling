@@ -1,8 +1,8 @@
 {
   "verified_direct_companies": 1063,
-  "fallback_only_companies": 104,
-  "direct_source_failures": 22,
-  "simplify_missing_from_healthy_direct": 519,
+  "fallback_only_companies": 107,
+  "direct_source_failures": 25,
+  "simplify_missing_from_healthy_direct": 515,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -105,6 +105,13 @@
     {
       "company": "Chewy",
       "domain": "wd5.myworkdaysite.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Cintas",
+      "domain": "careers.cintas.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -259,7 +266,7 @@
     {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
-      "job_count": 27,
+      "job_count": 28,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
     },
@@ -399,7 +406,7 @@
     {
       "company": "MSA Safety",
       "domain": "careers.msasafety.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -453,6 +460,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Octant Bio",
+      "domain": "www.octant.bio",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Otter.ai",
       "domain": "otter.ai",
       "job_count": 2,
@@ -497,6 +511,13 @@
     {
       "company": "Qorvo",
       "domain": "careers.qorvo.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "RLI",
+      "domain": "wd1.myworkdaysite.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -665,7 +686,7 @@
     {
       "company": "VTG",
       "domain": "careers.vtgdefense.com",
-      "job_count": 4,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -679,7 +700,7 @@
     {
       "company": "ViaSat",
       "domain": "careers.viasat.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -747,5 +768,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794510360
+  "generated_at": 1794529048
 }
