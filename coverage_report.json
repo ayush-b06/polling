@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1063,
-  "fallback_only_companies": 107,
-  "direct_source_failures": 25,
-  "simplify_missing_from_healthy_direct": 510,
+  "verified_direct_companies": 1065,
+  "fallback_only_companies": 104,
+  "direct_source_failures": 24,
+  "simplify_missing_from_healthy_direct": 502,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -150,13 +150,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Costco",
-      "domain": "phf.tbe.taleo.net",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Cvent",
@@ -369,13 +362,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Jamf",
-      "domain": "www.jamf.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Johns Hopkins Applied Physics Laboratory",
       "domain": "careers.jhuapl.edu",
       "job_count": 12,
@@ -423,13 +409,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Mercury Insurance",
-      "domain": "careers-mercuryinsurance.icims.com",
-      "job_count": 1,
-      "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Netflix",
@@ -630,7 +609,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 33,
+      "job_count": 34,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -768,5 +747,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794549403
+  "generated_at": 1794577583
 }
