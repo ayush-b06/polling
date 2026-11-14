@@ -1,19 +1,12 @@
 {
-  "verified_direct_companies": 1028,
+  "verified_direct_companies": 1013,
   "fallback_only_companies": 117,
-  "direct_source_failures": 86,
-  "simplify_missing_from_healthy_direct": 516,
+  "direct_source_failures": 103,
+  "simplify_missing_from_healthy_direct": 499,
   "fallback_companies": [
     {
       "company": "84 Lumber",
       "domain": "careers.84lumber.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "AGCO",
-      "domain": "careers.agcocorp.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -44,6 +37,13 @@
       "domain": "aerotech.applytojob.com",
       "job_count": 4,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Ambarella",
+      "domain": "ambarella.wd108.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -124,15 +124,15 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Chewy",
-      "domain": "wd5.myworkdaysite.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
+      "company": "Cboe",
+      "domain": "cboe.wd1.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Cintas",
-      "domain": "careers.cintas.com",
+      "company": "Chewy",
+      "domain": "wd5.myworkdaysite.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -285,6 +285,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "GE Appliances",
+      "domain": "haier.wd3.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "General Dynamics Mission Systems",
       "domain": "careers-gdms.icims.com",
       "job_count": 28,
@@ -318,13 +325,6 @@
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Huntington Ingalls Industries",
-      "domain": "careers.huntingtoningalls.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "IDEMIA",
@@ -418,6 +418,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Johnson Controls",
+      "domain": "jci.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "KBR",
       "domain": "kbr.wd5.myworkdayjobs.com",
       "job_count": 2,
@@ -439,6 +446,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "L3Harris Technologies",
+      "domain": "jobs.l3harris.com",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Leidos",
       "domain": "leidos.wd5.myworkdayjobs.com",
       "job_count": 3,
@@ -451,13 +465,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "MSA Safety",
-      "domain": "careers.msasafety.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "Markon",
@@ -481,6 +488,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "NCR Voyix",
+      "domain": "ncr.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Nelnet",
       "domain": "nelnet.wd1.myworkdayjobs.com",
       "job_count": 3,
@@ -490,13 +504,6 @@
     {
       "company": "Netflix",
       "domain": "explore.jobs.netflix.net",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "NextEra Energy",
-      "domain": "jobs.nexteraenergy.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -605,13 +612,6 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Safran",
-      "domain": "careers.safran-dsi.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
     },
     {
       "company": "SageSure",
@@ -740,13 +740,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "United Launch Alliance",
-      "domain": "jobs.ulalaunch.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Universal Health Services",
       "domain": "jobs.uhsinc.com",
       "job_count": 1,
@@ -819,7 +812,7 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 3,
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -836,7 +829,14 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Wolters Kluwer",
+      "domain": "wk.wd3.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794619273
+  "generated_at": 1794642551
 }
