@@ -2,7 +2,7 @@
   "verified_direct_companies": 1072,
   "fallback_only_companies": 104,
   "direct_source_failures": 26,
-  "simplify_missing_from_healthy_direct": 492,
+  "simplify_missing_from_healthy_direct": 481,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -747,5 +747,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1794685506
+  "generated_at": 1794699395
 }
