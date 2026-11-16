@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 1075,
-  "fallback_only_companies": 104,
-  "direct_source_failures": 25,
-  "simplify_missing_from_healthy_direct": 485,
+  "verified_direct_companies": 1065,
+  "fallback_only_companies": 108,
+  "direct_source_failures": 33,
+  "simplify_missing_from_healthy_direct": 486,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -37,6 +37,20 @@
       "domain": "aerotech.applytojob.com",
       "job_count": 4,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Ambarella",
+      "domain": "ambarella.wd108.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Ancestry",
+      "domain": "ancestry.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -129,6 +143,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Copart",
+      "domain": "copart.wd12.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "CoreWeave",
@@ -400,6 +421,13 @@
       "company": "Medpace",
       "domain": "careers.medpace.com",
       "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Meta",
+      "domain": "www.metacareers.com",
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -747,5 +775,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1794780734
+  "generated_at": 1794793577
 }
