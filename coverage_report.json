@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 790,
-  "fallback_only_companies": 220,
-  "direct_source_failures": 381,
-  "simplify_missing_from_healthy_direct": 250,
+  "verified_direct_companies": 791,
+  "fallback_only_companies": 222,
+  "direct_source_failures": 385,
+  "simplify_missing_from_healthy_direct": 240,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -159,6 +159,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Baird",
+      "domain": "baird.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Barrios",
       "domain": "careers-barrios.icims.com",
       "job_count": 1,
@@ -278,13 +285,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Chatham Financial",
-      "domain": "chathamfinancial.wd501.myworkdayjobs.com",
-      "job_count": 2,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Chewy",
       "domain": "wd5.myworkdaysite.com",
       "job_count": 1,
@@ -297,20 +297,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Cisco",
-      "domain": "careers.cisco.com",
-      "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Cisco",
-      "domain": "cisco.wd5.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Cisive",
@@ -374,6 +360,13 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Copart",
+      "domain": "copart.wd12.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "CoreWeave",
@@ -560,7 +553,7 @@
     {
       "company": "Fidelity Investments",
       "domain": "fmr.wd1.myworkdayjobs.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -649,6 +642,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Gordon Food Service",
+      "domain": "gfs.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Guidewire",
       "domain": "wd5.myworkdaysite.com",
       "job_count": 1,
@@ -660,13 +660,6 @@
       "domain": "h2oai.applytojob.com",
       "job_count": 5,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "HNTB",
-      "domain": "hntb.wd5.myworkdayjobs.com",
-      "job_count": 2,
-      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -791,7 +784,7 @@
     {
       "company": "Johnson & Johnson",
       "domain": "jj.wd5.myworkdayjobs.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -883,6 +876,13 @@
       "company": "Lowe's",
       "domain": "lowes.wd5.myworkdayjobs.com",
       "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "M&T Bank",
+      "domain": "mtb.wd5.myworkdayjobs.com",
+      "job_count": 5,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -1092,7 +1092,7 @@
     {
       "company": "RTX",
       "domain": "globalhr.wd5.myworkdayjobs.com",
-      "job_count": 20,
+      "job_count": 19,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -1113,7 +1113,7 @@
     {
       "company": "Rivian",
       "domain": "careers.rivian.com",
-      "job_count": 8,
+      "job_count": 7,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -1165,6 +1165,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Sallie Mae",
+      "domain": "sallie-mae.wd5.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Schweitzer Engineering Laboratories",
@@ -1566,5 +1573,5 @@
       "reason": "adapter discovered but not yet verified"
     }
   ],
-  "generated_at": 1794967752
+  "generated_at": 1794995085
 }
