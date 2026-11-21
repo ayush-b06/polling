@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 831,
-  "fallback_only_companies": 215,
-  "direct_source_failures": 349,
-  "simplify_missing_from_healthy_direct": 276,
+  "verified_direct_companies": 817,
+  "fallback_only_companies": 218,
+  "direct_source_failures": 370,
+  "simplify_missing_from_healthy_direct": 270,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -61,6 +61,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "AeroVironment",
+      "domain": "avav.wd1.myworkdayjobs.com",
+      "job_count": 13,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Aerotech",
       "domain": "aerotech.applytojob.com",
       "job_count": 3,
@@ -117,6 +124,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Ancestry",
+      "domain": "ancestry.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Applied Research Associates",
       "domain": "recruiting.ultipro.com",
       "job_count": 3,
@@ -133,13 +147,6 @@
     {
       "company": "Argonne National Laboratory",
       "domain": "argonne.wd1.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Arrowstreet Capital",
-      "domain": "arrowstreetcapital.wd5.myworkdayjobs.com",
       "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
@@ -229,6 +236,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Brunswick",
+      "domain": "brunswick.wd1.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Burns Engineering",
       "domain": "www.burns-group.com",
       "job_count": 1,
@@ -281,6 +295,13 @@
       "company": "CVS Health",
       "domain": "cvshealth.wd1.myworkdayjobs.com",
       "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Cadence Design Systems",
+      "domain": "cadence.wd1.myworkdayjobs.com",
+      "job_count": 6,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -1321,6 +1342,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Torch Technologies",
+      "domain": "starfish.wd501.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "TransCore",
       "domain": "recruiting2.ultipro.com",
       "job_count": 2,
@@ -1416,13 +1444,6 @@
       "domain": "valitanallc.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Varian",
-      "domain": "onehealthineers.wd3.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -1524,5 +1545,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1795282779
+  "generated_at": 1795300195
 }
