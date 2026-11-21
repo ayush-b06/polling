@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 830,
-  "fallback_only_companies": 196,
-  "direct_source_failures": 353,
-  "simplify_missing_from_healthy_direct": 259,
+  "verified_direct_companies": 826,
+  "fallback_only_companies": 213,
+  "direct_source_failures": 357,
+  "simplify_missing_from_healthy_direct": 256,
   "fallback_companies": [
     {
       "company": "84 Lumber",
@@ -54,6 +54,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Acuity Insurance",
+      "domain": "recruiting2.ultipro.com",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "AeroVironment",
       "domain": "avav.wd1.myworkdayjobs.com",
       "job_count": 13,
@@ -63,7 +70,7 @@
     {
       "company": "Aerotech",
       "domain": "aerotech.applytojob.com",
-      "job_count": 4,
+      "job_count": 3,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
     },
@@ -89,6 +96,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Ambarella",
+      "domain": "ambarella.wd108.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Amentum",
       "domain": "pae.wd1.myworkdayjobs.com",
       "job_count": 2,
@@ -110,15 +124,15 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Argonne National Laboratory",
-      "domain": "argonne.wd1.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
+      "company": "Applied Research Associates",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 3,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
-      "company": "Arrowstreet Capital",
-      "domain": "arrowstreetcapital.wd5.myworkdayjobs.com",
+      "company": "Argonne National Laboratory",
+      "domain": "argonne.wd1.myworkdayjobs.com",
       "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
@@ -135,13 +149,6 @@
       "domain": "campus-americas.icims.com",
       "job_count": 1,
       "attempted_adapter": "icims",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Axos Bank",
-      "domain": "axos.wd5.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -182,7 +189,7 @@
     {
       "company": "Booz Allen",
       "domain": "bah.wd1.myworkdayjobs.com",
-      "job_count": 15,
+      "job_count": 14,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -241,6 +248,13 @@
       "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Calamos Investments",
+      "domain": "recruiting2.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Cboe",
@@ -432,6 +446,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "ECPI University",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Early Warning",
       "domain": "earlywarning.wd5.myworkdayjobs.com",
       "job_count": 1,
@@ -455,6 +476,13 @@
     {
       "company": "Empower Pharmacy",
       "domain": "careers.empowerpharmacy.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Encore",
+      "domain": "recruiting2.ultipro.com",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -509,6 +537,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "First Bank & Trust",
+      "domain": "bankeasy.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Forge Nano",
       "domain": "forge-nano.breezy.hr",
       "job_count": 2,
@@ -523,11 +558,25 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Fort Bend County",
+      "domain": "fortbendcountytx.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Frontier Technology",
       "domain": "careers-ftidefense.icims.com",
       "job_count": 2,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "GCI",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "GEI Consultants",
@@ -656,13 +705,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Intel",
-      "domain": "intel.wd1.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Intelliforce-IT Solutions Group",
       "domain": "intelliforceitsolutionsgroup.applytojob.com",
       "job_count": 1,
@@ -761,6 +803,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "LexisNexis Risk Solutions",
+      "domain": "relx.wd3.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Life Fitness",
       "domain": "lifefitness.wd1.myworkdayjobs.com",
       "job_count": 2,
@@ -780,6 +829,13 @@
       "job_count": 5,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "MSU Federal Credit Union",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "ManTech",
@@ -805,6 +861,20 @@
     {
       "company": "Melaleuca",
       "domain": "recruiting2.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Mesirow",
+      "domain": "recruiting2.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Miami HEAT",
+      "domain": "recruiting.ultipro.com",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -887,6 +957,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Oshkosh",
+      "domain": "oshkoshcorporation.wd5.myworkdayjobs.com",
+      "job_count": 4,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Otter.ai",
       "domain": "otter.ai",
       "job_count": 2,
@@ -934,6 +1011,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Phoenix Defense",
+      "domain": "recruiting2.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Planview",
@@ -1160,11 +1244,11 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "TSC",
-      "domain": "tsc.wd12.myworkdayjobs.com",
-      "job_count": 3,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
+      "company": "TCOM",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Teledyne",
@@ -1209,6 +1293,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "TransCore",
+      "domain": "recruiting2.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Transcard Payments",
       "domain": "recruiting.paylocity.com",
       "job_count": 1,
@@ -1228,6 +1319,13 @@
       "job_count": 3,
       "attempted_adapter": "jobvite",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "USAble Life",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Udig",
@@ -1263,6 +1361,13 @@
       "job_count": 1,
       "attempted_adapter": "icims",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "VT Industries",
+      "domain": "vtindustries.rec.pro.ukg.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "VTG",
@@ -1330,7 +1435,7 @@
     {
       "company": "Vizient",
       "domain": "vizient.wd1.myworkdayjobs.com",
-      "job_count": 4,
+      "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -1342,6 +1447,20 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Watchfire Signs",
+      "domain": "watchfiresigns.rec.pro.ukg.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Wellabe",
+      "domain": "recruiting.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
       "company": "Western & Southern Financial Group",
       "domain": "careers-westernsouthern.icims.com",
       "job_count": 1,
@@ -1351,7 +1470,7 @@
     {
       "company": "Westinghouse Electric Company",
       "domain": "careers.westinghousenuclear.com",
-      "job_count": 3,
+      "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -1372,7 +1491,7 @@
     {
       "company": "Workday",
       "domain": "workday.wd5.myworkdayjobs.com",
-      "job_count": 2,
+      "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -1391,5 +1510,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1795210062
+  "generated_at": 1795228603
 }
