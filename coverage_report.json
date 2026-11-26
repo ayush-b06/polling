@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 875,
-  "fallback_only_companies": 193,
-  "direct_source_failures": 315,
-  "simplify_missing_from_healthy_direct": 259,
+  "verified_direct_companies": 884,
+  "fallback_only_companies": 194,
+  "direct_source_failures": 319,
+  "simplify_missing_from_healthy_direct": 273,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -196,7 +196,7 @@
     {
       "company": "Booz Allen",
       "domain": "bah.wd1.myworkdayjobs.com",
-      "job_count": 13,
+      "job_count": 12,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -285,13 +285,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Cboe",
-      "domain": "cboe.wd1.myworkdayjobs.com",
-      "job_count": 2,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Chewy",
       "domain": "wd5.myworkdaysite.com",
       "job_count": 1,
@@ -318,13 +311,6 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Citi",
-      "domain": "citi.wd5.myworkdayjobs.com",
-      "job_count": 3,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Clearwater Analytics",
@@ -381,6 +367,13 @@
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Copart",
+      "domain": "copart.wd12.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Corgan",
@@ -651,7 +644,7 @@
     {
       "company": "IXL Learning",
       "domain": "www.ixl.com",
-      "job_count": 2,
+      "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -672,6 +665,13 @@
     {
       "company": "InComm Payments",
       "domain": "jobs.incommpayments.com",
+      "job_count": 1,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Indie",
+      "domain": "www.indie.inc",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
@@ -915,25 +915,11 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Otter.ai",
-      "domain": "otter.ai",
-      "job_count": 2,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
-    },
-    {
       "company": "Panasonic Holdings",
       "domain": "careers.na.panasonic.com",
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Parsons",
-      "domain": "parsons.wd5.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Peraton",
@@ -1009,13 +995,6 @@
       "company": "RTX",
       "domain": "globalhr.wd5.myworkdayjobs.com",
       "job_count": 13,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Radiance Technologies",
-      "domain": "radiancetech.wd12.myworkdayjobs.com",
-      "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -1125,11 +1104,25 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Sonos",
+      "domain": "sonos.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Space Dynamics Laboratory",
       "domain": "spacedynamicslaboratory.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Starkey",
+      "domain": "recruiting2.ultipro.com",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Storable",
@@ -1183,14 +1176,14 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 29,
+      "job_count": 28,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
     {
       "company": "Textron",
       "domain": "textron.taleo.net",
-      "job_count": 7,
+      "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -1207,6 +1200,13 @@
       "job_count": 2,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Total Quality Logistics",
+      "domain": "tql.avature.net",
+      "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
     },
     {
       "company": "Transcard Payments",
@@ -1235,6 +1235,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Uline",
+      "domain": "uline.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Universal Health Services",
@@ -1370,5 +1377,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1795649378
+  "generated_at": 1795670555
 }
