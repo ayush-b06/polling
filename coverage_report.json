@@ -1,8 +1,8 @@
 {
-  "verified_direct_companies": 881,
-  "fallback_only_companies": 192,
-  "direct_source_failures": 320,
-  "simplify_missing_from_healthy_direct": 280,
+  "verified_direct_companies": 859,
+  "fallback_only_companies": 199,
+  "direct_source_failures": 351,
+  "simplify_missing_from_healthy_direct": 254,
   "fallback_companies": [
     {
       "company": "AGCO",
@@ -117,13 +117,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Arrowstreet Capital",
-      "domain": "arrowstreetcapital.wd5.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "AspenTech",
       "domain": "aspentech.wd5.myworkdayjobs.com",
       "job_count": 1,
@@ -148,6 +141,13 @@
       "company": "Auto-Owners Insurance",
       "domain": "aoins.wd5.myworkdayjobs.com",
       "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Axos Bank",
+      "domain": "axos.wd5.myworkdayjobs.com",
+      "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
@@ -194,6 +194,20 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Boeing",
+      "domain": "boeing.wd1.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Booz Allen",
+      "domain": "bah.wd1.myworkdayjobs.com",
+      "job_count": 9,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Bracco",
       "domain": "bracco.wd103.myworkdayjobs.com",
       "job_count": 1,
@@ -229,13 +243,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "CDK Global",
-      "domain": "cdk.wd1.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "CDPHP",
       "domain": "lthc.wd1.myworkdayjobs.com",
       "job_count": 1,
@@ -257,20 +264,6 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "CVS Health",
-      "domain": "cvshealth.wd1.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Cadence Design Systems",
-      "domain": "cadence.wd1.myworkdayjobs.com",
-      "job_count": 7,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Calamos Investments",
       "domain": "recruiting2.ultipro.com",
       "job_count": 2,
@@ -282,13 +275,6 @@
       "domain": "calyxcontainers.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
-      "company": "Cboe",
-      "domain": "cboe.wd1.myworkdayjobs.com",
-      "job_count": 2,
-      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -309,6 +295,13 @@
       "company": "Cirrus Logic",
       "domain": "jobs.eu.lever.co",
       "job_count": 2,
+      "attempted_adapter": "none",
+      "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Cisco",
+      "domain": "careers.cisco.com",
+      "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -376,13 +369,6 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Copart",
-      "domain": "copart.wd12.myworkdayjobs.com",
-      "job_count": 3,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
-    },
-    {
       "company": "Corgan",
       "domain": "campus-us-corgan.icims.com",
       "job_count": 1,
@@ -395,13 +381,6 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "Danaher",
-      "domain": "danaher.wd1.myworkdayjobs.com",
-      "job_count": 3,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Dayton Freight Lines",
@@ -444,13 +423,6 @@
       "job_count": 3,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
-    },
-    {
-      "company": "DraftKings",
-      "domain": "draftkings.wd1.myworkdayjobs.com",
-      "job_count": 1,
-      "attempted_adapter": "workday",
-      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Draper",
@@ -558,11 +530,18 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
-      "company": "Federal Home Loan Bank of Des Moines",
-      "domain": "wd5.myworkdaysite.com",
+      "company": "FHLBank Chicago",
+      "domain": "fhlbc.wd1.myworkdayjobs.com",
       "job_count": 1,
-      "attempted_adapter": "none",
-      "reason": "unsupported or custom career site"
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Firefly Aerospace",
+      "domain": "fireflyspace.wd115.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "First Bank & Trust",
@@ -803,6 +782,13 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Light & Wonder",
+      "domain": "lnw.wd5.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Lowe's",
       "domain": "lowes.wd5.myworkdayjobs.com",
       "job_count": 2,
@@ -859,8 +845,8 @@
       "reason": "unsupported or custom career site"
     },
     {
-      "company": "Motorola",
-      "domain": "motorolasolutions.wd5.myworkdayjobs.com",
+      "company": "NCR Voyix",
+      "domain": "ncr.wd1.myworkdayjobs.com",
       "job_count": 1,
       "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
@@ -1020,6 +1006,13 @@
       "reason": "unsupported or custom career site"
     },
     {
+      "company": "Rockwell Automation",
+      "domain": "rockwellautomation.wd1.myworkdayjobs.com",
+      "job_count": 6,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "RoviSys",
       "domain": "careers-additionalrovisysopportunities.icims.com",
       "job_count": 1,
@@ -1046,6 +1039,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Salesforce",
+      "domain": "salesforce.wd12.myworkdayjobs.com",
+      "job_count": 4,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Sallie Mae",
@@ -1111,11 +1111,25 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Stanley Black & Decker",
+      "domain": "sbdinc.wd1.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Starkey",
       "domain": "recruiting2.ultipro.com",
       "job_count": 2,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "State Street",
+      "domain": "statestreet.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Storable",
@@ -1169,7 +1183,7 @@
     {
       "company": "Tesla",
       "domain": "www.tesla.com",
-      "job_count": 28,
+      "job_count": 27,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
     },
@@ -1179,6 +1193,13 @@
       "job_count": 6,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "The Aerospace Corporation",
+      "domain": "aero.wd5.myworkdayjobs.com",
+      "job_count": 5,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Total Quality Logistics",
@@ -1221,6 +1242,13 @@
       "job_count": 1,
       "attempted_adapter": "none",
       "reason": "unsupported or custom career site"
+    },
+    {
+      "company": "Uhaul",
+      "domain": "uhaul.wd1.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
     },
     {
       "company": "Uline",
@@ -1272,6 +1300,20 @@
       "reason": "adapter discovered but not yet verified"
     },
     {
+      "company": "Vantive",
+      "domain": "vantive.wd108.myworkdayjobs.com",
+      "job_count": 1,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Vermeer",
+      "domain": "vermeer.wd5.myworkdayjobs.com",
+      "job_count": 3,
+      "attempted_adapter": "workday",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
       "company": "Veterans United",
       "domain": "veteransunited.wd1.myworkdayjobs.com",
       "job_count": 1,
@@ -1304,6 +1346,13 @@
       "domain": "virtualtechnologygroupllc.applytojob.com",
       "job_count": 1,
       "attempted_adapter": "jazzhr",
+      "reason": "adapter discovered but not yet verified"
+    },
+    {
+      "company": "Visa",
+      "domain": "visa.wd5.myworkdayjobs.com",
+      "job_count": 2,
+      "attempted_adapter": "workday",
       "reason": "adapter discovered but not yet verified"
     },
     {
@@ -1363,5 +1412,5 @@
       "reason": "unsupported or custom career site"
     }
   ],
-  "generated_at": 1795706602
+  "generated_at": 1795738084
 }
